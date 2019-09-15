@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'SENAITE LIMS', // Title for your website.
-  tagline: 'Enterprise Laboratory Information Management System',
+  tagline: 'Enterprise Open-Source Laboratory Information Management System',
   url: 'https://documentation.senaite.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -54,7 +54,7 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#d6dadb',
+    primaryColor: '#d6dbdc',
     secondaryColor: '#000',
   },
 
@@ -73,7 +73,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} SENAITE Foundation`,
+  copyright: `Copyright © 2017-${new Date().getFullYear()} SENAITE Foundation`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -94,17 +94,20 @@ const siteConfig = {
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
-  // docsSideNavCollapsible: true,
+  docsSideNavCollapsible: true,
 
   // Show documentation's last contributor's name.
-  // enableUpdateBy: true,
+  enableUpdateBy: true,
 
   // Show documentation's last update time.
-  // enableUpdateTime: true,
+  enableUpdateTime: true,
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+  repoUrl: 'https://github.com/senaite/senaite.core',
+
+  // Twitter
+  twitterUsername: 'senaitelims',
 };
 
 module.exports = siteConfig;

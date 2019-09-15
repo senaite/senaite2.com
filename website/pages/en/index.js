@@ -152,11 +152,16 @@ class Index extends React.Component {
       <Block background="light">
         {[
           {
-            content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            content: '',
+            image: `${baseUrl}img/ridingbytes.png`,
+            imageAlign: 'left',
+            title: '',
+          },
+          {
+            content: '',
+            image: `${baseUrl}img/naralabs.png`,
             imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
+            title: '',
           },
         ]}
       </Block>

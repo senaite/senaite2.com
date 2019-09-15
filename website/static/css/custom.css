@@ -36,3 +36,6 @@ input.form-input {
     padding: 10px;
     margin-right: 1px;
 }
+
+.projectTitle > small {
+}
