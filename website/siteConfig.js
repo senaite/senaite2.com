@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'SENAITE LIMS', // Title for your website.
-  tagline: 'Official Documentation Site',
+  tagline: 'Enterprise Laboratory Information Management System',
   url: 'https://documentation.senaite.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:

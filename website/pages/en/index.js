@@ -35,9 +35,10 @@ class HomeSplash extends React.Component {
       </div>
     );
 
-    const ProjectTitle = () => (
+    const ProjectTitle = props => (
       <h2 className="projectTitle">
-        {siteConfig.title}
+        {/* {siteConfig.title} */}
+        <img style={{width: "400px"}} src={props.img_src} alt={siteConfig.title} />
         <small>{siteConfig.tagline}</small>
       </h2>
     );
@@ -60,14 +61,18 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/logo.png`} />
-
+        {/* <Logo img_src={`${baseUrl}img/senaite_lims.png`} /> */}
         <div className="inner">
-          <ProjectTitle siteConfig={siteConfig} />
+          <ProjectTitle
+            img_src={`${baseUrl}img/senaite_lims.png`}
+            siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button target="_blank" href="https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/senaite/senaite.docker/master/stack.yml">Try It Out</Button>
+            <Button target="_blank" href="https://community.senaite.org">Community Forum</Button>
+            <Button target="_blank" href="https://gitter.im/senaite/Lobby">Gitter Chat</Button>
+            <Button target="_blank" href="https://github.com/senaite">GitHub Repository</Button>
+            {/* <Button href={docUrl('doc1.html')}>Example Link</Button> */}
+            {/* <Button href={docUrl('doc2.html')}>Example Link 2</Button> */}
           </PromoSection>
         </div>
       </SplashContainer>
