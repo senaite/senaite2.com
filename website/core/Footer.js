@@ -51,7 +51,7 @@ class Footer extends React.Component {
             {/*   User Showcase */}
             {/* </a> */}
             <a target="_blank" href="https://gitter.im/senaite/Lobby">Gitter Chat</a>
-            <a target="_blank" href="https://community.senaite.com">Community Site</a>
+            <a target="_blank" href="https://community.senaite.org">Community Site</a>
             <a
               href="https://stackoverflow.com/search?q=senaite"
               target="_blank"
