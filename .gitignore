@@ -14,5 +14,7 @@ website/i18n/*
 buildout/.installed.cfg
 buildout/bin
 buildout/develop-eggs/
+buildout/eggs
 buildout/parts
+buildout/src
 buildout/var
