@@ -137,6 +137,49 @@ PYTHONHTTPSVERIFY=0 bin/buildout
 Also see here: https://github.com/senaite/senaite.lims#readme
 
 
+## Starting SENAITE
+
+After the `buildout` command of the previous step returned without errors, you
+can start SENAITE from the terminal.
+
+To start SENAITE in foreground (debug) mode, use this command:
+
+```shell
+bin/instance fg
+```
+
+To stop the server, you can press `CTRL+C` on your keyboard.
+
+**Note**
+You can also start SENAITE in the background (production) mode with the command
+`bin/instance start` and stop it again with `bin/instance stop`.
+
+
+This will print several logs to the terminal and notifies when the server is ready with the line:
+
+```
+2019-09-14 09:59:44 INFO Zope Ready to handle requests
+```
+
+Open a browser (Safari/Chrome/FireFox ...) and navigate to the URL http://localhost:8080
+
+![Welcome Screen](/screenshots/welcome_screen.png "Welcome Screen")
+
+Log in with `admin:admin` to proceed to the next page.
+
+![Installation Screen](/screenshots/installation_screen.png "Installation Screen")
+
+You can continue with the default settings and press the "Install SENAITE LIMS" button.
+After a few moments, SENAITE should be installed and the dashboard view appears.
+
+![Dashboard Screen](/screenshots/dashboard_screen.png "Dashboard Screen")
+
+Congratulations, you successfully installed SENAITE LIMS on your system!
+
+You can now continue with the next sections to learn the first steps in your new system.
+
+
+
 [PLONE]: https://plone.org  "The Ultimate Enterprise CMS"
 [PLONE-installation]: https://docs.plone.org/4/en/manage/installing/installation.html#how-to-install-plone  "How to install Plone 4"
 [PYTHON]: https://www.python.org   "Python Programming Language"
