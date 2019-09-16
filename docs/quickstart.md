@@ -4,10 +4,7 @@ title: A quick start into SENAITE
 sidebar_label: Quickstart
 ---
 
-In this guide we will show you how to create your first sample in SENAITE, how
-to process it through the integrated workflow steps and how to finally publish
-the sample and report back the results.
-
+In this guide we will show you how to create your first sample in SENAITE.
 
 ## Configure SENAITE for the first sample
 
