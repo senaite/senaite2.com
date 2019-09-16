@@ -27,12 +27,13 @@ function Help(props) {
       title: 'Browse Docs',
     },
     {
-      content: 'Ask questions about the documentation and project',
+      content: 'Ask questions about the project',
+      content: `Ask questions about the project on the [Community Site](https://community.senaite.org) or in our [Chat Room](https://gitter.im/senaite/Lobby)`,
       title: 'Join the community',
     },
     {
-      content: "Find out what's new with this project",
-      title: 'Stay up to date',
+      content: `Contact [RIDING BYTES](https://www.ridingbytes.com) or [NARALABS](https://naralabs.com)`,
+      title: 'Contact a Service Provider',
     },
   ];
 

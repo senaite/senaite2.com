@@ -40,7 +40,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'doc1', label: 'Docs'},
     // {doc: 'doc4', label: 'API'},
-    // {page: 'help', label: 'Help'},
+    {page: 'help', label: 'Help'},
     // {blog: true, label: 'Blog'},
   ],
 
