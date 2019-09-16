@@ -3,6 +3,9 @@
     "Getting Started": [
       "installation",
       "quickstart"
+    ],
+    "Sample Basics": [
+      "sample_basics"
     ]
   }
 }

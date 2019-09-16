@@ -25,10 +25,10 @@ The ⚙️button is almost on every screen available and allows you to quickly
 navigate to the LIMS Setup.
 
 **🤓 Pro-Tip:**
-You can also press the key-combination `Ctrl+Space` to open the *Spotlight Search*.
-You can type in now the setup location you want to visit and select with the
-`Up` and `Down` arrow keys of your keyboard the item and press `Enter`. SENAITE
-will navigate you directly to the item you requested.
+You can also press the key-combination `Ctrl+Space` to open the *Spotlight
+Search*. You can search then the setup location you want to visit and select
+with the `Up` and `Down` arrow keys of your keyboard the location and press
+`Enter`. SENAITE will navigate you then directly to the item you requested.
 
 
 ### Add Lab Departments
@@ -41,6 +41,11 @@ Departments* tile to navigate to the listing of laboratory departments.
 Click on the "Add" button above the listing table to add a new lab department.
 
 ![Add Lab Department](/screenshots/add_lab_department_screen.png "Add a new Lab Department")
+
+Enter the following values in the add form:
+
+- Title: `Chemistry`
+- Description: `Analytical chemistry department`
 
 Click the "Save" button when you are done.
 
@@ -60,6 +65,9 @@ Let's add the category "Metal" to group together analyses which trace metals by
 clicking the "Add" Button above the listing table.
 
 ![Add Analysis Category](/screenshots/add_analysis_category_screen.png "Add a new Analysis Category")
+
+- Title: `Metals`
+- Description: `Trace metals in water`
 
 Click again the "Save" button when you are done.
 
@@ -95,7 +103,7 @@ selecting the checkbox of the Service you want to copy and click on the
 
 ### Add Sample Types
 
-To be later able to create samples in the system, we need to add some *Sample
+To be able to create samples in the system later, we need to add some *Sample
 Types* as well. Navigate therefore to the *LIMS Setup* and click on the *Sample
 Types* tile.
 
@@ -112,8 +120,8 @@ Enter the following values in the add form:
 - Minimum Volume: `100 ml`
 
 **⚠ Important:**
-The Sample Type Prefix `H2O` will control later the generated ID of the new sample.
-Please chose therefore a concise and short identifier!
+The Sample Type Prefix `H2O` will control the generated ID of the new sample
+later. Please always chose a concise and short identifier!
 
 
 ## Creating the first sample
@@ -122,9 +130,9 @@ All Samples reside below *Clients* in SENAITE.
 
 **☝️Note:**
 Although the system was initially designed for contract analyses labs, it is
-also perfectly possible to configure the system for non-contract analyses, e.g.
-for quality control analyses for the producing industry. Simply add just one
-client which represents your own company.
+also perfectly possible to configure the system for non-contract-analysis labs ,
+e.g. for quality control analyses for the producing industry. Simply add just
+one client which represents your own company.
 
 ### Add Clients
 
@@ -216,3 +224,6 @@ You can click now on the generated *Sample ID* link to inspect the created sampl
 Also note how the generated ID contains our referenced *Sample Type* `H2O` and
 is initially in the state `Sample due`, which means that the sample has
 physically not yet arrived in the lab.
+
+Continue then with the next section to learn the basic handling of samples in
+SENAITE.
