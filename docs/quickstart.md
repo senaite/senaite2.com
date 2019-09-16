@@ -17,15 +17,15 @@ needs to be setup first to be able to create samples.
 
 ### Open the LIMS Setup Screen
 
-Navigate to the *LIMS Setup* by clicking the gearwheel button in the upper right corner.
+Navigate to the *LIMS Setup* by clicking the ⚙️ button in the upper right corner.
 
 ![Setup Screen](/screenshots/setup_screen.png "SENAITE LIMS Setup")
 
 This screen shows all the available setup items to configure SENAITE for your lab.
 
 **☝️Note:**
-The gearwheel button is almost on every screen available and allows you to
-quickly navigate to the LIMS Setup.
+The ⚙️button is almost on every screen available and allows you to quickly
+navigate to the LIMS Setup.
 
 **🤓 Pro-Tip:**
 You can also press the key-combination `Ctrl+Space` to open the *Spotlight Search*.
