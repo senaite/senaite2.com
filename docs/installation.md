@@ -174,9 +174,9 @@ After a few moments, SENAITE should be installed and the dashboard view appears.
 
 ![Dashboard Screen](/screenshots/dashboard_screen.png "Dashboard Screen")
 
-Congratulations, you successfully installed SENAITE LIMS on your system!
+Congratulations 🙌 you successfully installed SENAITE LIMS on your system!
 
-You can now continue with the next sections to learn the first steps in your new system.
+Please continue with the next sections to learn the first steps in your new system.
 
 
 
