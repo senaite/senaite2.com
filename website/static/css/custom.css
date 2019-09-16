@@ -16,6 +16,10 @@
 }
 
 
+a {
+    text-decoration: underline;
+    color: #927f54;
+}
 .button {
     color: #927f54;
 }

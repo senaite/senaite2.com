@@ -29,3 +29,8 @@ Change into the `website` directory and run `npm start` or `yarn start`.
 
 The global site configuration resides in the file `website/siteConfig.js`.
 Documentation can be found here: https://docusaurus.io/docs/en/site-config
+
+
+# Sidebar Navigation
+
+The configuration for the sidebar navigation resides in the file `website/sidebars.json`
