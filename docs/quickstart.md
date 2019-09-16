@@ -213,5 +213,9 @@ Click on the "Save" button in the lower left corner to proceed.
 
 ![Client Samples](/screenshots/client_samples_listing_2.png "Client Samples")
 
-
 Congratulations 🙌 you successfully created your first Sample in SENAITE.
+
+You can click now on the generated *Sample ID* link to inspect the created sample.
+Also note how the generated ID contains our referenced *Sample Type* `H2O` and
+is initially in the state `Sample due`, which means that the sample has
+physically not yet arrived in the lab.
