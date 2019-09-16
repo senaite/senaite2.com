@@ -13,11 +13,11 @@ with some example templates.
 
 Run the following command:
 
-  npm install --global docusaurus-init
+    npm install --global docusaurus-init
 
 or if you have Yarn:
 
-  yarn global add docusaurus-init
+    yarn global add docusaurus-init
 
 
 ## Start the develop server
