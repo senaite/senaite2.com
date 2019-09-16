@@ -56,8 +56,8 @@ where yellow stands for `Sample due`, brown for `Sample received`, turquoise for
 
 ### Enter Results 
 
-Only in the *Received* state an Analyst can introduce the measured results for
-the Analyses of the Sample.
+ Only in the *Received* state a user with the `Analyst` role can introduce the
+measured results for the Analyses of the Sample.
 
 Open the previously created by clicking on the generated link in the listing,
 which automatically opens the "Manage Results" tab for you.
@@ -98,7 +98,7 @@ Navigate to the *Analyses* tab and check the Option "Allow self-verification of 
 Click the "Save" button to submit the changes.
 
 Go back to the created Sample and select all submitted Analyses. The button to
-verify the results appear now.
+verify the results appears now.
 
 ![Verify Sample Results](/screenshots/sample_verify_results.png "Verify Sample Results")
 
@@ -174,6 +174,9 @@ transitions the sample to the "Published" state.
 This behavior is by purpose, because we actually cannot control email delivery
 and the publication step should not depend on that.
 
+![Sample Published](/screenshots/sample_published.png "Sample Published")
+
 Congratulations 🙌 you successfully published your first Sample in SENAITE.
+
 
 [SENAITE-impress]: https://github.com/senaite/senaite.impress  "HTML to PDF Rendering Engine for SENAITE"
