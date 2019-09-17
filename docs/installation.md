@@ -169,7 +169,7 @@ Log in with `admin:admin` to proceed to the next page.
 
 ![Installation Screen](/screenshots/installation_screen.png "Installation Screen")
 
-You can continue with the default settings and press the "Install SENAITE LIMS" button.
+You can continue with the default settings and press the *Install SENAITE LIMS* button.
 After a few moments, SENAITE should be installed and the dashboard view appears.
 
 ![Dashboard Screen](/screenshots/dashboard_screen.png "Dashboard Screen")

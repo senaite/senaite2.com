@@ -38,7 +38,7 @@ Departments* tile to navigate to the listing of laboratory departments.
 
 ![Lab Departments](/screenshots/lab_departments_listing.png "Lab Departments")
 
-Click on the "Add" button above the listing table to add a new lab department.
+Click on the *Add* button above the listing table to add a new lab department.
 
 ![Add Lab Department](/screenshots/add_lab_department_screen.png "Add a new Lab Department")
 
@@ -47,7 +47,7 @@ Enter the following values in the add form:
 - Title: `Chemistry`
 - Description: `Analytical chemistry department`
 
-Click the "Save" button when you are done.
+Click the *Save* button when you are done.
 
 
 ### Add Analysis Categories
@@ -61,15 +61,15 @@ Currently, your SENAITE installation has no analysis categories configured.
 
 ![Analysis Categories](/screenshots/analysis_categories_listing.png "Analysis Categories")
 
-Let's add the category "Metal" to group together analyses which trace metals by
-clicking the "Add" Button above the listing table.
+Let's add the category *Metal* to group together analyses which trace metals by
+clicking the *Add* Button above the listing table.
 
 ![Add Analysis Category](/screenshots/add_analysis_category_screen.png "Add a new Analysis Category")
 
 - Title: `Metals`
 - Description: `Trace metals in water`
 
-Click again the "Save" button when you are done.
+Click again the *Save* button when you are done.
 
 
 ### Add Analysis Services
@@ -80,8 +80,8 @@ In this example we are adding **Calcium**, **Magnesium** and **Total Hardness**.
 
 ![Analysis Services](/screenshots/analysis_services_listing.png "Analysis Services")
 
-Proceed like in the previous examples by clicking on the "Add" button and entering the values, e.g.
-for the "Calcium" analysis as follows:
+Proceed like in the previous examples by clicking on the *Add* button and entering the values, e.g.
+for the *Calcium* analysis as follows:
 
 - Title: `Calcium`
 - Unit: `mg`
@@ -98,7 +98,7 @@ and chose `Mg` and `THCaCO3` as the Analysis Keyword respectively.
 **🤓 Pro-Tip:**
 You can also duplicate existing Analysis Services from the listing view by
 selecting the checkbox of the Service you want to copy and click on the
-"Duplicate" button.
+*Duplicate* button.
 
 
 ### Add Sample Types
@@ -141,7 +141,7 @@ no Clients in the database.
 
 ![Clients](/screenshots/clients_listing.png "Clients")
 
-Add a new client by clicking on the "Add" button.
+Add a new client by clicking on the *Add* button.
 
 ![Add Client](/screenshots/add_client_screen.png "Add Client")
 
@@ -150,7 +150,7 @@ Enter the following values in the add form:
 - Name: `Happy Hills`
 - Client ID: `HH`
 
-Click the "Save" button when you are done.
+Click the *Save* button when you are done.
 
 **☝️Note:**
 The `Client ID` must be unique in the system.
@@ -166,7 +166,7 @@ the *Contacts* tab.
 
 ![Client Contacts](/screenshots/client_contact_listing.png "Client Contacts")
 
-Click on the "Add" button and create a new Client Contact with either your own
+Click on the *Add* button and create a new Client Contact with either your own
 details or as shown in the screenshot above.
 
 **☝️Note:**
@@ -188,9 +188,9 @@ Make sure you are in the newly created `Happy Hills` Client and chose the
 **☝️Note:**
 The number next to the Add button let you chose the number of samples you want
 to register in the system at once. You need to chose a value before you click
-the "Add" button, otherwise already entered values get lost during reload.
+the *Add* button, otherwise already entered values get lost during reload.
 
-Chose `2` and click "Add".
+Chose `2` and click *Add*.
 
 ![Add Samples](/screenshots/add_samples_screen.png "Add Samples")
 
@@ -202,7 +202,7 @@ first column to the other Samples.
 
 **🤓 Pro-Tip:**
 You can globally set the visibility and order of the fields by clicking on the
-"Manage Form Fields" link in the upper left corner of the form. Simply check
+*Manage Form Fields* link in the upper left corner of the form. Simply check
 only the fields you need and change the order by dragging and dropping the lines
 in that management view.
 
@@ -214,7 +214,7 @@ Enter the following values in the add form:
 - Sample Type: `Water`
 - Lab Analyses: Select `Calcium`, `Magnesium` and `Total Hardness`
 
-Click on the "Save" button in the lower left corner to proceed.
+Click on the *Save* button in the lower left corner to proceed.
 
 ![Client Samples](/screenshots/client_samples_listing_2.png "Client Samples")
 
