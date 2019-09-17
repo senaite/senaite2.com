@@ -40,3 +40,29 @@ The new Sample was created with the next generated ID for the selected Sample Ty
 
 It is also possible to copy multiple Samples at once and even Samples from
 different Clients.
+
+Make sure you are still on the *Samples* tab of your Client and that you have
+selected the *All* filter of the listing table. Select now both samples.
+
+![Client Samples Copy](/screenshots/client_samples_listing_copy2.png "Client Samples Copy")
+
+**☝️Note:**
+The buttons at the bottom of each listing table appear first when you selected
+one or more items from the table. The displayed number in the buttons refers to
+the selected items of the table.
+
+Click on the *Copy to new* button to create a copy of the selected Samples.
+
+![Client Samples Add](/screenshots/client_add_samples_screen.png "Client Samples Add")
+
+The Add form shows now two columns which hold the copied values from the samples.
+
+**☝️Note:**
+The order how the Sample columns appear in that listing correspond to the order
+of the listing table where you selected the Samples.
+
+Click on the *Save* button to copy the two Samples.
+
+![Client Samples Copied](/screenshots/client_samples_listing_copied2.png "Client Samples Copied")
+
+Congratulations 🙌 you successfully copied your first Samples in SENAITE.
