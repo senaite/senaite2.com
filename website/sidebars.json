@@ -5,7 +5,8 @@
       "quickstart"
     ],
     "Working with Samples": [
-      "sample-basics"
+      "sample-basics",
+      "sample-copy"
     ]
   }
 }
