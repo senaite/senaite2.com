@@ -63,7 +63,7 @@ class HomeSplash extends React.Component {
       <form id="subscribe"
             className="form form-inline"
             action="https://sourceforge.net/projects/senaite/lists/senaite-users" method="GET">
-          <input name="email" placeholder="you@example.com" type="text" className="form-input"/>
+          <input name="email" placeholder="labman@acme-labs.io" type="text" className="form-input"/>
         <input className="button" type="submit" title="Send"
                value="Subscribe to the SENAITE Users List"/>
       </form>
