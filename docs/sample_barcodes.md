@@ -80,8 +80,8 @@ of one of the generated barcodes.
 
 ![Spotlight Search](/screenshots/senaite_spotlight_search_barcode.png "Spotlight Search")
 
-Navigating with the `Up` and `Down` arrow keys to select a result and pressing
-enter navigates directly to the sample.
+Navigate with the `Up` and `Down` arrow keys of your keyboard to select a
+search result and press `Enter` to navigate to this item.
 
 **🤓 Pro-Tip:**
 If the item you searched appears at the top of the *Spotlight Search*, you can
