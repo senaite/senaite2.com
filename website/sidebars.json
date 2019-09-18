@@ -6,7 +6,8 @@
     ],
     "Working with Samples": [
       "sample-basics",
-      "sample-copy"
+      "sample-copy",
+      "sample-barcodes"
     ]
   }
 }
