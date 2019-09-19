@@ -41,7 +41,15 @@ the codebase of SENAITE][SENAITE_stickers]. However, it is always recommended to
 do such customizations in a separate Add-on to prevent your changes from being
 lost when updating the core codebase of SENAITE.
 
-[SENAITE_stickers]:  https://github.com/senaite/senaite.core/tree/master/bika/lims/browser/templates/stickers
+Barcodes can also be generated directly from within a Sample. Open a Sample from
+the Samples listing by clicking on the generated *Sample ID* link. Make sure you
+are on the *View* tab and click on the rightmost barcode icon below the workflow
+menu to open the Barcode Print Preview.
+
+![Client Sample View](/screenshots/client_sample_view.png "Client Sample View")
+
+The other two Barcode Buttons are a short cut to print the configured small or
+large Barcode directly.
 
 
 ## Generate Barcodes for multiple Samples
@@ -59,6 +67,21 @@ but this time for both of the selected Samples.
 Pressing the *Print* button generates the barcodes for the selected Samples.
 
 ![Client Samples Print Sticker](/screenshots/client_samples_print_stickers.png "Client Samples Print Stickers")
+
+
+## Autogenerate Barcodes on Sample Reception
+
+The printing of Barcodes can be automated when Samples are registered or
+received. The setting can be enabled in the *Sticker* section of the *LIMS
+Setup*, as well as the standard templates for the small and large Barcodes.
+
+Click on the ⚙️button in the upper right corner and chose the grey *Setup* tile
+to open the general Setup options. Select the *Sticker* tab and chose *Receive*
+from the *Automatic sticker printing* menu. Press save when you are done.
+
+![Automatic Sticker Printing](/screenshots/senaite_setup_stickers.png "Automatic Sticker Printing")
+
+The Barcode Print Preview opens now automatically when you receive a Sample.
 
 
 ## Locating a Sample when scanning the Barcode
@@ -90,3 +113,6 @@ press immediately `Enter` to select and navigate in one step.
 
 Congratulations 🙌 you successfully printed barcodes for your Samples and
 located them quickly with the *Spotlight Search*.
+
+
+[SENAITE_stickers]:  https://github.com/senaite/senaite.core/tree/master/bika/lims/browser/templates/stickers
