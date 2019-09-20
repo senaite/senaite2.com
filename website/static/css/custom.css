@@ -16,6 +16,11 @@
 }
 
 
+html, body {
+    color: #293333;
+}
+
+
 a {
     text-decoration: underline;
     color: #927f54;
@@ -51,13 +56,15 @@ div.providers .logo {
 div.providers .logo img {
     width: 300px;
 }
-div.container .section-header {
+div.container h1.section-header {
     text-align: center;
 }
 div.container .section-intro {
-    text-align: center;
-    padding-bottom: 2em;
-    color: #000;
+    text-align: justify;
+    padding: 0 0 2em 0;
+    font-size: 110%;
+    font-weight: 100;
+    margin-top: 0.1rem;
 }
 
 div.providers .contactBlock {

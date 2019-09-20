@@ -152,16 +152,11 @@ class Index extends React.Component {
     const Providers = () => (
       <div className="container providers lightBackground paddingBottom paddingTop">
         <h1 className="section-header">The companies behind SENAITE</h1>
-
         <div className="wrapper">
           <div className="section-intro">
-            The listed companies are members of the SENAITE foundation and are
-            commited to maintain and protect the code of SENAITE. They provide in
-            depth knowledge about the system and are able to customize the system to
-            individual needs.
-            They work under high quality standards and always try to bring the
-            best features of their clients back to the core for the benefit of
-            the community and the project.
+            The listed companies are members of the SENAITE foundation and are <strong>commited to maintain and protect the code of SENAITE</strong>.
+            They provide <strong>in depth knowledge</strong> of the system and are able to customize the system to individual needs.
+            They work under <strong>high quality standards</strong> and always try to bring the best features of their clients back to the core for the <strong>benefit of the community and the project</strong>.
           </div>
         </div>
 
@@ -179,7 +174,7 @@ class Index extends React.Component {
                 <strong>RIDING BYTES</strong> is specialized in web development
                 in UI / UX design and server-based solutions. With over 15
                 years of experience in web development and consulting, we
-                support small, medium and large companies.
+                support small, medium a-d large companies.
 
                 <div className="contactBlock">
                   Contact Ramon Bartl at <a href="mailto:hello@ridingbytes.com"> hello@ridingbytes.com</a>
