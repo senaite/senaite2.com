@@ -100,6 +100,7 @@ class Index extends React.Component {
       <Container
         padding={['bottom', 'top']}
         id={props.id}
+        className={props.className}
         background={props.background}>
         <GridBlock
           align="center"
@@ -148,23 +149,63 @@ class Index extends React.Component {
       </Block>
     );
 
-    const LearnHow = () => (
-      <Block background="light">
-        {[
-          {
-            content: '',
-            image: `${baseUrl}img/ridingbytes.png`,
-            imageAlign: 'left',
-            title: '',
-          },
-          {
-            content: '',
-            image: `${baseUrl}img/naralabs.png`,
-            imageAlign: 'right',
-            title: '',
-          },
-        ]}
-      </Block>
+    const Providers = () => (
+      <div className="container providers lightBackground paddingBottom paddingTop">
+        <h1 className="section-header">The companies behind SENAITE</h1>
+
+        <div className="wrapper">
+          <div className="section-intro">
+            The listed companies are members of the SENAITE foundation and are
+            commited to maintain and protect the code of SENAITE. They provide in
+            depth knowledge about the system and are able to customize the system to
+            individual needs.
+            They work under high quality standards and always try to bring the
+            best features of their clients back to the core for the benefit of
+            the community and the project.
+          </div>
+        </div>
+
+        <div className="wrapper">
+
+          <div className="gridBlock">
+
+            <div className="provider ridingbytes blockElement alignCenter twoByGridBlock">
+              <div className="logo">
+                <div className="slogan"></div>
+                <img src={baseUrl + "img/ridingbytes.png"}/>
+                <div className="slogan">Professional Open Source Solutions</div>
+              </div>
+              <div className="blockContent">
+                <strong>RIDING BYTES</strong> is specialized in web development
+                in UI / UX design and server-based solutions. With over 15
+                years of experience in web development and consulting, we
+                support small, medium and large companies.
+
+                <div className="contactBlock">
+                  Contact Ramon Bartl at <a href="mailto:hello@ridingbytes.com"> hello@ridingbytes.com</a>
+                  <div className="">Location: Germany</div>
+                </div>
+
+              </div>
+            </div>
+
+            <div className="provider naralabs blockElement alignCenter twoByGridBlock">
+              <div className="logo">
+                <div className="top-slogan">&nbsp;</div>
+                <img src={baseUrl + "img/naralabs.png"}/>
+                <div className="slogan">&nbsp;</div>
+              </div>
+              <div className="blockContent">
+                <div></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
     );
 
     const Features = () => (
@@ -219,6 +260,7 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
+          <Providers />
           {/* <Features /> */}
           {/* <FeatureCallout /> */}
           {/* <LearnHow /> */}

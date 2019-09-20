@@ -25,7 +25,7 @@ a {
 }
 .button:hover {
     color: white;
-    background-color: #927f54;
+  background-color: #927f54;
 }
 
 input.form-input {
@@ -41,5 +41,28 @@ input.form-input {
     margin-right: 1px;
 }
 
-.projectTitle > small {
+/* Providers Component */
+div.providers .slogan {
+    text-align: center;
+}
+div.providers .logo {
+    padding: 2em 0;
+}
+div.providers .logo img {
+    width: 300px;
+}
+div.container .section-header {
+    text-align: center;
+}
+div.container .section-intro {
+    text-align: center;
+    padding-bottom: 2em;
+    color: #000;
+}
+
+div.providers .contactBlock {
+    padding-top: 1em;
+}
+div.providers .blockContent {
+    color: #ababab;
 }
