@@ -174,7 +174,7 @@ class Index extends React.Component {
                 <strong>RIDING BYTES</strong> is specialized in web development
                 in UI / UX design and server-based solutions. With over 15
                 years of experience in web development and consulting, we
-                support small, medium a-d large companies.
+                support small, medium and large companies.
 
                 <div className="contactBlock">
                   Contact Ramon Bartl at <a href="mailto:hello@ridingbytes.com"> hello@ridingbytes.com</a>
