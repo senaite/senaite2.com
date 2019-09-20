@@ -35,6 +35,13 @@ Documentation can be found here: https://docusaurus.io/docs/en/site-config
 
 The configuration for the sidebar navigation resides in the file `website/sidebars.json`
 
+## Provided Components
+
+Docusaurus comes with some ReactJS Components that can be used in pages like
+e.g. a `MarkdownBlock`, `Container`, `Grid` etc.
+
+https://docusaurus.io/docs/en/api-pages#provided-components
+
 
 # License
 
