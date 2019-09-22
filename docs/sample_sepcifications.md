@@ -46,8 +46,6 @@ Enter the following values in the add form:
     - `Max Operator: <=`
     - `Max: 11`
     - `Max warn: 10.5`
-    - `< Min: <9`
-    - `> Max: >11`
 
 Click the *Save* button when you are done.
 
@@ -77,8 +75,11 @@ the minimum allowed value, but includes 11 for the maximum allowed value.
 Now it is time to apply the *Analysis Specification* to a Sample. Navigate to
 the listing of all Samples and copy one of the existing Samples.
 
-Add the new created *Analysis Specification* in the corresponding field and
-press the *Save* button when you are done.
+Add the new created *Analysis Specification* in the corresponding field. Also
+make sure that there are *no manual result ranges* set for the selected Analyses
+in the *Add form* from the previous examples, because they would take
+precedence over the *Analysis Specifications* set in the Sample.
+Press the *Save* button when you are done.
 
 ![Add Sample with Specification](/screenshots/add_sample_with_specification.png "Add Sample with Specification")
 
@@ -90,8 +91,49 @@ Receive the Sample after it was registered as you did in the section [Sample
 Basics](sample-basics#receive-the-sample) and make sure you are in the *View*
 tab of the Sample.
 
+![Sample with Specification](/screenshots/sample_view_with_specifications.png "Sample with Specification")
 
 
+**☝️Note:**
+The notation of the braces `(` `)` and brackets `[` `]` next to the values
+define if the values are included or excluded.
+
+Enter the following values as results:
+
+- Calcium: `9`
+- Magnesium: `9`
+- Total Hardness: `9`
+
+Press the *Save* button when you are done and note the *Exclamation Mark* next
+to the `Calcium` and `Magnesium` Analyses notifying that these values are out of
+range when adding the mouse over it.
+
+**☝️Note:**
+There is currently a bug in SENAITE Core that you will lose the `Min/Max
+Operator` settings when you manage the Analyses in a Sample created with an
+*Analysis Specification* that defines them.
+Fortunately, there is a workaround that you manually remove all the
+Specifications in the *Manage Analyses* screen before saving. This will re-use
+the values from the *Analysis Specification*.
+
+
+## Publish Out of Range Analyses
+
+Please submit, verify and publish the results as you have done in the
+[Sample Basics](sample-basics#receive-the-sample) section to view the preview
+of the final report.
+
+![Sample Report Preview](/screenshots/sample_publish_preview_out_of_range.png "Sample Report Preview")
+
+The final report shows the defined ranges and added a red warning sign next to
+the results that are out of range.
+
+**☝️Note:**
+The final *Analysis Report* can be highly customized to meet almost any lab
+requirement. Contact the professional service providers for any more details.
+
+
+Congratulations 🙌 you successfully learned how to apply *Analysis Specifications* to Samples 
 
 
 [1]: https://en.wikipedia.org/wiki/Greater-than_sign
