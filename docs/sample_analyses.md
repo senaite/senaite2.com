@@ -125,5 +125,6 @@ display the allowed Result Ranges Settings per Analyses.
 This allows to define the allowed minimum and maximum Result values and a
 shoulder range, where the Result is still valid, but a warning is issued.
 
-Congratulations 🙌 you successfully managed the Analyses in Samples.
-Continue to learn more about Specifications and how they are used in SENAITE.
+Congratulations 🙌 you successfully learned how to manage Analyses in Samples.
+Continue to learn more about Specifications and how they are used in SENAITE in
+the next section.
