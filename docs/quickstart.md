@@ -119,7 +119,7 @@ Enter the following values in the add form:
 - Prefix: `H2O`
 - Minimum Volume: `100 ml`
 
-**⚠ Important:**
+**☝️Note:**
 The Sample Type Prefix `H2O` will control the generated ID of the new sample
 later. Please always chose a concise and short identifier!
 
