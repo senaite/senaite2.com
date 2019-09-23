@@ -8,9 +8,9 @@ sidebar_label: Sample Calculations
 take no manual input, but are calculated out of the Results of other Analyses
 Results.
 
-During this guide we created an *Analysis Service* for `Total Hardness`. However, we did
-not specify a calculation so far, but would like to be it a sum of the Results
-from the `Calcium` and `Magnesium` Analyses.
+During this guide we created an *Analysis Service* for `Total Hardness`.
+However, we did not specify a calculation so far, but would like to be it a sum
+of the Results from the `Calcium` and `Magnesium` Analyses.
 
 ### Add Calculations
 
@@ -25,13 +25,21 @@ Enter the following values in the add form:
 - Description: `Calculate the total hardness of Water based on the Calcium and Magnesium Results`
 - Calculation Formula `[Ca] + [Mg]`
 
+**☝️Note:**
+You can use any valid [Python Expression][Python Expressions] in the
+*Calculation Formula*
+
 Click the *Save* button when you are done.
 
 **☝️Note:**
 The calculation formula references the *Keywords* of the *Analysis Services* we
 defined in the [Quickstart](quickstart#add-analysis-services) section earlier.
-Selecting a meaningful *Analysis Service Keyword* is therefore from absolute importance,
-since changing it in a later point will break existing *Calculations*!
+Selecting a meaningful *Analysis Service Keyword* is therefore from absolute
+importance, since changing it later will break existing *Calculations*!
+
+**🤓 Pro-Tip:**
+Calculations also understand a selected set of [Python Builtins][Python Builtins]
+like `min`, `max`, `round`, `pow` etc.
 
 
 ## Using the calculation in an Analysis Service
@@ -51,7 +59,7 @@ done.
 ## Applying an Analysis with a Calculation to a Sample
 
 As already mentioned in the [Sample Analyses](sample-analyses) section, our
-change in the *Analysis Service* for `Total Hardness` does not affect any
+change in the *Analysis Service* for `Total Hardness` does *not* affect any
 existing Analyses in our Samples.
 
 Consequently, we must either create a new Sample with the `Total Hardness`
@@ -66,3 +74,123 @@ copied values without any changes and receive it afterwards.
 The *Manage Results* listing looks almost similar to the previous ones, but has
 the Results field of the `Total Hardness` Analysis greyed out, so that you can
 not introduce their a manual result anymore.
+
+However, the `Calcium` and `Magnesium` Analyses still take manual Results and we
+can test our *Calculation* by entering the following values for them:
+
+- Calcium: `9.1`
+- Magnesium: `9.5`
+
+Since we defined the formula as `[Ca] + [Mg]`, we expect for the `Total
+Hardness` a Result of `18.6`.
+
+![Sample with Calculation](/screenshots/sample_with_calculation_calculated.png "Sample with Calculation")
+
+The *Calculation* for `Total Hardness` got executed after both dependent
+Analyses were saved and the final Result was marked for submission
+automatically.
+
+
+## Calculation Versioning
+
+The same behavior like for *Analysis Services* applies also for *Calculations*,
+so that changes in the Calculation does *not* affect any of the Analysis created
+with prior versions of the Calculation.
+
+To demonstrate this, we are going to change the Formula of our `Total Hardness`
+Calculation and introduce an *Interim* as a new parameter to our formula:
+
+Navigate to the *LIMS Setup* and edit the prior created Calculation to enter the
+following values:
+
+- Calculation Interim Fields:
+  - Keyword: `factor`
+  - Title: `Factor`
+  - Default value: `1`
+- Calculation Formula: `([Ca] + [Mg]) * [factor]`
+
+Press the *Save* button when you are done.
+
+**☝️Note:**
+Interim fields also introduce Keywords that can be referenced in Calculation
+Formulas like the keywords of *Analysis Services*. Thus, they are checked for
+uniqueness in the system.
+
+Navigate back to the prior created Sample and click on the blue 🛈 Button next to
+the `Total Hardness` Analysis to view the details of the Analysis.
+
+![Analysis Details](/screenshots/analysis_popup.png "Analysis Popup")
+
+As you can see in the *Calculation* section of the displayed popup, the formula
+still references the initial version (`[Ca] + [MG]`) and was not changed for
+this Sample.
+
+However, creating a copy of this Sample uses the new Formula.
+
+![Sample with Calculation and Interim](/screenshots/sample_with_calculation_and_interim.png "Sample with Calculation and Interim")
+
+The new created Sample displays now also the *Interim* field we introduced earlier.
+Clicking again on the blue 🛈 Button next to the `Total Hardness` Analysis
+reveals the new version of the Calculation with the new Formula 
+`([Ca] + [Mg] * [factor]`.
+
+![Analysis Details](/screenshots/analysis_popup_2.png "Analysis Popup")
+
+
+## External Calculations
+
+Using [Python Expressions][Python Expressions] and [Python Builtins][Python
+Builtins] inside might be sometimes not enough for your Calculation and you need
+to do more complex numeric computations.
+
+The SENAITE Calculation machinery let you therefore import your own modules with
+external functions to even use external libraries like [SciPy][SciPy] or
+[NumPy][NumPy].
+
+Create a file called `calculations.py` and put it somewhere in the `PYTHONPATH`
+on your SENAITE Server. For simplicity, we simply put it directly into the
+`site-packages` directory of the used Python interpreter.
+
+Use this command to find out where the `site-packages` directory is located on
+your server: `python -c "import site; print(site.getsitepackages())"`
+
+Add the following contents into `calculations.py`:
+
+```python
+def total_hardness(a, b, factor=1):
+   return float(a + b) * factor
+```
+
+**☝️Note:**
+You need to restart your SENAITE instances to make this new module importable!
+
+Navigate to the prior created calculation and enter the following values:
+
+- Additional Python Libraries:
+  - Module: `calculations`
+  - Function: `total_hardness`
+- Calculation Formula `total_hardness([Ca], [Mg], factor=[factor])`
+
+![Calculation with external Module](/screenshots/calculation_with_external_module.png "Calculation with external Module")
+
+Copy now one of the previous Samples to a new one to use the new *Calculation
+Formula*. Also receive the Sample to be able to introduce new Results.
+
+Click again on the blue 🛈 Button next to the `Total Hardness` Analysis to verify
+that the new Formula is set to `total_hardness([Ca], [Mg], factor=[factor])`.
+
+![Analysis Details](/screenshots/analysis_popup_3.png "Analysis Popup")
+
+Introduce now some Results for `Calcium`, `Magnesium` and the `Factor` interim field.
+
+![Sample with Calculation in external Module](/screenshots/sample_with_calculation_in_external_module.png "Sample with Calculation in external Module")
+
+
+Congratulations 🙌 you successfully created your first Calculations in SENAITE
+and learned how to import external modules for complex computations.
+
+
+[Python Expressions]: https://docs.python.org/2/reference/expressions.html
+[Python Builtins]: https://docs.python.org/2/library/functions.html "Built-in Functions"
+[SciPy]: https://www.scipy.org/ "SciPy"
+[NumPy]: https://numpy.org "NumPy"
