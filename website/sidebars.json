@@ -10,7 +10,8 @@
       "sample-barcodes",
       "sample-analyses",
       "sample-specifications",
-      "sample-calculations"
+      "sample-calculations",
+      "sample-profiles"
     ]
   }
 }
