@@ -21,6 +21,9 @@ html, body {
 }
 
 
+text-blue { color: #293333!important; }
+text-gold { color: #927f54; }
+
 a {
     text-decoration: underline;
     color: #927f54;
@@ -70,6 +73,7 @@ div.container .section-intro {
 div.providers .contactBlock {
     padding-top: 1em;
 }
-div.providers .blockContent {
+div.providers .blockContent{
     color: #ababab;
+    vertical-align: top;
 }

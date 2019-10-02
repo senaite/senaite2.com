@@ -167,32 +167,54 @@ class Index extends React.Component {
             <div className="provider ridingbytes blockElement alignCenter twoByGridBlock">
               <div className="logo">
                 <div className="slogan"></div>
-                <img src={baseUrl + "img/ridingbytes.png"}/>
+                <a href="https://www.ridingbytes.com" className="logo-link">
+                  <img src={baseUrl + "img/ridingbytes.png"}/>
+                </a>
                 <div className="slogan">Professional Open Source Solutions</div>
               </div>
               <div className="blockContent">
-                <strong>RIDING BYTES</strong> is specialized in web development
-                in UI / UX design and server-based solutions. With over 15
-                years of experience in web development and consulting, we
-                support small, medium and large companies.
-
+                <strong>RIDING BYTES</strong> is a German-based company, providing <strong>professional open source services</strong> for enterprises of all sizes.
+                We are specialized in interfacing systems into existing IT infrastructures and have a special focus on the areas of <strong>lab- and healthcare systems</strong>.
+                Our <strong>comprehensive services</strong> encompasses consulting, administration, software development and continuous maintenance of the software and the computer systems.
+                <br/>
+                <br/>
+                The company was started for one single reason: To build better software for human beings.
+                Therefore our mission is to build software solutions, using the most sophisticated and modern technologies available on the market.
+                Always aligned with our strategy: To support free and open source software.
                 <div className="contactBlock">
-                  Contact Ramon Bartl at <a href="mailto:hello@ridingbytes.com"> hello@ridingbytes.com</a>
+                  Contact us at <a href="mailto:hello@ridingbytes.com"> hello@ridingbytes.com</a>
                   <div className="">Location: Germany</div>
                 </div>
-
               </div>
             </div>
 
             <div className="provider naralabs blockElement alignCenter twoByGridBlock">
               <div className="logo">
                 <div className="top-slogan">&nbsp;</div>
-                <img src={baseUrl + "img/naralabs.png"}/>
-                <div className="slogan">&nbsp;</div>
+                <a href="https://naralabs.com" className="logo-link">
+                  <img src={baseUrl + "img/naralabs.png"}/>
+                </a>
+                <div className="slogan"></div>
               </div>
               <div className="blockContent">
-                <div></div>
-              </div>
+                <div>
+                  <strong>Naralabs</strong> is a is a company specialized in
+                  SENAITE Laboratory Information Management System (LIMS). It
+                  offers engineering and professional technology services such
+                  as consulting, implementation, training, system maintenance
+                  and technical support.
+                  <br/>
+                  Naralabs observes, and is committed with, the <strong>Professional Open Source (POSS) business model</strong> and actively participates in the SENAITE project both in software design and in development tasks.
+                  <br/>
+                  <br/>
+                  Naralabs mission is to be a <strong>technological and operational partner</strong> by providing a multidisciplinary vision and <strong>empowering our clients with the knowledge, skills and tools to improve, optimize and automate their processes.</strong>
+                  <br/>
+                  <div className="contactBlock">
+                    Contact us at <a href="mailto:info@naralabs.com"> info@naralabs.com</a>
+                    <div className="">Location: Spain</div>
+                  </div>
+                </div>
+            </div>
             </div>
 
           </div>
