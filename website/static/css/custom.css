@@ -21,8 +21,13 @@ html, body {
 }
 
 
-text-blue { color: #293333!important; }
-text-gold { color: #927f54; }
+.text-blue { color: #293333!important; }
+.text-gold { color: #927f54; }
+.text-muted { color: #ababab; font-size: 89%; }
+.text-centered { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-bold { font-weight: bold; }
 
 a {
     text-decoration: underline;
@@ -63,7 +68,7 @@ div.container h1.section-header {
     text-align: center;
 }
 div.container .section-intro {
-    text-align: justify;
+    text-align: center;
     padding: 0 0 2em 0;
     font-size: 110%;
     font-weight: 100;
@@ -73,7 +78,8 @@ div.container .section-intro {
 div.providers .contactBlock {
     padding-top: 1em;
 }
-div.providers .blockContent{
-    color: #ababab;
-    vertical-align: top;
+
+
+div.companies .company img {
+    padding: 0;
 }

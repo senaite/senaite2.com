@@ -11,12 +11,16 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'User1',
+    name: 'BECHEM Lubrication Technology',
+    caption: 'BECHEM Lubrication Technology',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
+    image: '/logos/bechem.png',
+    infoLink: 'https://bechem.de',
     pinned: true,
+    description: [
+      'BECHEM is one of the leading manufacturers of high-quality special lubricants and metal working fluids. BECHEM is development partner of the industry with high competence for tailor-made solutions, regardless of whether for the development of for-life lubricants for the automotive industry, machinery and plant engineering, or process optimisation in metal working operations. With the extended lifetime of components, machines and tools BECHEM lubrication products considerably contribute to the success of our customers.'
+    ]
   },
 ];
 
