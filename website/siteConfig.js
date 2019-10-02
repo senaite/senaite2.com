@@ -1,8 +1,5 @@
 /**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * Copyright (c) 2017-present, SENAITE Project.
  */
 
 // See https://docusaurus.io/docs/site-config for all the possible
@@ -23,6 +20,23 @@ const users = [
     ]
   },
 ];
+
+const home_buttons = [
+  {
+    title: "Try it out",
+    href: "https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/senaite/senaite.docker/master/stack.yml",
+  }, {
+    title: "Community Forum",
+    href: "https://community.senaite.org",
+  }, {
+    title: "Gitter Chat",
+    href: "https://gitter.im/senaite/Lobby",
+  }, {
+    title: "GitHub Repository",
+    href: "https://github.com/senaite",
+  }
+
+]
 
 const siteConfig = {
   title: 'SENAITE LIMS', // Title for your website.
@@ -50,6 +64,9 @@ const siteConfig = {
 
   // If you have users set above, you add it here:
   users,
+
+  // If you have home_buttons set above, you add it here:
+  home_buttons,
 
   /* path to images for header/footer */
   headerIcon: 'img/favicon.ico',

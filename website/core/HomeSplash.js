@@ -57,6 +57,26 @@ class HomeSplash extends React.Component {
       </form>
     );
 
+    /**
+     * Renders the top Buttons
+     */
+    const HomeButtons = () => {
+      if ((siteConfig.home_buttons || []).length === 0) {
+        return null;
+      }
+      const buttons = siteConfig.home_buttons.map(
+        (button, index) =>
+          <Button
+            key={index}
+            title={button.title}
+            target={button.target||'_blank'}
+            href={button.href}>
+            {button.title}
+          </Button>
+      )
+      return buttons
+    }
+
     return (
       <SplashContainer>
         {/* <Logo img_src={`${baseUrl}img/senaite_lims.png`} /> */}
@@ -65,10 +85,7 @@ class HomeSplash extends React.Component {
             img_src={`${baseUrl}img/senaite_lims.png`}
             siteConfig={siteConfig} />
           <PromoSection>
-            <Button target="_blank" href="https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/senaite/senaite.docker/master/stack.yml">Try It Out</Button>
-            <Button target="_blank" href="https://community.senaite.org">Community Forum</Button>
-            <Button target="_blank" href="https://gitter.im/senaite/Lobby">Gitter Chat</Button>
-            <Button target="_blank" href="https://github.com/senaite">GitHub Repository</Button>
+            <HomeButtons/>
           </PromoSection>
           <MailingListForm></MailingListForm>
         </div>
