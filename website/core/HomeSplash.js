@@ -47,18 +47,8 @@ class HomeSplash extends React.Component {
       </div>
     );
 
-    const MailingListForm = props => (
-      <form id="subscribe"
-            className="form form-inline"
-            action="https://sourceforge.net/projects/senaite/lists/senaite-users" method="GET">
-          <input name="email" placeholder="labman@acme-labs.io" type="text" className="form-input"/>
-        <input className="button" type="submit" title="Send"
-               value="Subscribe to the SENAITE Users List"/>
-      </form>
-    );
-
     /**
-     * Renders the top Buttons
+     * Renders the main Project Buttons
      */
     const HomeButtons = () => {
       if ((siteConfig.home_buttons || []).length === 0) {
@@ -76,6 +66,19 @@ class HomeSplash extends React.Component {
       )
       return buttons
     }
+
+    /**
+     * Renders the Mailing List Subscrber Widget
+     */
+    const MailingListForm = props => (
+      <form id="subscribe"
+            className="form form-inline"
+            action="https://sourceforge.net/projects/senaite/lists/senaite-users" method="GET">
+        <input name="email" placeholder="labman@acme-labs.io" type="text" className="form-input"/>
+        <input className="button" type="submit" title="Send"
+               value="Subscribe to the SENAITE Users List"/>
+      </form>
+    );
 
     return (
       <SplashContainer>
