@@ -163,12 +163,12 @@ class Index extends React.Component {
               <div className="text-muted">
                 <strong>RIDING BYTES</strong> is a German-based company, providing <strong>professional open source services</strong> for enterprises of all sizes.
                 We are specialized in interfacing systems into existing IT infrastructures and have a special focus on the areas of <strong>lab- and healthcare systems</strong>.
-                Our <strong>comprehensive services</strong> encompasses consulting, administration, software development and continuous maintenance of the software and the computer systems.
+                Our <strong>comprehensive services</strong> include consulting, administration, software development and continuous maintenance of the software and the computer systems.
                 <br/>
                 <br/>
                 The company was started for one single reason: To build better software for human beings.
                 Therefore our mission is to build software solutions, using the most sophisticated and modern technologies available on the market.
-                Always aligned with our strategy: To support free and open source software.
+                Always aligned with our strategy: To support Free and Open-Source Software.
                 <div className="contactBlock">
                   Contact us at <a href="mailto:hello@ridingbytes.com"> hello@ridingbytes.com</a>
                   <div className="">Location: Germany</div>
