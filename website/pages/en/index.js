@@ -36,9 +36,9 @@ class Index extends React.Component {
         <h1 className="section-header">Unchain your laboratory with SENAITE</h1>
         <div className="wrapper">
           <div className="section-intro paddingBottom">
-            Chosing Open-Source is a matter of <strong>liberty</strong> and not just the ability to get the software for free.
-            We believe that <strong>freedom is one of the most important goods</strong> in every aspect of live.
-            Therefore, you should chose SENAITE primarily because of its abilities and because you love your freedom as much as we do.
+            Choosing Open-Source is a matter of <strong>liberty</strong> and not just the ability to get the software for free.
+            We believe that <strong>freedom is one of the most important goods</strong> in every aspect of life.
+            Therefore, you should choose SENAITE primarily because of its abilities and because you love your freedom as much as we do.
           </div>
         </div>
         <div className="wrapper pt-1">
@@ -71,7 +71,7 @@ class Index extends React.Component {
         <h1 className="section-header">The companies behind SENAITE</h1>
         <div className="wrapper">
           <div className="section-intro">
-            The listed companies are members of the SENAITE foundation and are <strong>commited to maintain and protect the code of SENAITE</strong>.
+            The listed companies are members of the SENAITE foundation and are <strong>committed to maintain and protect the code of SENAITE</strong>.
             They provide <strong>in depth knowledge</strong> of the system and are able to customize the system to individual needs.
             They work under <strong>high quality standards</strong> and always try to bring the best features of their clients back to the core for the <strong>benefit of the community and the project</strong>.
           </div>
