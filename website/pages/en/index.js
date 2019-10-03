@@ -71,7 +71,7 @@ class Index extends React.Component {
         <h1 className="section-header">SENAITE Features</h1>
         <div className="wrapper">
           <div className="section-intro">
-            SENAITE ships with a <strong>lot of great features</strong> that makes it an <strong>outstanding and trusted laboratory management system</strong>.
+            SENAITE ships with a <strong>lot of great features</strong> that makes it an <strong>outstanding and trusted Laboratory Management System</strong>.
             While we are adding constantly new exciting features and solutions from real laboratories back into the SENAITE core system,
             we would like to highlight some of them here, but there is a lot more you can discover in SENAITE.
           </div>
@@ -219,7 +219,7 @@ class Index extends React.Component {
         <div className="wrapper">
           <div className="section-intro">
             By contracting a Professional Service Provider you always invest in the Open-Source Project as well.
-            All listed Service Providers are commited to the Project and to Open-Source.
+            All listed Service Providers are committed to the Project and to Open-Source.
           </div>
         </div>
         <Block layout="twoColumn">
