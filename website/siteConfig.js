@@ -109,7 +109,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © 2017-${new Date().getFullYear()} SENAITE Foundation`,
+  copyright: `Copyright © 2017-${new Date().getFullYear()} SENAITE Professional Service Providers`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
