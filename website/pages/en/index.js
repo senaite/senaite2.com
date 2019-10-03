@@ -33,7 +33,7 @@ class Index extends React.Component {
 
     const Description = () => (
       <div className="container paddingBottom">
-        <h1 className="section-header">Unchain your laboratory with SENAITE</h1>
+        <h1 className="section-header">Unchain your Lab with SENAITE</h1>
         <div className="wrapper">
           <div className="section-intro paddingBottom">
             Choosing Open-Source is a matter of <strong>liberty</strong> and not just the ability to get the software for free.
@@ -63,6 +63,77 @@ class Index extends React.Component {
             </div>
           </div>
         </div>
+      </div>
+    );
+
+    const Features = () => (
+      <div className="container features lightBackground paddingBottom paddingTop">
+        <h1 className="section-header">SENAITE Features</h1>
+        <div className="wrapper">
+          <div className="section-intro">
+            SENAITE ships with a <strong>lot of great features</strong> that makes it an <strong>outstanding and trusted laboratory management system</strong>.
+            While we are adding constantly new exciting features and solutions from real laboratories back into the SENAITE core system,
+            we would like to highlight some of them here, but there is a lot more you can discover in SENAITE.
+          </div>
+        </div>
+        <Block layout="threeColumn">
+          {[
+            {
+              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS.',
+              image: `${baseUrl}img/undraw_secure_data.svg`,
+              imageAlign: 'top',
+              title: 'Industrial Strength Security',
+            },
+            {
+              content: 'SENAITE uses state of the art web frameworks to provide a modern and responsive User Interface that displays just the right information at the right place.',
+              image: `${baseUrl}img/undraw_done.svg`,
+              imageAlign: 'top',
+              title: 'Great User Experience',
+            },
+            {
+              content: 'SENAITE provides a powerful extensible fulltext search engine, to let you quickly find and filter the data and locate Samples by simply scanning the Barcode or QR-code.',
+              image: `${baseUrl}img/undraw_Search.svg`,
+              imageAlign: 'top',
+              title: 'Fast Search Engine',
+            },
+            {
+              content: 'SENAITE allows you to generate Barcodes, QR-codes and even Address stickers with a few clicks.',
+              image: `${baseUrl}img/undraw_windows.svg`,
+              imageAlign: 'top',
+              title: 'Barcodes',
+            },
+            {
+              content: 'Generate pixel-perfect Reports in PDF of your Analysis Results and send them directly out via Email.',
+              image: `${baseUrl}img/undraw_data.svg`,
+              imageAlign: 'top',
+              title: 'Beautiful Reports',
+            },
+            {
+              content: 'Import results from your instruments to speed up your turn-around time and avoid human errors in the carrying over process.',
+              image: `${baseUrl}img/undraw_server.svg`,
+              imageAlign: 'top',
+              title: 'Import Results',
+            },
+            {
+              content: 'SENAITE generates snapshots of your data on any modification. All changes in the system can be easily inspected and traced back.',
+              image: `${baseUrl}img/undraw_inspection.svg`,
+              imageAlign: 'top',
+              title: 'Audit Trails',
+            },
+            {
+              content: 'SENAITE provides a powerful dashboard to visualize the performance of the lab on a daily, weekly, monthly, quarterly, biannually and yearly basis.',
+              image: `${baseUrl}img/undraw_all_the_data.svg`,
+              imageAlign: 'top',
+              title: 'Data Insights',
+            },
+            {
+              content: 'SENAITE can be translated into in any language. If your language is not yet supported, you can easily provide it via <a href="https://transifex.com/senaite/senaite-core/dashboard/">Transifex</a>',
+              image: `${baseUrl}img/undraw_chat.svg`,
+              imageAlign: 'top',
+              title: 'Speaks your Language',
+            },
+          ]}
+        </Block>
       </div>
     );
 
@@ -142,71 +213,40 @@ class Index extends React.Component {
       </div>
     );
 
-    const Features = () => (
-      <div className="container features lightBackground paddingBottom paddingTop">
-        <h1 className="section-header">SENAITE Features</h1>
+    const WhyChooseUs = () => (
+      <div className="container lightBackground paddingBottom paddingTop">
+        <h1 className="section-header">Advantages of choosing a Professional Service Provider</h1>
         <div className="wrapper">
           <div className="section-intro">
-            SENAITE ships with a <strong>lot of great features</strong> that makes it an <strong>outstanding and trusted laboratory management system</strong>.
-            While we are adding constantly new exciting features and solutions from real laboratories back into the SENAITE core system,
-            we would like to highlight some of them here, but there is a lot more you can discover in SENAITE.
+            By contracting a Professional Service Provider you always invest in the Open-Source Project as well.
+            All listed Service Providers are commited to the Project and to Open-Source.
           </div>
         </div>
-        <Block layout="threeColumn">
+        <Block layout="twoColumn">
           {[
             {
-              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS.',
-              image: `${baseUrl}img/undraw_secure_data.svg`,
+              content: 'As Core Developers we have a deep understanding of the SENAITE Codebase and know quickly where and how to implement new features.',
+              image: `${baseUrl}img/undraw_solution_mindset.svg`,
               imageAlign: 'top',
-              title: 'Industrial Strength Security',
+              title: 'Deep Knowledge',
             },
             {
-              content: 'SENAITE uses state of the art web frameworks to provide a modern and responsive User Interface that displays just the right information at the right place.',
-              image: `${baseUrl}img/undraw_done.svg`,
+              content: 'We write clean, concise and human understandable Code based on the [Zen of Python](https://www.python.org/dev/peps/pep-0020/#id3) principles, to keep the code understandable and further maintenance costs low.',
+              image: `${baseUrl}img/undraw_to_the_moon.svg`,
               imageAlign: 'top',
-              title: 'Great User Experience',
+              title: 'High Quality Standards',
             },
             {
-              content: 'SENAITE provides a powerful extensible fulltext search engine, to let you quickly find and filter the data and locate Samples by simply scanning the Barcode or QR-code.',
-              image: `${baseUrl}img/undraw_Search.svg`,
+              content: 'We code your customizations in separate Add-ons to keep your system upgradable and mitigate the adaption to newer versions of SENAITE.',
+              image: `${baseUrl}img/undraw_version_control.svg`,
               imageAlign: 'top',
-              title: 'Fast Search Engine',
+              title: 'Sustainable Solutions',
             },
             {
-              content: 'SENAITE allows you to generate Barcodes, QR-codes and even Address stickers with a few clicks.',
-              image: `${baseUrl}img/undraw_windows.svg`,
+              content: 'We always try to bring the best features from our Client projects back into the Core for the benefit of all users.',
+              image: `${baseUrl}img/undraw_investment.svg`,
               imageAlign: 'top',
-              title: 'Barcodes',
-            },
-            {
-              content: 'Generate pixel-perfect Reports in PDF of your Analysis Results and send them directly out via Email.',
-              image: `${baseUrl}img/undraw_data.svg`,
-              imageAlign: 'top',
-              title: 'Beautiful Reports',
-            },
-            {
-              content: 'Import results from your instruments to speed up your turn-around time and avoid human errors in the carrying over process.',
-              image: `${baseUrl}img/undraw_server.svg`,
-              imageAlign: 'top',
-              title: 'Import Results',
-            },
-            {
-              content: 'SENAITE generates snapshots of your data on any modification. All changes in the system can be easily inspected and traced back.',
-              image: `${baseUrl}img/undraw_inspection.svg`,
-              imageAlign: 'top',
-              title: 'Audit Trails',
-            },
-            {
-              content: 'SENAITE provides a powerful dashboard to visualize the performance of the lab on a daily, weekly, monthly, quarterly, biannually and yearly basis.',
-              image: `${baseUrl}img/undraw_all_the_data.svg`,
-              imageAlign: 'top',
-              title: 'Data Insights',
-            },
-            {
-              content: 'SENAITE can be translated into in any language. If your language is not yet supported, you can easily provide it via <a href="https://transifex.com/senaite/senaite-core/dashboard/">Transifex</a>',
-              image: `${baseUrl}img/undraw_chat.svg`,
-              imageAlign: 'top',
-              title: 'Speaks your Language',
+              title: 'Back to Core',
             },
           ]}
         </Block>
@@ -257,6 +297,7 @@ class Index extends React.Component {
           <Description />
           <Features />
           <Providers />
+          <WhyChooseUs />
           <Showcase />
         </div>
       </div>
