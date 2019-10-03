@@ -54,6 +54,14 @@ input.form-input {
     margin-right: 1px;
 }
 
+div.container .section-intro {
+    text-align: center;
+    padding: 0 0 2em 0;
+    font-size: 110%;
+    font-weight: 100;
+    margin-top: 0.1rem;
+}
+
 /* Providers Component */
 div.providers .slogan {
     text-align: center;
@@ -67,25 +75,6 @@ div.providers .logo img {
 div.container h1.section-header {
     text-align: center;
 }
-div.container .section-intro {
-    text-align: center;
-    padding: 0 0 2em 0;
-    font-size: 110%;
-    font-weight: 100;
-    margin-top: 0.1rem;
-}
-
 div.providers .contactBlock {
     padding-top: 1em;
-}
-
-
-div.companies .company img {
-    padding: 0;
-}
-
-div.showcase img {
-    max-height: 110px;
-    padding: 20px;
-    width: 150px;
 }
