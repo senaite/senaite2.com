@@ -31,47 +31,8 @@ class Index extends React.Component {
       </Container>
     );
 
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
-    const TryOut = () => (
-      <Block id="try">
-        {[
-          {
-            content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
-            imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
-          },
-        ]}
-      </Block>
-    );
-
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
-            imageAlign: 'right',
-            title: 'Description',
-          },
-        ]}
-      </Block>
-    );
-
     const Providers = () => (
-      <div className="container providers lightBackground paddingBottom paddingTop">
+      <div className="container providers paddingBottom paddingTop">
         <h1 className="section-header">The companies behind SENAITE</h1>
         <div className="wrapper">
           <div className="section-intro">
@@ -147,22 +108,74 @@ class Index extends React.Component {
     );
 
     const Features = () => (
-      <Block layout="fourColumn">
-        {[
-          {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
-            imageAlign: 'top',
-            title: 'Feature One',
-          },
-          {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
-            imageAlign: 'top',
-            title: 'Feature Two',
-          },
-        ]}
-      </Block>
+      <div className="container features lightBackground paddingBottom paddingTop">
+        <h1 className="section-header">SENAITE Features</h1>
+        <div className="wrapper">
+          <div className="section-intro">
+            SENAITE ships with a <strong>lot of great features</strong> that makes it an <strong>outstanding and trusted laboratory management system</strong>.
+            While we are adding constantly new exciting features and solutions from real laboratories back into the SENAITE core system,
+            we would like to highlight some of them here, but there is a lot more you can discover in SENAITE.
+          </div>
+        </div>
+        <Block layout="threeColumn">
+          {[
+            {
+              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS.',
+              image: `${baseUrl}img/undraw_secure_data.svg`,
+              imageAlign: 'top',
+              title: 'Industrial Strength Security',
+            },
+            {
+              content: 'SENAITE uses state of the art web frameworks to provide a modern and responsive User Interface that displays just the right information at the right place.',
+              image: `${baseUrl}img/undraw_done.svg`,
+              imageAlign: 'top',
+              title: 'Great User Experience',
+            },
+            {
+              content: 'SENAITE provides a powerful extensible fulltext search engine, to let you quickly find and filter the data and locate Samples by simply scanning the Barcode or QR-code.',
+              image: `${baseUrl}img/undraw_Search.svg`,
+              imageAlign: 'top',
+              title: 'Fast Search Engine',
+            },
+            {
+              content: 'SENAITE allows you to generate Barcodes, QR-codes and even Address stickers with a few clicks.',
+              image: `${baseUrl}img/undraw_windows.svg`,
+              imageAlign: 'top',
+              title: 'Barcodes',
+            },
+            {
+              content: 'Generate pixel-perfect Reports in PDF of your Analysis Results and send them directly out via Email.',
+              image: `${baseUrl}img/undraw_data.svg`,
+              imageAlign: 'top',
+              title: 'Beautiful Reports',
+            },
+            {
+              content: 'Import results from your instruments to speed up your turn-around time and avoid human errors in the carrying over process.',
+              image: `${baseUrl}img/undraw_server.svg`,
+              imageAlign: 'top',
+              title: 'Import Results',
+            },
+            {
+              content: 'SENAITE generates snapshots of your data on any modification. All changes in the system can be easily inspected and traced back.',
+              image: `${baseUrl}img/undraw_inspection.svg`,
+              imageAlign: 'top',
+              title: 'Audit Trails',
+            },
+            {
+              content: 'SENAITE provides a powerful dashboard to visualize the performance of the lab on a daily, weekly, monthly, quarterly, biannually and yearly basis.',
+              image: `${baseUrl}img/undraw_all_the_data.svg`,
+              imageAlign: 'top',
+              title: 'Data Insights',
+            },
+            {
+              content: 'SENAITE can be translated into in any language. If your language is not yet supported, you can easily provide it via <a href="https://transifex.com/senaite/senaite-core/dashboard/">Transifex</a>',
+              image: `${baseUrl}img/undraw_chat.svg`,
+              imageAlign: 'top',
+              title: 'Speaks your Language',
+            },
+          ]}
+        </Block>
+      </div>
     );
 
     const Showcase = () => {
@@ -211,13 +224,9 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
+          <Features />
           <Providers />
           <Showcase />
-          {/* <Features /> */}
-          {/* <FeatureCallout /> */}
-          {/* <LearnHow /> */}
-          {/* <TryOut /> */}
-          {/* <Description /> */}
         </div>
       </div>
     );
