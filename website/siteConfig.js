@@ -12,12 +12,27 @@ const users = [
     caption: 'BECHEM Lubrication Technology',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/logos/bechem.png',
+    image: '/logos/bechem.svg',
     infoLink: 'https://bechem.de',
     pinned: true,
-    description: [
-      'BECHEM is one of the leading manufacturers of high-quality special lubricants and metal working fluids. BECHEM is development partner of the industry with high competence for tailor-made solutions, regardless of whether for the development of for-life lubricants for the automotive industry, machinery and plant engineering, or process optimisation in metal working operations. With the extended lifetime of components, machines and tools BECHEM lubrication products considerably contribute to the success of our customers.'
-    ]
+  },
+  {
+    name: 'CERMEL',
+    caption: 'Centre de Recherches Médicales de Lambaréné',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/logos/cermel.png',
+    infoLink: 'https://cermel.org',
+    pinned: true,
+  },
+  {
+    name: 'LISCON',
+    caption: 'Umwelt Ingenieurservice',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/logos/liscon.jpg',
+    infoLink: 'http://liscon.de/',
+    pinned: true,
   },
 ];
 

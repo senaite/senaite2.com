@@ -83,3 +83,9 @@ div.providers .contactBlock {
 div.companies .company img {
     padding: 0;
 }
+
+div.showcase img {
+    max-height: 110px;
+    padding: 20px;
+    width: 150px;
+}

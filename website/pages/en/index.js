@@ -186,16 +186,9 @@ class Index extends React.Component {
       const showcase = siteConfig.users
         .filter(user => user.pinned)
         .map(user => (
-          <div key={user.name} className="company">
-            <a href={user.infoLink} key={user.infoLink}>
-              <img src={user.image} alt={user.caption} title={user.caption} />
-            </a>
-            <div className="text-muted text-justified">
-            {user.description.map(
-              (line, index) =>
-                <MarkdownBlock key={index}>{line}</MarkdownBlock>)}
-            </div>
-          </div>
+          <a href={user.infoLink} key={user.infoLink}>
+            <img src={user.image} alt={user.caption} title={user.caption} />
+          </a>
         ));
 
       const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
@@ -209,12 +202,14 @@ class Index extends React.Component {
             </div>
           </div>
           <div className="wrapper">
-            <div className="logos">{showcase}</div>
-          <div className="more-users">
-            <a className="button" href={pageUrl('users.html')}>
-              More Companies trusting in SENAITE
-            </a>
-          </div>
+            <div className="logos">
+              {showcase}
+            </div>
+            <div className="more-users">
+              <a className="button" href={pageUrl('users.html')}>
+                View all Companies trusting in SENAITE
+              </a>
+            </div>
           </div>
         </div>
       );
