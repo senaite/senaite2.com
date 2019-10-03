@@ -29,6 +29,17 @@ html, body {
 .text-right { text-align: right; }
 .text-bold { font-weight: bold; }
 
+
+.pt-1 { padding-top: 1em; }
+.pt-2 { padding-top: 2em; }
+.pt-3 { padding-top: 3em; }
+.pt-4 { padding-top: 4em; }
+
+.pb-1 { padding-bottom: 1em; }
+.pb-2 { padding-bottom: 2em; }
+.pb-3 { padding-bottom: 3em; }
+.pb-4 { padding-bottom: 4em; }
+
 a {
     text-decoration: underline;
     color: #927f54;
