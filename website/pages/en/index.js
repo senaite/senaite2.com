@@ -230,10 +230,10 @@ class Index extends React.Component {
 
       return (
         <div className="container companies productShowcaseSection paddingBottom paddingTop">
-          <h1 className="section-header">Companies using SENAITE</h1>
+          <h1 className="section-header">Organizations using SENAITE</h1>
           <div className="wrapper">
             <div className="section-intro">
-              The following companies trust SENAITE as a <strong>robust and reliable Open-Source LIMS Solution</strong> to manage their daily laboratory routines.
+              The following organizations trust SENAITE as a <strong>robust and reliable Open-Source LIMS Solution</strong> to manage their daily laboratory routines.
             </div>
           </div>
           <div className="wrapper">
@@ -242,7 +242,7 @@ class Index extends React.Component {
             </div>
             <div className="more-users">
               <a className="button" href={pageUrl('users.html')}>
-                View all Companies trusting in SENAITE
+                View all Organizations trusting in SENAITE
               </a>
             </div>
           </div>
