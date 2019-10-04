@@ -195,7 +195,7 @@ class Index extends React.Component {
                 </p>
                 <p>
                   We are not only accomplished professional service providers,
-                  but also passionate engineers able to speak same language with
+                  but also passionate engineers, able to speak same language with
                   both Laboratory personnel and IT department: we act as the
                   catalyst to make the implementation of the LIMS/LIS in your
                   organization a success.
