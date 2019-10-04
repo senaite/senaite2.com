@@ -284,9 +284,9 @@ class Index extends React.Component {
           <h1 className="section-header">Powering laboratories efficiency</h1>
           <div className="wrapper">
             <div className="section-intro">
-              Organizations across the globe that trust SENAITE as a
-              <strong>robust and reliable Open-Source LIMS Solution</strong> to
-              manage their daily laboratory routines.
+              Organizations across the globe that trust SENAITE as a <strong>robust
+              and reliable Open-Source LIMS Solution</strong> to manage their
+              daily laboratory routines.
             </div>
           </div>
           <div className="wrapper">
