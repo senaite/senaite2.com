@@ -172,7 +172,7 @@ class Index extends React.Component {
                 <br/>
                 The company was started for one single reason: To build better software for human beings.
                 Therefore our mission is to build software solutions, using the most sophisticated and modern technologies available on the market.
-                Always aligned with our strategy: To support Free and Open-Source Software.
+                Always aligned with our strategy: To support Open-Source Software.
                 <div className="contactBlock">
                   Contact us at <a href="mailto:hello@ridingbytes.com"> hello@ridingbytes.com</a>
                   <div className="">Location: Germany</div>
