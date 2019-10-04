@@ -274,10 +274,12 @@ class Index extends React.Component {
 
       return (
         <div className="container companies productShowcaseSection paddingBottom paddingTop">
-          <h1 className="section-header">Organizations using SENAITE</h1>
+          <h1 className="section-header">Powering laboratories efficiency</h1>
           <div className="wrapper">
             <div className="section-intro">
-              The following organizations trust SENAITE as a <strong>robust and reliable Open-Source LIMS Solution</strong> to manage their daily laboratory routines.
+              Organizations across the globe that trust SENAITE as a
+              <strong>robust and reliable Open-Source LIMS Solution</strong> to
+              manage their daily laboratory routines.
             </div>
           </div>
           <div className="wrapper">
