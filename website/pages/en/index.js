@@ -142,9 +142,13 @@ class Index extends React.Component {
         <h1 className="section-header">The companies behind SENAITE</h1>
         <div className="wrapper">
           <div className="section-intro">
-            The listed companies are members of the SENAITE foundation and are <strong>committed to maintain and protect the code of SENAITE</strong>.
-            They provide <strong>in depth knowledge</strong> of the system and are able to customize the system to individual needs.
-            They work under <strong>high quality standards</strong> and always try to bring the best features of their clients back to the core for the <strong>benefit of the community and the project</strong>.
+            The listed companies are SENAITE Professional Service Providers and
+            are <strong>committed to maintain and protect the code of SENAITE</strong>.
+            They provide <strong>in depth knowledge</strong> of the system and
+            are able to tailor the system to your specific needs and requirements.
+            They work under <strong>high quality standards</strong> and always
+            try to bring the best features of their clients back to the core for
+            the <strong>benefit of the community and the project</strong>.
           </div>
         </div>
 
@@ -222,8 +226,11 @@ class Index extends React.Component {
         <h1 className="section-header">Advantages of choosing a Professional Service Provider</h1>
         <div className="wrapper">
           <div className="section-intro">
-            By contracting a Professional Service Provider you always invest in the Open-Source Project as well.
-            All listed Service Providers are committed to the Project and to Open-Source.
+            Professional Service Providers will help you to drive the adoption
+            and implementation of SENAITE in your organization. In addition, by
+            contracting a Professional Service Provider committed to SENAITE
+            Open-Source project, you always invest in the project as well, making
+            SENAITE a better product for all.
           </div>
         </div>
         <Block layout="twoColumn">
