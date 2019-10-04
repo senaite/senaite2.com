@@ -186,17 +186,20 @@ class Index extends React.Component {
               </div>
               <div className="text-muted">
                 <div>
-                  <strong>Naralabs</strong> is a is a company specialized in
-                  SENAITE Laboratory Information Management System (LIMS). It
-                  offers engineering and professional technology services such
-                  as consulting, implementation, training, system maintenance
-                  and technical support.
-                  <br/>
-                  Naralabs observes, and is committed with, the <strong>Professional Open Source (POSS) business model</strong> and actively participates in the SENAITE project both in software design and in development tasks.
-                  <br/>
-                  <br/>
-                  Naralabs mission is to be a <strong>technological and operational partner</strong> by providing a multidisciplinary vision and <strong>empowering our clients with the knowledge, skills and tools to improve, optimize and automate their processes.</strong>
-                  <br/>
+                <p>
+                  <strong>Naralabs</strong> is a company specialized in engineering
+                  and professional services around SENAITE. Our vision is to
+                  consolidate Free Open Source Software (FOSS) as an essential
+                  component within the strategies for improving efficiency,
+                  quality and data management in laboratories.
+                </p>
+                <p>
+                  We are not only accomplished professional service providers,
+                  but also passionate engineers able to speak same language with
+                  both Laboratory personnel and IT department: we act as the
+                  catalyst to make the implementation of the LIMS/LIS in your
+                  organization a success.
+                </p>
                   <div className="contactBlock">
                     Contact us at <a href="mailto:info@naralabs.com"> info@naralabs.com</a>
                     <div className="">Location: Spain</div>
