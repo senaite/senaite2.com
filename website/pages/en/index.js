@@ -193,9 +193,9 @@ class Index extends React.Component {
                 <p>
                   <strong>Naralabs</strong> is a company specialized in engineering
                   and professional services around SENAITE. Our vision is to
-                  consolidate Free Open Source Software (FOSS) as an essential
-                  component within the strategies for improving efficiency,
-                  quality and data management in laboratories.
+                  consolidate Open Source Software as an essential component
+                  within the strategies for improving efficiency, quality and
+                  data management in laboratories.
                 </p>
                 <p>
                   We are not only accomplished professional service providers,
