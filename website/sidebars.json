@@ -8,10 +8,12 @@
       "sample-basics",
       "sample-copy",
       "sample-barcodes",
-      "sample-analyses",
-      "sample-specifications",
-      "sample-calculations",
-      "sample-profiles"
+      "sample-analyses"
+    ],
+    "Working with Analyses": [
+      "analysis-specifications",
+      "analysis-calculations",
+      "analysis-profiles"
     ]
   }
 }

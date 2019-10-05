@@ -1,7 +1,7 @@
 ---
-id: sample-calculations
-title: Sample Calculations
-sidebar_label: Sample Calculations
+id: analysis-calculations
+title: Analysis Calculations
+sidebar_label: Analysis Calculations
 ---
 
 *Calculations* are a powerful tool in SENAITE to define *Analysis Services* that
