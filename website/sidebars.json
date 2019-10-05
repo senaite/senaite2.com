@@ -13,7 +13,8 @@
     "Working with Analyses": [
       "analysis-specifications",
       "analysis-calculations",
-      "analysis-profiles"
+      "analysis-profiles",
+      "analysis-categorization"
     ]
   }
 }
