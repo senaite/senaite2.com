@@ -31,7 +31,50 @@ class Index extends React.Component {
       </Container>
     );
 
-    const Description = () => (
+    const WhyOpenSource = () => (
+      <div className="container paddingTop paddingBottom">
+        <h1 className="section-header">Why to chose Open-Source</h1>
+        <div className="wrapper">
+          <div className="section-intro paddingBottom">
+            Open source is in your best interest, whether you're an individual, a corporation, a small business, a non-profit, or a government agency.
+            <div className="text-muted">
+              <hr/>
+              Source: <a href="https://opensource.com/life/15/12/why-open-source">6 motivations for consuming or publishing open source software</a> by <a href="https://opensource.com/users/benbalter">Ben Balter</a>
+            </div>
+          </div>
+        </div>
+        <Block layout="twoColumn">
+          {[
+            {
+              content: "Using open source software yields a lower total cost of ownership when compared to closed source and proprietary alternatives. Adopting open source software generally has a lower up-front cost (because the software often comes at no cost or relatively low cost), and shifts the cost center from licensing (an operating expense) to customization and implementation (a capital expense). Additional costs like training, maintenance, and support are sunk costs. You're going to be paying for both regardless of if the software is open or closed source, the cost often being baked into the license in the case of commercial, off-the-shelf software (COTS). What makes open source unique is that you're not paying for the right to use the underlying intellectual property.",
+              image: `${baseUrl}img/undraw_predictive_analytics.svg`,
+              imageAlign: 'top',
+              title: 'Lower total cost of ownership',
+            },
+            {
+              content: "We like to say in open source that all the easy problems have already been solved. Blogging, content management, and operating systems are all problems with established (and mainstream) open source solutions, to name a few. While your developers could spend their time reinventing wheels that the open source community have already perfected, it's far preferable to use the worlds best wheel, especially when that wheel comes at no cost to you. This frees developers up to work on yet-unsolved challenges, the types of challenges that are unique to and add value to your organization's mission. Why not stand on the shoulders of technology giants?",
+              image: `${baseUrl}img/undraw_High_five.svg`,
+              imageAlign: 'top',
+              title: "Shift developers from low-value work to high-value work",
+            },
+            {
+              content: "If you consume open source software, it's in your best interest to contribute back. Contributions can be in the form of reporting bugs, or even submitting proposed fixes. Since software is written by humans, it's highly unlikely to be perfect, and even if so, likely doesn't satisfy every use case. Rather than forking the project and implementing changes into your own version (closed source), submitting bug reports and improvements upstream (open source) allows you to more easily continue to benefit from the subsequent fixes and improvements submitted by others.",
+              image: `${baseUrl}img/undraw_invest.svg`,
+              imageAlign: 'top',
+              title: "Upstream improvements",
+            },
+            {
+              content: "You'd be hard pressed to find a startup today worth it's venture capital funding not based, at least in part (if not largely) on open source. Open source isn't a fad, or a bunch of hippies out in California passing around tie-dye laptops like they would illicit substances. Open source is how modern organizations, and increasingly more traditional organizations build software. It's becoming exceedingly challenging to make the argument that five-or-ten years from now the technology landscape is going to be less collaborative and more closed",
+              image: `${baseUrl}img/undraw_open_source.svg`,
+              imageAlign: 'top',
+              title: "Open source is the future",
+            },
+          ]}
+        </Block>
+      </div>
+    );
+
+    const UnchainYourLab = () => (
       <div className="container paddingBottom">
         <h1 className="section-header">Unchain your Lab with SENAITE</h1>
         <div className="wrapper">
@@ -153,7 +196,6 @@ class Index extends React.Component {
         </div>
 
         <div className="wrapper">
-
           <div className="gridBlock">
 
             <div className="provider ridingbytes blockElement alignCenter twoByGridBlock">
@@ -213,10 +255,7 @@ class Index extends React.Component {
             </div>
 
           </div>
-
         </div>
-
-
       </div>
     );
 
@@ -306,10 +345,11 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Description />
+          {/* <Description /> */}
           <Features />
           <Providers />
           <WhyChooseUs />
+          <WhyOpenSource />
           <Showcase />
         </div>
       </div>
