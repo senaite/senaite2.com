@@ -207,7 +207,6 @@ class Index extends React.Component {
                   <div className="contactBlock">
                     Contact us at <a href="mailto:info@naralabs.com"> info@naralabs.com</a>
                     <div className="">Location: Barcelona, Spain</div>
-                    <div className="">Website: <a href="https://naralabs.com">https://naralabs.com</a></div>
                   </div>
                 </div>
               </div>
