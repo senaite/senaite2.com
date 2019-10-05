@@ -61,13 +61,14 @@ Currently, your SENAITE installation has no analysis categories configured.
 
 ![Analysis Categories](/screenshots/analysis_categories_listing.png "Analysis Categories")
 
-Let's add the category *Metal* to group together analyses which trace metals by
-clicking the *Add* Button above the listing table.
+Let's add the category *Water Chemistry* to group together chemical water
+analyses by clicking the *Add* Button above the listing table.
 
 ![Add Analysis Category](/screenshots/add_analysis_category_screen.png "Add a new Analysis Category")
 
-- Title: `Metals`
-- Description: `Trace metals in water`
+- Title: `Water Chemistry`
+- Description: `Chemical water analyses`
+- Department: `Chemistry`
 
 Click again the *Save* button when you are done.
 
@@ -87,7 +88,7 @@ for the *Calcium* analysis as follows:
 - Unit: `mg`
 - Analysis Keyword: `Ca`
 - Point of Capture: `Lab`
-- Analysis Category: `Water`
+- Analysis Category: `Water Chemistry`
 - Price (excluding VAT): `10`
 - Department `Chemistry`
 
