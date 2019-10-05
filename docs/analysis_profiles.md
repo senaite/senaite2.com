@@ -1,7 +1,7 @@
 ---
-id: sample-profiles
-title: Sample Profiles
-sidebar_label: Sample Profiles
+id: analysis-profiles
+title: Analysis Profiles
+sidebar_label: Analysis Profiles
 ---
 
 In the previous sections you added single Analyses for each Sample, which can

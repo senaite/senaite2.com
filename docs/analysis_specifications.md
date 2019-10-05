@@ -1,7 +1,7 @@
 ---
-id: sample-specifications
-title: Sample Specifications
-sidebar_label: Sample Specifications
+id: analysis-specifications
+title: Analysis Specifications
+sidebar_label: Analysis Specifications
 ---
 
 In the previous Section you learned how to manage Analyses and how to add Result
