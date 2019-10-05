@@ -70,7 +70,7 @@ by the `Min Operator` and `Max Operator`. The `Magnesium` Analysis excludes `9` 
 the minimum allowed value, but includes 11 for the maximum allowed value.
 
 
-## Applying an Analysis Specification to a Sample
+## Apply an Analysis Specification to a Sample
 
 Now it is time to apply the *Analysis Specification* to a Sample. Navigate to
 the listing of all Samples and copy one of the existing Samples.
