@@ -34,6 +34,15 @@ const users = [
     infoLink: 'http://liscon.de/',
     pinned: true,
   },
+  {
+    name: 'Ministry of Health and Child Care',
+    caption: 'Ministry of Health and Child Care Zimbabwe',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/logos/mhcc_zim.jpg',
+    infoLink: '#',
+    pinned: true,
+  }
 ];
 
 const home_buttons = [
