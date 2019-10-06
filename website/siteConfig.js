@@ -35,6 +35,15 @@ const users = [
     pinned: true,
   },
   {
+    name: 'Caribbean Public Health Agency',
+    caption: 'Caribbean Public Health Agency (CARPHA)',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/logos/carpha.jpg',
+    infoLink: 'http://carpha.org',
+    pinned: true,
+  },
+  {
     name: 'Ministry of Health and Child Care',
     caption: 'Ministry of Health and Child Care Zimbabwe',
     // You will need to prepend the image path with your baseUrl
