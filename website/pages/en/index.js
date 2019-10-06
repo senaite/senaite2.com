@@ -33,7 +33,7 @@ class Index extends React.Component {
 
     const WhyOpenSource = () => (
       <div className="container paddingTop paddingBottom">
-        <h1 className="section-header">Why to chose Open-Source</h1>
+        <h1 className="section-header">Why to choose Open-Source</h1>
         <div className="wrapper">
           <div className="section-intro paddingBottom">
             Open source is in your best interest, whether you're an individual, a corporation, a small business, a non-profit, or a government agency.
