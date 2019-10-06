@@ -117,3 +117,11 @@ div.homeSplashFade {
 .projectTitle {
     color: #fff;
 }
+
+.promoSection {
+    padding-top: 30px;
+}
+.promoSection a {
+    font-weight: 600;
+    color: #fff;
+}
