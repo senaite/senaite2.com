@@ -113,3 +113,7 @@ div.homeSplashFade {
 .homeContainer .homeWrapper {
     min-height:550px;
 }
+
+.projectTitle {
+    color: #fff;
+}
