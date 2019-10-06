@@ -114,10 +114,9 @@ div.homeSplashFade {
     color: #fff;
 }
 
-div.mainContainer {
-    padding:0;
+.homeContainer {
+    margin-bottom: -40px;
 }
-
 .homeContainer .homeWrapper {
     min-height:550px;
 }
