@@ -51,6 +51,15 @@ const users = [
     image: '/logos/mhcc_zim.jpg',
     infoLink: '#',
     pinned: true,
+  },
+  {
+    name: 'Botswana Harvard AIDS Institute Partnership',
+    caption: 'Botswana Harvard AIDS Institute Partnership',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/logos/bhp.png',
+    infoLink: 'https://www.botswanaharvardpartnership.org/',
+    pinned: true,
   }
 ];
 
