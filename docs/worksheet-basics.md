@@ -103,9 +103,23 @@ can be done by changing the Layout to *Transposed*.
 The default layout for Worksheets can also be permanently changed in the *LIMS
 Setup* in the section *Appearance*. Select the preferred layout and save the changes.
 
-
 ![Setup Worksheet layout](/screenshots/setup_appearance_worksheet_layout.png "Setup Worksheet layout")
 
+
+### Adding Results to a Worksheet
+
+We assigned the *Worksheet* to our previously created Analyst `Lab Analyst 1`.
+Let's login with this user to introduce results to our Worksheet.
+
+Please logout with the current user or open another Browser to login as
+`analyst1`. Open now the *Worksheet* and introduce some results.
+
+![Worksheet Results](/screenshots/worksheet_analyst_results.png "Worksheet Results")
+
+After the results have been saved and submitted, the Analyst can not do any more changes.
+
+Now login again as Admin (or a user with the role of a *Lab Manager*) to verify
+the submitted results.
 
 Congratulations 🙌 you successfully created your first Worksheet in SENAITE
 and learned how to change the layout.
