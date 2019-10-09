@@ -136,3 +136,28 @@ Consequently, having a correct Control Reference Result tells us again that the
 used instrument of the Analyst measured correctly, but there is still no hint if
 the Analyst carried over the numbers correctly.
 
+
+## Duplicates
+
+Every Sample of a Worksheet can be duplicated with all of the contained Analyses.
+
+Navigate now back to the previously created *Worksheet* and click on the *Add
+Duplicate* tab. Please also ensure that the Worksheet is in the open state,
+because it is otherwise not possible to add the Duplicate.
+
+![Add Duplicate](/screenshots/worksheet_add_duplicate.png "Add Duplicate")
+
+All the Analyses from the Sample are now duplicated for this Worksheet and any
+deviation between the actual results and the duplicate will be alerted.
+
+![Worksheet Results](/screenshots/worksheet_analyst_results_with_duplicate.png "Worksheet Results")
+
+In this case the Analyst entered different results for the `Calcium` and
+`Magnesium` Analyses of the Duplicate, which got marked with an exclamation
+mark.
+
+Consequently, the Analyst did either measured incorrectly or had an carry over
+mistake.
+
+Congratulations 🙌 you successfully learned how to add reference Samples to your
+Worksheet and how to interprete them.
