@@ -37,7 +37,7 @@ Enter the following values in the add form:
 
 ## Apply an Analysis Profile to a Sample
 
-Now it is time to apply the *Analysis Specification* to a Sample. Navigate to
+Now it is time to apply the *Analysis Profile* to a Sample. Navigate to
 the Samples tab of our Happy Hills Client and create a new Sample.
 
 Add the new created *Analysis Profile* in the corresponding field.

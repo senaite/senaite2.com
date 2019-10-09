@@ -14,8 +14,9 @@
     "Working with Analyses": [
       "analysis-specifications",
       "analysis-calculations",
+      "analysis-categorization",
       "analysis-profiles",
-      "analysis-categorization"
+      "analysis-templates"
     ]
   }
 }
