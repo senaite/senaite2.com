@@ -17,6 +17,9 @@
       "analysis-categorization",
       "analysis-profiles",
       "analysis-templates"
+    ],
+    "Working with Worksheets": [
+      "worksheet-basics"
     ]
   }
 }
