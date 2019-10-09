@@ -19,20 +19,31 @@ where a node represents a State and the connecting edge reflects a Transition.
 The basic workflow of a sample can thus be displayed as follows:
 
 ```text
-Registered -> Sample Due -> Received -> Pending -> Verified -> Published
-          \  /          \  /        \  /       \  /        \  /
-       initialze      receive      submit     verify      publish
+Registered -> Sample Due -> Received -> To be verified -> Verified -> Published
+          \  /          \  /        \  /              \  /        \  /
+       initialze      receive      submit            verify      publish
 ```
 
 **☝️Note:**
-This is graph omits some of the Sample states/transitions for the sake of simplicity.
+This is graph omits some additional Sample states/transitions for the sake of 
+simplicity. Permissions, visibility constraints and available actions for a 
+given sample will depend on its workflow state.
 
 
 ### Receive the Sample
 
 You have already seen the first *State* of the prior created *Sample*, which was
 `Sample due`. In this state it is *not possible to enter any results*, because the
-sample has not been received yet by the lab.
+sample has not been received yet by the lab. 
+
+The reception of the sample is usually done by a laboratory clerk and involves 
+a full review of the sample conditions to ensure its validity (the support is 
+not broken, suitability of the preservation, the sample type fits with the 
+requirements of the requested analyses, the elapsed time since the sample was 
+collected is in range, etc.). Therefore, the process of sample reception is a 
+critical step in contract-analyses labs. For non-contract-analysis labs (those 
+that create and consume their own samples), this process can be performed 
+automatically by turning on the setting "Auto-receive samples" in LIMS Setup.  
 
 To receive a sample, you can select the *Receive* transition from the dropdown
 menu within the Sample.
@@ -56,11 +67,23 @@ where yellow stands for `Sample due`, brown for `Sample received`, turquoise for
 
 ### Enter Results 
 
- Only in the *Received* state a user with the `Analyst` role can introduce the
+Only in the *Received* state a user with the `Analyst` role can introduce the 
 measured results for the Analyses of the Sample.
 
-Open the previously created by clicking on the generated link in the listing,
-which automatically opens the *Manage Results* tab for you.
+Logout from the system by clicking the *Log out* button displayed in the blue 
+dropdown list at top-right with title *Eugene Krabs*. Login with the credentials 
+for the user with *Analyst* role you created in the section 
+[*Add a Laboratory Analyst* from the previous guide](quickstart#add-a-laboratory-analyst):
+
+- User Name: `analyst`
+- Password: `analyst`
+
+Once logged in, note that *Sponge Bob* is displayed now in the blue box at 
+top-right corner.
+
+Open the previously created sample by clicking on the generated 
+link in the samples listing, which automatically opens the *Manage Results* tab 
+for you.
 
 ![Manage Results](/screenshots/sample_manage_results.png "Sample Manage Results")
 
@@ -80,6 +103,12 @@ the values anymore and the State of the Sample is *To be verified*
 
 ![Manage Results](/screenshots/sample_manage_results_submitted.png "Sample Manage Results")
 
+**☝️Note:**
+Here we've entered the results directly in the Sample view, but, as we will see
+in "Working with Worksheets" guide, the management and distribution of the
+work to be done within laboratory analysts, along with the results entry, will
+mostly be performed by using Worksheets. 
+
 
 ### Verify the submitted Results
 
@@ -87,34 +116,39 @@ Only users with the role of a `Lab Manager` or `Verifier` are allowed to
 *Verify* the results of a Sample by selecting the Analyses and click on the
 *Verify* button.
 
-However, the system does not allow per default that the user who submitted also
-verifies them. To allow this, the setting need to be enabled in the *LIMS Setup*.
+The verification of results is maybe the most important step within the whole
+process. This step involves the review of both the sample information and the 
+results submitted by the analyst. Once an analysis is verified, the client 
+contact with access granted to the system will be able to see the result, 
+even if is not yet published. There is no step-back option once an analysis has
+been verified by a qualified user other than invalidating the whole sample.
 
-Click on the ⚙️button in the upper right corner and click on the grey *Setup* tile.
-Navigate to the *Analyses* tab and check the Option *Allow self-verification of results*.
+Logout from the system and login again with the credentials for the user you
+created in the previous guide that belongs to the "Lab Manager" role:
 
-![Allow self-verification of results](/screenshots/setup_analyses.png "Allow self-verification of results")
+- User Name: `labman`
+- Password: `labman`
 
-Click the *Save* button to submit the changes.
-
-Go back to the created Sample and select all submitted Analyses. The button to
-verify the results appears now.
+Once logged in, go back to the created Sample and select all submitted Analyses. 
+The button to verify the results appears now.
 
 ![Verify Sample Results](/screenshots/sample_verify_results.png "Verify Sample Results")
 
-Clicking on the *Verify* button verifies the results, but leaves a warning that
-the user who verified the results also submitted them.
+Clicking on the *Verify* button verifies the results.
 
 ![Verified Sample Results](/screenshots/sample_verified_results.png "Verified Sample Results")
 
 **☝️Note:**
-You can put your mouse over the exclamation mark inside the analysis row to view
-the warning message.
+In this guide we are verifying the results directly in Sample's manage analyses 
+view. As we will see later in "Working with Worksheets" guide, the addition of 
+QC analyses (controls, blanks and duplicates) to ensure the quality of the tests
+and provide useful insights for the verification process can be done with
+Worksheets.
 
 
 ### Publish the Results
 
-To finalize the Sample, it need to be transitioned to the *Published* state (or
+To finalize the Sample, it needs to be transitioned to the *Published* state (or
 another end-state). Only users with the role of a `Lab Manager` or a `Publisher`
 are allowed to publish the sample.
 

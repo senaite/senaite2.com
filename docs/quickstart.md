@@ -50,12 +50,92 @@ Enter the following values in the add form:
 Click the *Save* button when you are done.
 
 
+### Add a Laboratory Manager
+
+The `admin` user the system created by default on install should only be used
+for maintenance purposes and by qualified personnel. SENAITE ships with default
+user roles and the most common are:
+ 
+ - `Lab Manager`: users with this role can manage the LIMS from a functional
+ perspective and have rights to do almost everything, albeit they are bound to
+ Good Laboratory Practices (GLP) and ISO policies.
+ 
+ - `Lab Clerk`: users with this role can manage clients and some setup 
+ configurations. They are mostly responsible of reviewing samples on reception, 
+ communication with clients and distribution of published results.
+ 
+ - `Analyst`: users with this role do not have rights to manage. Analysts are 
+ the users who enter analysis results into the system.
+
+Move to the *LIMS Setup* screen by clicking again the ⚙ button in the upper 
+right corner of your screen.
+
+Click now the *Lab Contacts* link. Press the *Add* button to add a new Contact
+and fill the form as follows:
+
+- Firstname: `Eugene`
+- Surname: `Krabs`
+- Departments: `Chemistry`
+
+Click the *Save* button.
+
+At this point, we've created a laboratory contact, but there is still the need
+to create a user bound to this contact to be able to login to the system. Now,
+click to *Login Details* tab and fill the form as follows:
+
+- User Name: `labman`
+- Password: `labman`
+- Confirm Password: `labman`
+- Email: `labman@example.org`
+- Add to the following groups: choose `LabManagers`
+
+Press the *Save* button.
+
+### Add a Laboratory Analyst
+
+Now, go back to *Lab Contacts* list by either clicking the link from the
+breadcrumbs bar at the top or by clicking again the ⚙ button in the upper right 
+corner of your screen. Then, follow the abovementioned procedure to create a new
+contact with the following information:
+
+- Firstname: `Sponge`
+- Surname: `Bob`
+- Departments: `Chemistry`
+
+Click the *Save* button and follow same steps as previous section to create a 
+new user, but with role Analyst:
+
+- User Name: `analyst`
+- Password: `analyst`
+- Confirm Password: `analyst`
+- Email: `analyst@example.org`
+- Add to the following groups: choose `Analysts`
+
+Press the *Save* button.
+
+
+### Login as Laboratory Manager
+
+Press the *Log out* element from the blue dropdown list at top-right with title
+*admin*.
+
+You are now logged out from SENAITE. Use the credentials for the labman user you
+created in the previous section:
+
+- Login Name: `labman`
+- Password: `labman`
+
+Press the *Log in* button. Note that *Eugene Krabs* is displayed now in the 
+blue box at top-right corner.
+
+
 ### Add Analysis Categories
 
 Move to the *LIMS Setup* screen by clicking again the ⚙ button in the
 upper right corner of your screen.
 
-Click now the *Analysis Categories* tile to add a category for the analyses you add in the next step.
+Click now the *Analysis Categories* link to add a category for the analyses you 
+add in the next step.
 
 Currently, your SENAITE installation has no analysis categories configured.
 
