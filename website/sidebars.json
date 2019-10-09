@@ -8,7 +8,8 @@
       "sample-basics",
       "sample-copy",
       "sample-barcodes",
-      "sample-analyses"
+      "sample-analyses",
+      "sample-partitions"
     ],
     "Working with Analyses": [
       "analysis-specifications",

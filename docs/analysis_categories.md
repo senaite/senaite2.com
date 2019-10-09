@@ -5,8 +5,8 @@ sidebar_label: Analysis Categorization
 ---
 
 *Analysis Services* can be categorized to be better manageable and sortable.
-In the section [Quickstart into SENAITE](quickstart#add-analysis-categories) you
-created already category named `Water Chemistry`.
+In the previous sections you created already categories for `Water Chemistry`
+and `Microbiology`.
 
 However, we did not activate yet the categorization, so all Analysis Services
 appeared ungrouped in the listings.
@@ -33,23 +33,7 @@ appear collapsed, but clicking on it expands the group.
 *Analysis Categories* are per default sorted alphabetically. However, you may
 also define a *Sort Key* to override the default sorting behavior.
 
-
-## Adding more Categories
-
-Let's extend the example a little bit by adding another department and category.
-
-Add another *Analysis Category* for `Microbiology` (revisit the [Quickstart into
-SENAITE](quickstart#add-analysis-categories) guide how to create a new *Analysis
-Category*)
-
-Also add the following *Analysis Services* to the System:
-
-- Title: `Salmonella`
-- Analysis Keyword: `Salmon`
-- Point of Capture: `Lab`
-- Analysis Category: `Microbiology`
-
-Per default the category `Microbiology` appears now *before* `Water Chemistry`.
+Per default the category `Microbiology` appears *before* `Water Chemistry`.
 
 ![Categorized Analysis Services](/screenshots/analysis_services_listing_categorized_2.png "Categorized Analysis Services")
 
