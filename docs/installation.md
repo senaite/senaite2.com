@@ -74,10 +74,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 Install the required dependencies for SENAITE:
 
 ```shell
-sudo apt install build-essential
-sudo apt install python2.7 python2.7-dev
-sudo apt install libxml2 libxml2-dev libxslt1.1 libxslt1-dev
-sudo apt install libffi-dev libcairo2 libpango-1.0-0 libgdk-pixbuf2.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0
+$ sudo apt install build-essential
+$ sudo apt install python2.7 python2.7-dev
+$ sudo apt install libxml2 libxml2-dev libxslt1.1 libxslt1-dev
+$ sudo apt install libffi-dev libcairo2 libpango-1.0-0 libgdk-pixbuf2.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0
 ```
 
 
@@ -87,9 +87,9 @@ The [Plone Unified Installer][PLONE-unified-installer] installs Plone and its
 dependencies from source on most Unix-like platforms.
 
 ```
-wget --no-check-certificate https://launchpad.net/plone/4.3/4.3.18/+download/Plone-4.3.18-UnifiedInstaller.tgz
-tar xzf Plone-4.3.18-UnifiedInstaller.tgz
-cd Plone-4.3.18-UnifiedInstaller
+$ wget --no-check-certificate https://launchpad.net/plone/4.3/4.3.18/+download/Plone-4.3.18-UnifiedInstaller.tgz
+$ tar xzf Plone-4.3.18-UnifiedInstaller.tgz
+$ cd Plone-4.3.18-UnifiedInstaller
 ```
 
 
@@ -98,7 +98,7 @@ cd Plone-4.3.18-UnifiedInstaller
 Next step is to install Plone with the provided `install.sh` shell script:
 
 ```shell
-./install.sh standalone --target=/home/senaite --instance=senaitelims --password=admin
+$ ./install.sh standalone --target=/home/senaite --instance=senaitelims --password=admin
 ```
 
 **Note**
@@ -112,9 +112,13 @@ To install SENAITE we need to modify the generated `buildout.cfg` config file.
 [Buildout][BUILDOUT] is an automation tool written in and extended with Python:
 
 ```shell
-cd /home/senaite
-vim buildout.cfg
+$ cd /home/senaite
+$ vim buildout.cfg
 ```
+
+**Note**
+You can use `nano` or any other text editor you feel comfortable with instead of
+`vim`.
 
 Add `senaite.lims` to the `eggs` section of the file:
 
@@ -131,7 +135,7 @@ zcml =
 Re-run the `buildout` script:
 
 ```shell
-PYTHONHTTPSVERIFY=0 bin/buildout
+$ PYTHONHTTPSVERIFY=0 bin/buildout
 ```
 
 Also see here: https://github.com/senaite/senaite.lims#readme
@@ -145,7 +149,7 @@ can start SENAITE from the terminal.
 To start SENAITE in foreground (debug) mode, use this command:
 
 ```shell
-bin/instance fg
+$ bin/instance fg
 ```
 
 To stop the server, you can press `CTRL+C` on your keyboard.
