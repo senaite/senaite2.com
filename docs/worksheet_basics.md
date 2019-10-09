@@ -123,8 +123,3 @@ the submitted results.
 
 Congratulations 🙌 you successfully created your first Worksheet in SENAITE
 and learned how to change the layout.
-
-
-
-
-

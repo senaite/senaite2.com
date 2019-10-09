@@ -19,7 +19,8 @@
       "analysis-templates"
     ],
     "Working with Worksheets": [
-      "worksheet-basics"
+      "worksheet-basics",
+      "worksheet-control-references"
     ]
   }
 }
