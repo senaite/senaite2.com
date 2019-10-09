@@ -72,10 +72,23 @@ analyses by clicking the *Add* Button above the listing table.
 
 Click again the *Save* button when you are done.
 
+**☝️Note:**
+Analysis categories allows you to group analyses regardless of the department
+they are assigned to. Thus, you can have analyses in same category that belong 
+to different departments. Here we've created a "Water chemistry" category, but 
+we could rather create a category called "Liquids" or "Mining". The criteria 
+used to group analyses depends on your laboratory needs.
+
 
 ### Add Analysis Services
 
-Finally, we add some analysis services by chosing the *Analysis Services* tile in the *LIMS Setup* screen.
+Analysis services represent the catalog of tests/analyses the laboratory is able
+to perform. Although in most cases we think of an Analysis Service as a single 
+test for which we expect a single result, their level of granularity may
+depend on the laboratory needs and/or compiled Standard Operating Procedures 
+(SOPs).
+
+We add some analysis services by clicking the *Analysis Services* link in the *LIMS Setup* screen.
 
 In this example we are adding **Calcium**, **Magnesium** and **Total Hardness**.
 
@@ -95,6 +108,13 @@ for the *Calcium* analysis as follows:
 Repeat the steps for the **Magnesium** and **Total Hardness** Analysis Services
 and chose `Mg` and `THCaCO3` as the Analysis Keyword respectively.
 
+**☝️Note:**
+The "Analysis Keyword" is an important field and must be unique. This keyword 
+will be used widely by the system. Amongst other uses, keywords are used in
+calculations or to find matches when importing results from instruments. They
+can also be displayed in results reports if needed. [CAS Numbers][CAS] for 
+chemical substances or [LOINC][LOINC] codes for health measurements are good 
+keyword choices.
 
 **🤓 Pro-Tip:**
 You can also duplicate existing Analysis Services from the listing view by
@@ -131,7 +151,7 @@ All Samples reside below *Clients* in SENAITE.
 
 **☝️Note:**
 Although the system was initially designed for contract analyses labs, it is
-also perfectly possible to configure the system for non-contract-analysis labs ,
+also perfectly possible to configure the system for non-contract-analysis labs,
 e.g. for quality control analyses for the producing industry. Simply add just
 one client which represents your own company.
 
@@ -160,9 +180,12 @@ The `Client ID` must be unique in the system.
 ### Add Client Contacts
 
 Each Client needs to have at least one Client Contact which represents a natural
-person in the system.
+person in the system. As we will see in the next section, client contact is a 
+mandatory field when creating a sample. The reason is that the client contact 
+assigned to a sample will be the laboratory's first point of contact during the
+sample's life-cycle within the lab facilities. 
 
-Make sure you are within the newly created `Happy Hills` client and chose then
+Make sure you are within the newly created `Happy Hills` client and choose then
 the *Contacts* tab.
 
 ![Client Contacts](/screenshots/client_contact_listing.png "Client Contacts")
@@ -181,25 +204,25 @@ As already mentioned, all samples reside inside Client Entities in the database.
 Now that we just created a new Client, we can also add new Samples for this
 Client.
 
-Make sure you are in the newly created `Happy Hills` Client and chose the
+Make sure you are in the newly created `Happy Hills` Client and choose the
 *Samples* tab.
 
 ![Client Samples](/screenshots/client_samples_listing.png "Client Samples")
 
 **☝️Note:**
-The number next to the Add button let you chose the number of samples you want
-to register in the system at once. You need to chose a value before you click
-the *Add* button, otherwise already entered values get lost during reload.
+The number next to the Add button lets you choose the number of samples you want
+to register in the system at once. You need to select a value before you click
+the *Add* button, otherwise already entered values will get lost during reload.
 
-Chose `2` and click *Add*.
+Choose `2` and click *Add*.
 
 ![Add Samples](/screenshots/add_samples_screen.png "Add Samples")
 
-Each displayed column represents the data for one sample.
+Each displayed column represents a sample.
 
 **🤓 Pro-Tip:**
-The ⏩ button in the second column let you copy over the row values from the
-first column to the other Samples.
+The button in the second column lets you copy over the row values from the first
+column to the other Samples.
 
 **🤓 Pro-Tip:**
 You can globally set the visibility and order of the fields by clicking on the
@@ -219,7 +242,7 @@ Click on the *Save* button in the lower left corner to proceed.
 
 ![Client Samples](/screenshots/client_samples_listing_2.png "Client Samples")
 
-Congratulations 🙌 you successfully created your first Sample in SENAITE.
+Congratulations, you successfully created your first Sample in SENAITE.
 
 You can click now on the generated *Sample ID* link to inspect the created sample.
 Also note how the generated ID contains our referenced *Sample Type* `H2O` and
@@ -228,3 +251,8 @@ physically not yet arrived in the lab.
 
 Continue then with the next section to learn the basic handling of samples in
 SENAITE.
+
+
+
+[CAS]: https://en.wikipedia.org/wiki/CAS_Registry_Number "CAS Registry Number at Wikipedia"
+[LOINC]: https://loinc.org/ "Logical Observation Identifiers Names and Codes (LOINC)"
