@@ -186,7 +186,7 @@ Introduce now some Results for `Calcium`, `Magnesium` and the `Factor` interim f
 ![Sample with Calculation in external Module](/screenshots/sample_with_calculation_in_external_module.png "Sample with Calculation in external Module")
 
 
-Congratulations 🙌 you successfully created your first Calculations in SENAITE
+Congratulations 🙌 you successfully created your first Calculation in SENAITE
 and learned how to import external modules for complex computations.
 
 
