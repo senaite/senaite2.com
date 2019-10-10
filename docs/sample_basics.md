@@ -105,9 +105,9 @@ the values anymore and the State of the Sample is *To be verified*
 
 **☝️Note:**
 Here we've entered the results directly in the Sample view, but, as we will see
-in "Working with Worksheets" guide, the management and distribution of the
-work to be done within laboratory analysts, along with the results entry, will
-mostly be performed by using Worksheets. 
+in [Working with Worksheets](worksheet-basics) guide, the management and 
+distribution of the work to be done within laboratory analysts, along with the 
+results entry, will mostly be performed by using Worksheets. 
 
 
 ### Verify the submitted Results
@@ -140,10 +140,10 @@ Clicking on the *Verify* button verifies the results.
 
 **☝️Note:**
 In this guide we are verifying the results directly in Sample's manage analyses 
-view. As we will see later in "Working with Worksheets" guide, the addition of 
-QC analyses (controls, blanks and duplicates) to ensure the quality of the tests
-and provide useful insights for the verification process can be done with
-Worksheets.
+view. As we will see later in [Working with Worksheets](worksheet-basics) guide, 
+the addition of QC analyses (controls, blanks and duplicates) to ensure the 
+quality of the tests and provide useful insights for the verification process 
+can be done with Worksheets.
 
 
 ### Publish the Results
