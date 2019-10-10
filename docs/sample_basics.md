@@ -71,14 +71,14 @@ Only in the *Received* state a user with the `Analyst` role can introduce the
 measured results for the Analyses of the Sample.
 
 Logout from the system by clicking the *Log out* button displayed in the blue 
-dropdown list at top-right with title *Eugene Krabs*. Login with the credentials 
+dropdown list at top-right with title *Lab Manager*. Login with the credentials 
 for the user with *Analyst* role you created in the section 
 [*Add a Laboratory Analyst* from the previous guide](quickstart#add-a-laboratory-analyst):
 
 - User Name: `analyst`
 - Password: `analyst`
 
-Once logged in, note that *Sponge Bob* is displayed now in the blue box at 
+Once logged in, note that *Lab Analyst* is displayed now in the blue box at 
 top-right corner.
 
 Open the previously created sample by clicking on the generated 

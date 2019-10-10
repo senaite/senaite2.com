@@ -73,8 +73,8 @@ right corner of your screen.
 Click now the *Lab Contacts* link. Press the *Add* button to add a new Contact
 and fill the form as follows:
 
-- Firstname: `Eugene`
-- Surname: `Krabs`
+- Firstname: `Lab`
+- Surname: `Manager`
 - Departments: `Chemistry`
 
 Click the *Save* button.
@@ -98,8 +98,8 @@ breadcrumbs bar at the top or by clicking again the ⚙ button in the upper righ
 corner of your screen. Then, follow the abovementioned procedure to create a new
 contact with the following information:
 
-- Firstname: `Sponge`
-- Surname: `Bob`
+- Firstname: `Lab`
+- Surname: `Analyst`
 - Departments: `Chemistry`
 
 Click the *Save* button and follow same steps as previous section to create a 
@@ -125,7 +125,7 @@ created in the previous section:
 - Login Name: `labman`
 - Password: `labman`
 
-Press the *Log in* button. Note that *Eugene Krabs* is displayed now in the 
+Press the *Log in* button. Note that *Lab Manager* is displayed now in the 
 blue box at top-right corner.
 
 
