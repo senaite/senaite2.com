@@ -7,7 +7,7 @@ sidebar_label: Sample Analyses
 Analyses define the tests to be conducted on a Sample and are basically clones
 of *Analysis Services*.
 
-In the section [Quickstart into SENAITE](quickstart#add-analysis-services) you
+In the section [Quickstart into SENAITE](quickstart#add-analysis-services), you
 created *Analysis Services* for `Calcium`, `Magnesium` and `Total Hardness` and
 added them later to your [first Sample](quickstart#add-new-samples), where they
 were transformed to *Analyses*.
@@ -16,7 +16,11 @@ Consequently, the *Analysis Service* act like templates for *Analyses*, that
 were added during Sample creation or when you *Manage Analyses*.
 
 This also means that changing the *Analysis Service* at a later point will not
-change any of the *Analyses* that were created.
+change any of the *Analyses* that were created. Therefore, an eventual 
+dichotomy between an *Analysis Service* and its *Analysis* counterpart because
+of a modification of the former, won't have any impact to the tests the 
+laboratory is actually carrying out. This mechanism ensures the integrity of 
+data, that is required for compliance with ISO 17025.
 
 
 ## Manage Analyses in Samples
@@ -25,13 +29,15 @@ Changing, adding or removing *Analyses* after the Sample was created can be done
 in the Samples's *Manage Analyses* tab.
 
 **☝️Note:**
-The *Manage Analyses* tab is only visible when at least one Analysis is still in
-an open state, e.g. not submitted for verification yet.
+The *Manage Analyses* tab is only visible to users with "Lab Manager" role and 
+when at least one Analysis is still in an open state, e.g. not submitted for 
+verification yet.
 
 ![Manage Analyses](/screenshots/sample_manage_analyses.png "Manage Analyses")
 
 It is important to understand here that the *Manage Analyses* lists all
-available *Analyses Services* (not *Analyses*).
+available *Analyses Services* (not *Analyses*). 
+
 However, the **Analyses Services* that were added as *Analyses* are preselected
 in the listing.
 
@@ -46,7 +52,7 @@ Please uncheck the `Total Hardness` Service of this Sample and press *Save*.
 ![Sample Analyses](/screenshots/sample_analysis_removed.png "Sample Analyses")
 
 The Sample now only contains the other two *Analyses* and the `Total Hardness` Analysis
-have been removed from the Sample.
+has been removed from the Sample.
 
 **☝️Note:**
 Removing an Analysis from a Sample is only allowed when no Result has been submitted!
@@ -92,15 +98,13 @@ Analysis.
 #### Price
 
 SENAITE provides some basic functionalities to generate *Invoices* for Analysis
-Requests. The prices are calculated either on a per-Analyses base or based on
-the *Analysis Profile* (more on this later). The prices are calculated either on
-a per *Analysis* or on a per *Analysis Profile* basis (more on the latter one
-later). Changing a price here will therefore change the invoiced price for per
-Analysis invoiced Samples.
+Requests. The prices are calculated either on a per *Analysis* or on a per 
+*Analysis Profile* basis (more on the latter one later). Changing a price here 
+will therefore change the invoiced price for per Analysis invoiced Samples.
 
 **☝️Note:**
 The price field only appears if the *Include and display pricing information*
-in the *Accounting Setup* is enabled.
+if the *Accounting Setup* is enabled.
 Furthermore, this setting also affects the display of the prices in the *Request
 new Analyses* form when adding new Samples.
 
