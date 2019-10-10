@@ -125,3 +125,24 @@ div.homeSplashFade {
     font-weight: 600;
     color: #fff;
 }
+
+#subscribe .button {
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#subscribe .button {
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+#subscribe .button:hover {
+    color: white;
+    background-color: #927f54;
+}
+#subscribe input.form-input {
+    color: #555;
+}
