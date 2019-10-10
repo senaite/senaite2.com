@@ -4,10 +4,10 @@ title: Sample Barcodes
 sidebar_label: Sample Barcodes
 ---
 
-Samples are usually sent in Containers to the lab and need to be identified on
-arrival with the electronic record in SENAITE on arrival. To support that
-identification process, SENAITE provides an easy and customizable way to print
-Barcodes for Analysis Requests, Batches, Worksheets etc.
+Samples are usually sent in Containers to the lab and need to be identified with
+the electronic record in SENAITE on arrival. To support that identification 
+process, SENAITE provides an easy and customizable way to print Barcodes for 
+Analysis Requests, Batches, Worksheets etc.
 
 
 ## Generate a Barcode for a Sample
@@ -75,7 +75,7 @@ The printing of Barcodes can be automated when Samples are registered or
 received. The setting can be enabled in the *Sticker* section of the *LIMS
 Setup*, as well as the standard templates for the small and large Barcodes.
 
-Click on the ⚙️button in the upper right corner and chose the grey *Setup* tile
+Click on the ⚙️button in the upper right corner and choose the grey *Setup* tile
 to open the general Setup options. Select the *Sticker* tab and chose *Receive*
 from the *Automatic sticker printing* menu. Press save when you are done.
 
