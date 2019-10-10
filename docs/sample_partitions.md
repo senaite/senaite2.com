@@ -157,15 +157,22 @@ make use of the action *Detach*.
 Go to the samples listing and select the second partition (the one ending with
 `-P02`) and press the button *Detach*.
 
+![Detach partition](/screenshots/sample_detach_partition_1.png "Detach partition")
+
 
 In Samples listing, the detached partition is no longer displayed under its 
 parent, rather is displayed as if it was a primary sample. If you click to the
 little black triangle next to the original sample you will notice that only the
 first partition is displayed below.
 
+
+![Detached partition in listing](/screenshots/sample_detach_partition_2.png "Detached partition in listing")
+
 Detached partitions become "primary" samples and no longer depend on (or 
 propagate to) their original parent sample, but their relationship is kept 
 in the system. Click to the detached partition.
+
+![Informative panel in a detached partition](/screenshots/sample_detached_partition_info_panel.png "Informative panel in a detached partition")
 
 A blue box is displayed at the top with the link to the original sample the
 current sample was originated from.
