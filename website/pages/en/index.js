@@ -39,7 +39,7 @@ class Index extends React.Component {
             Open source is in your best interest, whether you're an individual, a corporation, a small business, a non-profit, or a government agency.
             <div className="text-muted">
               <hr/>
-              Source: <a href="https://opensource.com/life/15/12/why-open-source">6 motivations for consuming or publishing open source software</a> by <a href="https://opensource.com/users/benbalter">Ben Balter</a>
+              Source: <a href="https://ben.balter.com/2015/11/23/why-open-source/">Why Open Source</a> by <a href="https://opensource.com/users/benbalter">Ben Balter</a>, Nov. 23, 2015
             </div>
           </div>
         </div>
