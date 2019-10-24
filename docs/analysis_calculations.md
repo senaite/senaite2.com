@@ -5,8 +5,8 @@ sidebar_label: Analysis Calculations
 ---
 
 *Calculations* are a powerful tool in SENAITE to define *Analysis Services* that
-take no manual input, but are calculated out of the Results of other Analyses
-Results.
+take no manual input, but are calculated out of either user-defined parameters 
+(*Interim fields*) or Results of other Analyses.
 
 During this guide we created an *Analysis Service* for `Total Hardness`.
 However, we did not specify a calculation so far, but would like to be it a sum
@@ -98,7 +98,7 @@ so that changes in the Calculation does *not* affect any of the Analysis created
 with prior versions of the Calculation.
 
 To demonstrate this, we are going to change the Formula of our `Total Hardness`
-Calculation and introduce an *Interim* as a new parameter to our formula:
+Calculation and introduce a new parameter (*Interim*) to our formula:
 
 Navigate to the *LIMS Setup* and edit the prior created Calculation to enter the
 following values:
@@ -112,9 +112,9 @@ following values:
 Press the *Save* button when you are done.
 
 **☝️Note:**
-Interim fields also introduce Keywords that can be referenced in Calculation
-Formulas like the keywords of *Analysis Services*. Thus, they are checked for
-uniqueness in the system.
+User-defined parameters (*Interim fields*) also introduce Keywords that can be 
+referenced in Calculation Formulas like the keywords of *Analysis Services*. 
+Thus, they are checked for uniqueness in the system.
 
 Navigate back to the prior created Sample and click on the blue 🛈 Button next to
 the `Total Hardness` Analysis to view the details of the Analysis.
@@ -122,17 +122,20 @@ the `Total Hardness` Analysis to view the details of the Analysis.
 ![Analysis Details](/screenshots/analysis_popup.png "Analysis Popup")
 
 As you can see in the *Calculation* section of the displayed popup, the formula
-still references the initial version (`[Ca] + [MG]`) and was not changed for
-this Sample.
+still references the initial version (`[Ca] + [Mg]`) and it has not been changed
+for this Sample. This mechanism ensures pre-existing tests won't change, even
+after modifying the electronic records they are based on. Therefore, this
+guarantees the integrity of the data, that is required for compliance with 
+ISO 17025.
 
 However, creating a copy of this Sample uses the new Formula.
 
 ![Sample with Calculation and Interim](/screenshots/sample_with_calculation_and_interim.png "Sample with Calculation and Interim")
 
-The new created Sample displays now also the *Interim* field we introduced earlier.
-Clicking again on the blue 🛈 Button next to the `Total Hardness` Analysis
-reveals the new version of the Calculation with the new Formula 
-`([Ca] + [Mg] * [factor]`.
+The new created Sample displays now also the calculation parameter (*Interim 
+field*) we introduced earlier. Clicking again on the blue 🛈 Button next to the
+`Total Hardness` Analysis reveals the new version of the Calculation with the 
+new Formula `([Ca] + [Mg] * [factor]`.
 
 ![Analysis Details](/screenshots/analysis_popup_2.png "Analysis Popup")
 
@@ -162,7 +165,7 @@ def total_hardness(a, b, factor=1):
 ```
 
 **☝️Note:**
-You need to restart your SENAITE instances to make this new module importable!
+You need to restart your SENAITE instances for this new module to be imported!
 
 Navigate to the prior created calculation and enter the following values:
 
@@ -181,7 +184,7 @@ that the new Formula is set to `total_hardness([Ca], [Mg], factor=[factor])`.
 
 ![Analysis Details](/screenshots/analysis_popup_3.png "Analysis Popup")
 
-Introduce now some Results for `Calcium`, `Magnesium` and the `Factor` interim field.
+Introduce now some Results for `Calcium`, `Magnesium` and the `Factor` parameter.
 
 ![Sample with Calculation in external Module](/screenshots/sample_with_calculation_in_external_module.png "Sample with Calculation in external Module")
 

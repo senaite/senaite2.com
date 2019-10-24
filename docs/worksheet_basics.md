@@ -74,7 +74,7 @@ After the *Worksheet* was created, all open and unassigned Analyses are listed.
 This means that only Analyses are shown, which have not been added yet in another
 *Worksheet* or are already submitted for verification (or in a later state).
 
-Let's assume that our Analyst is wants to insert all `Salmonella` results at once.
+Let's assume that we want our Analyst to enter results for `Salmonella` test.
 Search for the Term `Salmonella` and press enter.
 
 **🤓 Pro-Tip:**

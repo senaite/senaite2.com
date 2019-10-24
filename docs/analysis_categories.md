@@ -14,7 +14,7 @@ appeared ungrouped in the listings.
 
 ## Activate Analysis Categorization
 
-Click on the ⚙️button in the upper right corner and chose the *Setup* tile.
+Click on the ⚙️button in the upper right corner and choose the *Setup* tile.
 Navigate to the *Analyses* tab and activate the checkbox *Categorise analysis
 services* and press the *Save* button afterwards.
 

@@ -18,7 +18,7 @@ a "Makefile" that defines the *Analyses* to be added to a Sample.
 *Analysis Profiles* can be added globally for the whole LIMS or per *Client*.
 Here we are going to add one that is available globally.
 
-Click on the ⚙️button in the upper right corner and chose the *Analysis Profiles*
+Click on the ⚙️button in the upper right corner and choose the *Analysis Profiles*
 tile and press then the *Add* Button.
 
 ![Add Analysis Profile](/screenshots/add_analysis_profile_screen_default.png "Add Analysis Profile")
@@ -56,7 +56,8 @@ Analyses coming from an *Analysis Profile* cannot be deselected and are
 therefore locked (symbolized with the 🔒 icon).
 Removing them would require to remove the corresponding *Analysis Profile* first.
 
-Also note that the price has been taken from the profile.
+Also note that the price has been taken from the profile and that you can add as
+many profiles for a given sample as you like.
 
 ![Add Sample with Profile](/screenshots/add_sample_with_profile_price.png "Add Sample with Profile")
 
