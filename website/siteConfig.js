@@ -64,6 +64,7 @@ const users = [
 ];
 
 const home_buttons = [
+/*
   {
     title: "Try it out",
     href: "https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/senaite/senaite.docker/master/stack.yml",
@@ -77,7 +78,7 @@ const home_buttons = [
     title: "GitHub Repository",
     href: "https://github.com/senaite",
   }
-
+*/
 ]
 
 const siteConfig = {
@@ -99,8 +100,10 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'installation', label: 'Documentation'},
+    {href: 'https://community.senaite.org', label: 'Community'},
+
     // {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
+    // {page: 'help', label: 'Help'},
     // {blog: true, label: 'Blog'},
   ],
 

@@ -90,7 +90,6 @@ class HomeSplash extends React.Component {
           <PromoSection>
             <HomeButtons/>
           </PromoSection>
-          <MailingListForm></MailingListForm>
         </div>
       </SplashContainer>
     );
