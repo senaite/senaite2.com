@@ -4,13 +4,16 @@ title: Worksheet Control References
 sidebar_label: Worksheet Control References
 ---
 
-Worksheets provide some powerful tools for quality assurance based on *Control
-References*. They can assure that the Instruments measured correctly and mitigate
-human mistakes when carrying over the results into SENAITE.
+Worksheets provide some powerful tools for Quality Control and Quality Assurance
+(QA/QC) based on *Reference Samples*. They can assure that the Instruments 
+measured correctly and mitigate human mistakes when carrying over the results 
+into SENAITE. Besides, the person in charge of verifying results during the 
+verification process makes use of them to guarantee that the tests have been 
+performed in accordance with the SOPs and results are valid.
 
 ## Preparing the LIMS
 
-Blank- and Control References can be both added in a Supplier.
+Blank and Control References can be both added in a Supplier.
 
 Navigate to the *LIMS Setup* by clicking the ⚙️ button in the upper right corner
 and then on the *Suppliers* tile.
@@ -28,7 +31,8 @@ Press the *Save* button when you are done.
 
 ## Blank Reference
 
-Blank References are Samples where all values are zero or 'blank'.
+Blank References are Samples where all values (e.g. concentration of a given
+substance or component) are zero or 'blank'.
 
 Navigate to the previously created *Supplier* and select then the *Reference
 Samples* tab.
@@ -158,6 +162,14 @@ mark.
 
 Consequently, the Analyst did either measured incorrectly or had an carry over
 mistake.
+
+**☝️Note:**
+By default, the duplication variation percentage is set to 0 %. This means that
+an alert will be displayed if the results of duplicate analyses carried out on
+the same sample differ, even if the difference is small. You can change the
+duplication variation percentage in "Analysis Service" edit view, under 
+"Method" tab.
+
 
 Congratulations 🙌 you successfully learned how to add reference Samples to your
 Worksheet and how to interprete them.
