@@ -96,7 +96,9 @@ tab of the Sample.
 
 **☝️Note:**
 The notation of the braces `(` `)` and brackets `[` `]` next to the values
-define if the values are included or excluded.
+define if the values are included or excluded. For instance, `(0,10]` means 
+greater than 0 and less than or equal to 10, while `[0,10)` means greater than 
+or equal to 0 and less than 10.
 
 Enter the following values as results:
 
@@ -130,7 +132,7 @@ the results that are out of range.
 
 **☝️Note:**
 The final *Analysis Report* can be highly customized to meet almost any lab
-requirement. Contact the professional service providers for any more details.
+requirement. Contact the professional service providers for more details.
 
 
 Congratulations 🙌 you successfully learned how to apply *Analysis Specifications* to Samples 
