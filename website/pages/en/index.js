@@ -51,18 +51,18 @@ class Index extends React.Component {
               imageAlign: 'top',
               title: 'Lower total cost of ownership',
             },
-            {
-              content: "We like to say in open source that all the easy problems have already been solved. Blogging, content management, and operating systems are all problems with established (and mainstream) open source solutions, to name a few. While your developers could spend their time reinventing wheels that the open source community have already perfected, it's far preferable to use the worlds best wheel, especially when that wheel comes at no cost to you. This frees developers up to work on yet-unsolved challenges, the types of challenges that are unique to and add value to your organization's mission. Why not stand on the shoulders of technology giants?",
-              image: `${baseUrl}img/undraw_High_five.svg`,
-              imageAlign: 'top',
-              title: "Shift developers from low-value work to high-value work",
-            },
-            {
-              content: "If you consume open source software, it's in your best interest to contribute back. Contributions can be in the form of reporting bugs, or even submitting proposed fixes. Since software is written by humans, it's highly unlikely to be perfect, and even if so, likely doesn't satisfy every use case. Rather than forking the project and implementing changes into your own version (closed source), submitting bug reports and improvements upstream (open source) allows you to more easily continue to benefit from the subsequent fixes and improvements submitted by others.",
-              image: `${baseUrl}img/undraw_invest.svg`,
-              imageAlign: 'top',
-              title: "Upstream improvements",
-            },
+            /* { */
+            /*   content: "We like to say in open source that all the easy problems have already been solved. Blogging, content management, and operating systems are all problems with established (and mainstream) open source solutions, to name a few. While your developers could spend their time reinventing wheels that the open source community have already perfected, it's far preferable to use the worlds best wheel, especially when that wheel comes at no cost to you. This frees developers up to work on yet-unsolved challenges, the types of challenges that are unique to and add value to your organization's mission. Why not stand on the shoulders of technology giants?", */
+            /*   image: `${baseUrl}img/undraw_High_five.svg`, */
+            /*   imageAlign: 'top', */
+            /*   title: "Shift developers from low-value work to high-value work", */
+            /* }, */
+            /* { */
+            /*   content: "If you consume open source software, it's in your best interest to contribute back. Contributions can be in the form of reporting bugs, or even submitting proposed fixes. Since software is written by humans, it's highly unlikely to be perfect, and even if so, likely doesn't satisfy every use case. Rather than forking the project and implementing changes into your own version (closed source), submitting bug reports and improvements upstream (open source) allows you to more easily continue to benefit from the subsequent fixes and improvements submitted by others.", */
+            /*   image: `${baseUrl}img/undraw_invest.svg`, */
+            /*   imageAlign: 'top', */
+            /*   title: "Upstream improvements", */
+            /* }, */
             {
               content: "You'd be hard pressed to find a startup today worth it's venture capital funding not based, at least in part (if not largely) on open source. Open source isn't a fad, or a bunch of hippies out in California passing around tie-dye laptops like they would illicit substances. Open source is how modern organizations, and increasingly more traditional organizations build software. It's becoming exceedingly challenging to make the argument that five-or-ten years from now the technology landscape is going to be less collaborative and more closed",
               image: `${baseUrl}img/undraw_open_source.svg`,
@@ -110,13 +110,77 @@ class Index extends React.Component {
     );
 
     const Features = () => (
-      <div className="container features lightBackground paddingBottom paddingTop">
-        <h1 className="section-header">SENAITE Features</h1>
+      <div className="container features paddingBottom paddingTop">
+        <h1 className="section-header">Improve the performance</h1>
         <div className="wrapper">
           <div className="section-intro">
-            SENAITE ships with a <strong>lot of great features</strong> that makes it an <strong>outstanding and trusted Laboratory Management System</strong>.
-            While we are adding constantly new exciting features and solutions from real laboratories back into the SENAITE core system,
-            we would like to highlight some of them here, but there is a lot more you can discover in SENAITE.
+            Stakeholders
+          </div>
+        </div>
+        <Block layout="threeColumn">
+          {[
+            {
+              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS.',
+              image: `${baseUrl}img/undraw_secure_data.svg`,
+              imageAlign: 'top',
+              title: 'Processes Automation',
+            },
+            {
+              content: 'Import results from your instruments to speed up your turn-around time and avoid human errors in the carrying over process.',
+              image: `${baseUrl}img/undraw_server.svg`,
+              imageAlign: 'top',
+              title: 'Equipment integration',
+            },
+            {
+              content: 'SENAITE provides a powerful dashboard to visualize the performance of the lab on a daily, weekly, monthly, quarterly, biannually and yearly basis.',
+              image: `${baseUrl}img/undraw_all_the_data.svg`,
+              imageAlign: 'top',
+              title: 'Reduction of Turnaround Time',
+            },
+          ]}
+        </Block>
+      </div>
+    );
+
+    const Features2 = () => (
+      <div className="container lightBackground paddingBottom paddingTop">
+        <h1 className="section-header">Control</h1>
+        <div className="wrapper">
+          <div className="section-intro">
+            Decision Maker
+          </div>
+        </div>
+        <Block layout="threeColumn">
+          {[
+            {
+              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS.',
+              image: `${baseUrl}img/undraw_secure_data.svg`,
+              imageAlign: 'top',
+              title: 'Compliance',
+            },
+            {
+              content: 'SENAITE generates snapshots of your data on any modification. All changes in the system can be easily inspected and traced back.',
+              image: `${baseUrl}img/undraw_inspection.svg`,
+              imageAlign: 'top',
+              title: 'Traceability',
+            },
+            {
+              content: 'SENAITE provides a powerful dashboard to visualize the performance of the lab on a daily, weekly, monthly, quarterly, biannually and yearly basis.',
+              image: `${baseUrl}img/undraw_all_the_data.svg`,
+              imageAlign: 'top',
+              title: 'Data Insights',
+            },
+          ]}
+        </Block>
+      </div>
+    );
+
+    const Features3 = () => (
+      <div className="container paddingBottom paddingTop">
+        <h1 className="section-header">Technical</h1>
+        <div className="wrapper">
+          <div className="section-intro">
+            Technical
           </div>
         </div>
         <Block layout="threeColumn">
@@ -128,52 +192,49 @@ class Index extends React.Component {
               title: 'Industrial Strength Security',
             },
             {
-              content: 'SENAITE uses state of the art web frameworks to provide a modern and responsive User Interface that displays just the right information at the right place.',
-              image: `${baseUrl}img/undraw_done.svg`,
+              content: 'SENAITE runs on a reliable sofware stack',
+              image: `${baseUrl}img/undraw_secure_data.svg`,
               imageAlign: 'top',
-              title: 'Great User Experience',
+              title: 'Reliable Architecture',
             },
             {
-              content: 'SENAITE provides a powerful extensible fulltext search engine, to let you quickly find and filter the data and locate Samples by simply scanning the Barcode or QR-code.',
-              image: `${baseUrl}img/undraw_Search.svg`,
+              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS.',
+              image: `${baseUrl}img/undraw_secure_data.svg`,
               imageAlign: 'top',
-              title: 'Fast Search Engine',
+              title: 'Centralized System',
+            },
+          ]}
+        </Block>
+      </div>
+    );
+
+
+    const Features4 = () => (
+      <div className="container lightBackground paddingBottom paddingTop">
+        <h1 className="section-header">Driving the Implementation</h1>
+        <div className="wrapper">
+          <div className="section-intro">
+          </div>
+        </div>
+        <Block layout="threeColumn">
+          {[
+            {
+              content: '',
+              image: `${baseUrl}img/undraw_secure_data.svg`,
+              imageAlign: 'top',
+              title: 'Planning',
             },
             {
-              content: 'SENAITE allows you to generate Barcodes, QR-codes and even Address stickers with a few clicks.',
-              image: `${baseUrl}img/undraw_windows.svg`,
+              content: '',
+              image: `${baseUrl}img/undraw_secure_data.svg`,
               imageAlign: 'top',
-              title: 'Barcodes',
+              title: 'Tailoring',
             },
             {
-              content: 'Generate pixel-perfect Reports in PDF of your Analysis Results and send them directly out via Email.',
-              image: `${baseUrl}img/undraw_data.svg`,
+              content: '',
+              image: `${baseUrl}img/undraw_secure_data.svg`,
               imageAlign: 'top',
-              title: 'Beautiful Reports',
-            },
-            {
-              content: 'Import results from your instruments to speed up your turn-around time and avoid human errors in the carrying over process.',
-              image: `${baseUrl}img/undraw_server.svg`,
-              imageAlign: 'top',
-              title: 'Import Results',
-            },
-            {
-              content: 'SENAITE generates snapshots of your data on any modification. All changes in the system can be easily inspected and traced back.',
-              image: `${baseUrl}img/undraw_inspection.svg`,
-              imageAlign: 'top',
-              title: 'Audit Trails',
-            },
-            {
-              content: 'SENAITE provides a powerful dashboard to visualize the performance of the lab on a daily, weekly, monthly, quarterly, biannually and yearly basis.',
-              image: `${baseUrl}img/undraw_all_the_data.svg`,
-              imageAlign: 'top',
-              title: 'Data Insights',
-            },
-            {
-              content: 'SENAITE can be translated into in any language. If your language is not yet supported, you can easily provide it via <a href="https://transifex.com/senaite/senaite-core/dashboard/">Transifex</a>',
-              image: `${baseUrl}img/undraw_chat.svg`,
-              imageAlign: 'top',
-              title: 'Speaks your Language',
+              title: 'Training and Support',
             },
           ]}
         </Block>
@@ -182,16 +243,19 @@ class Index extends React.Component {
 
     const Providers = () => (
       <div className="container providers paddingBottom paddingTop">
-        <h1 className="section-header">The companies behind SENAITE</h1>
+        <h1 className="section-header">Companies</h1>
         <div className="wrapper">
+          {/* <div className="section-intro"> */}
+          {/*   The listed companies are SENAITE Professional Service Providers and */}
+          {/*   are <strong>committed to maintain and protect the code of SENAITE</strong>. */}
+          {/*   They provide <strong>in depth knowledge</strong> of the system and */}
+          {/*   are able to tailor the system to your specific needs and requirements. */}
+          {/*   They work under <strong>high quality standards</strong> and always */}
+          {/*   try to bring the best features of their clients back to the core for */}
+          {/*   the <strong>benefit of the community and the project</strong>. */}
+          {/* </div> */}
           <div className="section-intro">
-            The listed companies are SENAITE Professional Service Providers and
-            are <strong>committed to maintain and protect the code of SENAITE</strong>.
-            They provide <strong>in depth knowledge</strong> of the system and
-            are able to tailor the system to your specific needs and requirements.
-            They work under <strong>high quality standards</strong> and always
-            try to bring the best features of their clients back to the core for
-            the <strong>benefit of the community and the project</strong>.
+            Solutions made by people. We are the companies behind SENAITE.
           </div>
         </div>
 
@@ -206,20 +270,20 @@ class Index extends React.Component {
                 </a>
                 <div className="slogan">Professional Open Source Solutions</div>
               </div>
-              <div className="text-muted">
-                <strong>RIDING BYTES</strong> is a German-based company, providing <strong>professional open source services</strong> for enterprises of all sizes.
-                We are specialized in interfacing systems into existing IT infrastructures and have a special focus on the areas of <strong>lab- and healthcare systems</strong>.
-                Our <strong>comprehensive services</strong> include consulting, administration, software development and continuous maintenance of the software and the computer systems.
-                <br/>
-                <br/>
-                The company was started for one single reason: To build better software for human beings.
-                Therefore our mission is to build software solutions, using the most sophisticated and modern technologies available on the market.
-                Always aligned with our strategy: To support Open-Source Software.
-                <div className="contactBlock">
-                  Contact us at <a href="mailto:hello@ridingbytes.com"> hello@ridingbytes.com</a>
-                  <div className="">Location: Germany</div>
-                </div>
-              </div>
+              {/* <div className="text-muted"> */}
+              {/*   <strong>RIDING BYTES</strong> is a German-based company, providing <strong>professional open source services</strong> for enterprises of all sizes. */}
+              {/*   We are specialized in interfacing systems into existing IT infrastructures and have a special focus on the areas of <strong>lab- and healthcare systems</strong>. */}
+              {/*   Our <strong>comprehensive services</strong> include consulting, administration, software development and continuous maintenance of the software and the computer systems. */}
+              {/*   <br/> */}
+              {/*   <br/> */}
+              {/*   The company was started for one single reason: To build better software for human beings. */}
+              {/*   Therefore our mission is to build software solutions, using the most sophisticated and modern technologies available on the market. */}
+              {/*   Always aligned with our strategy: To support Open-Source Software. */}
+              {/*   <div className="contactBlock"> */}
+              {/*     Contact us at <a href="mailto:hello@ridingbytes.com"> hello@ridingbytes.com</a> */}
+              {/*     <div className="">Location: Germany</div> */}
+              {/*   </div> */}
+              {/* </div> */}
             </div>
 
             <div className="provider naralabs blockElement alignCenter twoByGridBlock">
@@ -230,30 +294,32 @@ class Index extends React.Component {
                 </a>
                 <div className="slogan"></div>
               </div>
-              <div className="text-muted">
-                <div>
-                <p>
-                  <strong>Naralabs</strong> is a company specialized in engineering
-                  and professional services around SENAITE. Our vision is to
-                  consolidate Open Source Software as an essential component
-                  within the strategies for improving efficiency, quality and
-                  data management in laboratories.
-                </p>
-                <p>
-                  We are not only accomplished professional service providers,
-                  but also passionate engineers, able to speak same language with
-                  both Laboratory personnel and IT department: we act as the
-                  catalyst to make the implementation of the LIMS/LIS in your
-                  organization a success.
-                </p>
-                  <div className="contactBlock">
-                    Contact us at <a href="mailto:info@naralabs.com"> info@naralabs.com</a>
-                    <div className="">Location: Barcelona, Spain</div>
-                  </div>
-                </div>
-              </div>
+              {/* <div className="text-muted"> */}
+              {/*   <div> */}
+              {/*   <p> */}
+              {/*     <strong>Naralabs</strong> is a company specialized in engineering */}
+              {/*     and professional services around SENAITE. Our vision is to */}
+              {/*     consolidate Open Source Software as an essential component */}
+              {/*     within the strategies for improving efficiency, quality and */}
+              {/*     data management in laboratories. */}
+              {/*   </p> */}
+              {/*   <p> */}
+              {/*     We are not only accomplished professional service providers, */}
+              {/*     but also passionate engineers, able to speak same language with */}
+              {/*     both Laboratory personnel and IT department: we act as the */}
+              {/*     catalyst to make the implementation of the LIMS/LIS in your */}
+              {/*     organization a success. */}
+              {/*   </p> */}
+              {/*     <div className="contactBlock"> */}
+              {/*       Contact us at <a href="mailto:info@naralabs.com"> info@naralabs.com</a> */}
+              {/*       <div className="">Location: Barcelona, Spain</div> */}
+              {/*     </div> */}
+              {/*   </div> */}
+              {/* </div> */}
             </div>
 
+          </div>
+          <div className="gridBlock">
           </div>
         </div>
       </div>
@@ -345,12 +411,14 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          {/* <Description /> */}
           <Features />
+          <Features2 />
+          <Features3 />
+          <Features4 />
+          {/* <WhyOpenSource /> */}
           <Providers />
-          <WhyChooseUs />
-          <WhyOpenSource />
-          <Showcase />
+          {/* <WhyChooseUs /> */}
+          {/* <Showcase /> */}
         </div>
       </div>
     );
