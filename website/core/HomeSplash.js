@@ -85,7 +85,7 @@ class HomeSplash extends React.Component {
         {/* <Logo img_src={`${baseUrl}img/senaite_lims.png`} /> */}
         <div className="inner">
           <ProjectTitle
-            img_src={`${baseUrl}img/senaite_lims_white.png`}
+            img_src={`${baseUrl}img/senaite2_grey.png`}
             siteConfig={siteConfig} />
           <PromoSection>
             <HomeButtons/>
