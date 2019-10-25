@@ -104,7 +104,7 @@ input.form-input {
 div.container .section-intro {
     text-align: center;
     padding: 0 0 2em 0;
-    font-size: 110%;
+    font-size: 1.5rem;
     font-weight: 100;
     margin-top: 0.1rem;
 }
@@ -121,6 +121,8 @@ div.providers .logo img {
 }
 div.container h1.section-header {
     text-align: center;
+    font-weight: 100;
+    font-size: 3.5rem;
 }
 div.providers .contactBlock {
     padding-top: 1em;
