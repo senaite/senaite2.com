@@ -92,7 +92,7 @@ class Footer extends React.Component {
            rel="noreferrer noopener"
            className="fbOpenSource">
           <img
-            src={`${this.props.config.baseUrl}img/senaite_lims_white.png`}
+            src={`${this.props.config.baseUrl}img/senaite2_grey.png`}
             alt="SENAITE LIMS"/>
         </a>
         <section className="copyright">{this.props.config.copyright}</section>
