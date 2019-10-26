@@ -43,6 +43,7 @@ html, body {
 .text-blue { color: #293333!important; }
 .text-gold { color: #927f54; }
 .text-muted { color: #ababab; font-size: 89%; }
+.text-lightgrey { color: #d7dbdc; }
 .text-centered { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
