@@ -153,19 +153,19 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: 'SENAITE supports the technical requirements of compliant laboratories',
+              content: 'SENAITE is ready for use in an ISO/IEC 17025 compliant environment, if setup and run properly on appropriate infrastructure. SENAITE itself can not be certified. However we can help review and validate your compliance.',
               image: `${baseUrl}img/undraw_inspection.svg`,
               imageAlign: 'top',
               title: 'Compliance',
             },
             {
-              content: 'SENAITE generates snapshots of your data on any modification. All changes in the system can be easily inspected and traced back.',
+              content: 'SENAITE records and generates snapshots of your data on any modification, including the user name, IP and datetime when the Electronic Record was changed. All changes in the system can be easily inspected and traced back.',
               image: `${baseUrl}img/undraw_surveillance.svg`,
               imageAlign: 'top',
-              title: 'Traceability',
+              title: 'Audit and Traceability',
             },
             {
-              content: 'SENAITE provides a powerful dashboard to visualize the performance of the lab on a daily, weekly, monthly, quarterly, biannually and yearly basis.',
+              content: 'SENAITE provides a powerful dashboard to visualize the performance of the lab on a daily, weekly, monthly, quarterly, biannually and yearly basis. Business Intelligence tools can also be connected to SENAITE through its JSON API.',
               image: `${baseUrl}img/undraw_all_the_data.svg`,
               imageAlign: 'top',
               title: 'Data Insights',

@@ -192,3 +192,9 @@ div.homeSplashFade {
 #subscribe input.form-input {
     color: #555;
 }
+
+.imageAlignTop .blockImage {
+    margin-bottom: 20px;
+    max-width: 100px;
+    height: 80px;
+}
