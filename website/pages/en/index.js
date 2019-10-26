@@ -120,19 +120,19 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: 'Automate data imports of your instruments',
+              content: 'Amongst other functionalities, SENAITE comes with highly-customizable workflows to drive users through the analytical process, easy-to-use UI for data registration, automatic import of results, data validation and transitions constraints.',
               image: `${baseUrl}img/undraw_process.svg`,
               imageAlign: 'top',
               title: 'Process Automation',
             },
             {
-              content: 'Import results of your instruments and avoid human errors in the carrying over process.',
+              content: 'SENAITE can be easily integrated with instruments by using off-the-shell interfaces for data import and export. Custom interfacing is supported too. Import instrument results and avoid human errors in the carrying over process.',
               image: `${baseUrl}img/undraw_server.svg`,
               imageAlign: 'top',
               title: 'Equipment Integration',
             },
             {
-              content: 'Handle Samples in Batches and Analyses in Worksheets',
+              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
               image: `${baseUrl}img/undraw_timeline.svg`,
               imageAlign: 'top',
               title: 'Turnaround Time',
