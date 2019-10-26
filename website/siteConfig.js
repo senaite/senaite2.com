@@ -83,7 +83,7 @@ const home_buttons = [
 
 const siteConfig = {
   title: 'SENAITE', // Title for your website.
-  tagline: 'Enterprise Laboratory System',
+  tagline: 'Open-Source Enterprise Laboratory System',
   url: 'https://github.com/senaite/senaite.github.io',
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
