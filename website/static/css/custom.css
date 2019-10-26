@@ -36,6 +36,10 @@ html, body {
     color: #293333;
 }
 
+div.mainContainer {
+    padding-bottom: 0;
+}
+
 .fixedHeaderContainer header .headerTitleWithLogo {
     display: none;
 }
@@ -43,11 +47,19 @@ html, body {
 .text-blue { color: #293333!important; }
 .text-gold { color: #927f54; }
 .text-muted { color: #ababab; font-size: 89%; }
-.text-lightgrey { color: #d7dbdc; }
+.text-lightgrey { color: #f7f7f7; }
+.text-grey { color: #d7dbdc; }
+.text-darkgrey { color: #d7dbdc; }
+.text-black { color: #000; }
 .text-centered { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-bold { font-weight: bold; }
+
+.bg-white { background: #fff; }
+.bg-lightgrey { background: #f7f7f7; }
+.bg-grey { background: #d7dbdc; }
+.bg-screen { background: url(/img/bgx.png) repeat; }
 
 
 .pt-1 { padding-top: 1em; }
@@ -86,7 +98,7 @@ input.form-input {
 }
 
 .fixedHeaderContainer {
-    background-color: #201a13;
+    background-color: #293333;
 }
 
 .nav-footer {
@@ -130,12 +142,11 @@ div.providers .contactBlock {
 }
 
 div.homeSplashFade {
+    background: url(/img/bgx.png) repeat;
     /* background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)); */
-    background-color: #201a13;
-}
-
-.projectTitle > small {
-    color: #d7dbdc;
+    /* background-color: #201a13; */
+    /* background-color: #d7dbdc; */
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.8)); */
 }
 
 .homeContainer {
@@ -146,7 +157,7 @@ div.homeSplashFade {
 }
 
 .homeContainer .homeWrapper .inner {
-    margin-top: 10%;
+    margin-top: 2rem;
 }
 
 .projectTitle {

@@ -19,16 +19,24 @@ class HomeSplash extends React.Component {
 
     const Logo = props => (
       <div className="projectLogo">
-        <img src={props.img_src} alt="SENAITE LIMS" />
+        <img src={props.img_src} alt="SENAITE" />
       </div>
     );
 
     const ProjectTitle = props => (
-      <h2 className="projectTitle">
-        {/* {siteConfig.title} */}
-        <img style={{width: "400px"}} src={props.img_src} alt={siteConfig.title} />
-        <small>{siteConfig.tagline}</small>
-      </h2>
+      <div>
+        {/* <div style={{float: "left"}}> */}
+        <div>
+          <h2 className="projectTitle">
+            {/* {siteConfig.title} */}
+            <img style={{width: "400px"}} src={props.img_src} alt={siteConfig.title} />
+            <small className="text-gold">{siteConfig.tagline}</small>
+          </h2>
+        </div>
+        <div>
+          <img style={{width: "450px"}} src="/img/screenshot.png" />
+        </div>
+      </div>
     );
 
     const PromoSection = props => (
@@ -85,8 +93,9 @@ class HomeSplash extends React.Component {
         {/* <Logo img_src={`${baseUrl}img/senaite_lims.png`} /> */}
         <div className="inner">
           <ProjectTitle
-            img_src={`${baseUrl}img/senaite2_grey.png`}
+            img_src={`${baseUrl}img/senaite2.png`}
             siteConfig={siteConfig} />
+
           <PromoSection>
             <HomeButtons/>
           </PromoSection>

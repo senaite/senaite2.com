@@ -110,7 +110,7 @@ class Index extends React.Component {
     );
 
     const Features = () => (
-      <div className="container features paddingBottom paddingTop">
+      <div className="container bg-lightgrey paddingBottom paddingTop">
         <h1 className="section-header">Improve the performance</h1>
         <div className="wrapper">
           <div className="section-intro">
@@ -143,7 +143,7 @@ class Index extends React.Component {
     );
 
     const Features2 = () => (
-      <div className="container lightBackground paddingBottom paddingTop">
+      <div className="container bg-white paddingBottom paddingTop">
         <h1 className="section-header">Control</h1>
         <div className="wrapper">
           <div className="section-intro">
@@ -176,7 +176,7 @@ class Index extends React.Component {
     );
 
     const Features3 = () => (
-      <div className="container paddingBottom paddingTop">
+      <div className="container bg-lightgrey paddingBottom paddingTop">
         <h1 className="section-header">Technical</h1>
         <div className="wrapper">
           <div className="section-intro">
@@ -210,7 +210,7 @@ class Index extends React.Component {
 
 
     const Features4 = () => (
-      <div className="container lightBackground paddingBottom paddingTop">
+      <div className="container bg-white paddingBottom paddingTop">
         <h1 className="section-header">Driving the Implementation</h1>
         <div className="wrapper">
           <div className="section-intro">
@@ -242,7 +242,7 @@ class Index extends React.Component {
     );
 
     const Providers = () => (
-      <div className="container providers paddingBottom paddingTop">
+      <div className="container bg-screen providers paddingBottom paddingTop">
         <h1 className="section-header">Companies</h1>
         <div className="wrapper">
           {/* <div className="section-intro"> */}
@@ -415,8 +415,8 @@ class Index extends React.Component {
           <Features2 />
           <Features3 />
           <Features4 />
-          {/* <WhyOpenSource /> */}
           <Providers />
+          {/* <WhyOpenSource /> */}
           {/* <WhyChooseUs /> */}
           {/* <Showcase /> */}
         </div>
