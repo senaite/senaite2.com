@@ -153,7 +153,7 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: '',
+              content: 'SENAITE supports the technical requirements of compliant laboratories',
               image: `${baseUrl}img/undraw_inspection.svg`,
               imageAlign: 'top',
               title: 'Compliance',
@@ -186,7 +186,7 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS.',
+              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS',
               image: `${baseUrl}img/undraw_secure_server.svg`,
               imageAlign: 'top',
               title: 'Industrial Strength Security',
@@ -198,7 +198,7 @@ class Index extends React.Component {
               title: 'Reliable Architecture',
             },
             {
-              content: 'All users work with SENAITE through the web browser, so no further software needs to be installed on the workstations.',
+              content: 'All users work with SENAITE through the web browser, so no further software needs to be installed on the workstations',
               image: `${baseUrl}img/undraw_server.svg`,
               imageAlign: 'top',
               title: 'Centralized System',
@@ -220,20 +220,20 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: '',
-              image: `${baseUrl}img/undraw_prioritise.svg`,
+              content: 'An initial and detailed gap analyses uveils how much SENAITE covers the requirements of the lab and determines the amount of customizations needed',
+              image: `${baseUrl}img/undraw_detailed_analysis.svg`,
               imageAlign: 'top',
               title: 'Planning',
             },
             {
-              content: '',
+              content: 'SENAITE can be fully customized to the individual needs of any lab',
               image: `${baseUrl}img/undraw_control_panel.svg`,
               imageAlign: 'top',
-              title: 'Tailoring',
+              title: 'Customization',
             },
             {
-              content: '',
-              image: `${baseUrl}img/undraw_secure_data.svg`,
+              content: 'We provide Trainings for your Lab- and IT Personell and provide Software- and Operational Support Packages',
+              image: `${baseUrl}img/undraw_professor.svg`,
               imageAlign: 'top',
               title: 'Training and Support',
             },
@@ -244,7 +244,7 @@ class Index extends React.Component {
 
     const Providers = () => (
       <div className="container bg-screen providers paddingBottom paddingTop">
-        <h1 className="section-header">Companies</h1>
+        <h1 className="section-header">Providers</h1>
         <div className="wrapper">
           {/* <div className="section-intro"> */}
           {/*   The listed companies are SENAITE Professional Service Providers and */}
