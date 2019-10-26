@@ -111,31 +111,31 @@ class Index extends React.Component {
 
     const Features = () => (
       <div className="container bg-lightgrey paddingBottom paddingTop">
-        <h1 className="section-header">Improve the performance</h1>
+        <h1 className="section-header">Performance</h1>
         <div className="wrapper">
           <div className="section-intro">
-            Stakeholders
+            Eliminate manual or repetitive tasks to increase the efficiency
           </div>
         </div>
         <Block layout="threeColumn">
           {[
             {
-              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS.',
-              image: `${baseUrl}img/undraw_secure_data.svg`,
+              content: 'Automate data imports of your instruments',
+              image: `${baseUrl}img/undraw_process.svg`,
               imageAlign: 'top',
-              title: 'Processes Automation',
+              title: 'Process Automation',
             },
             {
-              content: 'Import results from your instruments to speed up your turn-around time and avoid human errors in the carrying over process.',
+              content: 'Import results of your instruments and avoid human errors in the carrying over process.',
               image: `${baseUrl}img/undraw_server.svg`,
               imageAlign: 'top',
-              title: 'Equipment integration',
+              title: 'Equipment Integration',
             },
             {
-              content: 'SENAITE provides a powerful dashboard to visualize the performance of the lab on a daily, weekly, monthly, quarterly, biannually and yearly basis.',
-              image: `${baseUrl}img/undraw_all_the_data.svg`,
+              content: 'Handle Samples in Batches and Analyses in Worksheets',
+              image: `${baseUrl}img/undraw_timeline.svg`,
               imageAlign: 'top',
-              title: 'Reduction of Turnaround Time',
+              title: 'Turnaround Time',
             },
           ]}
         </Block>
@@ -147,20 +147,20 @@ class Index extends React.Component {
         <h1 className="section-header">Control</h1>
         <div className="wrapper">
           <div className="section-intro">
-            Decision Maker
+            Inspect data flows and gain valuable insights
           </div>
         </div>
         <Block layout="threeColumn">
           {[
             {
-              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS.',
-              image: `${baseUrl}img/undraw_secure_data.svg`,
+              content: '',
+              image: `${baseUrl}img/undraw_inspection.svg`,
               imageAlign: 'top',
               title: 'Compliance',
             },
             {
               content: 'SENAITE generates snapshots of your data on any modification. All changes in the system can be easily inspected and traced back.',
-              image: `${baseUrl}img/undraw_inspection.svg`,
+              image: `${baseUrl}img/undraw_surveillance.svg`,
               imageAlign: 'top',
               title: 'Traceability',
             },
@@ -180,26 +180,26 @@ class Index extends React.Component {
         <h1 className="section-header">Technical</h1>
         <div className="wrapper">
           <div className="section-intro">
-            Technical
+            Trustable, robust, secure, independent
           </div>
         </div>
         <Block layout="threeColumn">
           {[
             {
               content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS.',
-              image: `${baseUrl}img/undraw_secure_data.svg`,
+              image: `${baseUrl}img/undraw_secure_server.svg`,
               imageAlign: 'top',
               title: 'Industrial Strength Security',
             },
             {
-              content: 'SENAITE runs on a reliable sofware stack',
-              image: `${baseUrl}img/undraw_secure_data.svg`,
+              content: 'SENAITE can be run on a Linux Server together with high availability web servers, load balancers and proxy servers',
+              image: `${baseUrl}img/undraw_server_status.svg`,
               imageAlign: 'top',
               title: 'Reliable Architecture',
             },
             {
-              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS.',
-              image: `${baseUrl}img/undraw_secure_data.svg`,
+              content: 'All users work with SENAITE through the web browser, so no further software needs to be installed on the workstations.',
+              image: `${baseUrl}img/undraw_server.svg`,
               imageAlign: 'top',
               title: 'Centralized System',
             },
@@ -214,19 +214,20 @@ class Index extends React.Component {
         <h1 className="section-header">Driving the Implementation</h1>
         <div className="wrapper">
           <div className="section-intro">
+            From the planning to the successful integration of SENAITE in your daily lab routine
           </div>
         </div>
         <Block layout="threeColumn">
           {[
             {
               content: '',
-              image: `${baseUrl}img/undraw_secure_data.svg`,
+              image: `${baseUrl}img/undraw_prioritise.svg`,
               imageAlign: 'top',
               title: 'Planning',
             },
             {
               content: '',
-              image: `${baseUrl}img/undraw_secure_data.svg`,
+              image: `${baseUrl}img/undraw_control_panel.svg`,
               imageAlign: 'top',
               title: 'Tailoring',
             },
