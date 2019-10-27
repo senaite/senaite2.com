@@ -220,19 +220,19 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: 'An initial and detailed GAP analysis unveils how much SENAITE covers the requirements of the lab and determines the amount of customizations needed. ',
+              content: 'We help you to elaborate a project plan and drive the implementation of SENAITE in your organization. After an <b>initial meeting</b> to know first-hand your requirements, we elaborate a detailed <b>GAP analysis</b> to unveil how much SENAITE covers the requirements of your lab and determines the amount of customizations needed. With your feedback, we therefore elaborate a <b>project plan with a defined scope and deliverables</b>.',
               image: `${baseUrl}img/undraw_detailed_analysis.svg`,
               imageAlign: 'top',
-              title: 'Planning',
+              title: 'Analysis and Planning',
             },
             {
-              content: 'SENAITE can be fully customized to the individual needs of any lab',
+              content: 'After the project plan is approved, we then proceed with the installation of two instances: <b>Q-System (pilot) + P-System (production)</b>. Having these two instances running at this early stage allows the laboratory to have a working system from the very beginning, making it easier for the lab-personnel to familiarize themselves with SENAITE and therefore, facilitating a regular feedback to make the implementation a success.',
               image: `${baseUrl}img/undraw_control_panel.svg`,
               imageAlign: 'top',
-              title: 'Customization',
+              title: 'Implementation',
             },
             {
-              content: 'We provide Trainings for your Lab- and IT Personell and provide Software- and Operational Support Packages',
+              content: '<b>We love capacity building</b>, because we strongly believe the engagement of your team is key for success. We train your team in both functional (Lab personnel) and technical areas (System administrators and Software developers), so they can take control of SENAITE by themselves. We also provide <b>Operational Support Packages</b> to monitor your system and give you advice for <b>preventive and corrective actions</b>.',
               image: `${baseUrl}img/undraw_professor.svg`,
               imageAlign: 'top',
               title: 'Training and Support',
@@ -386,22 +386,15 @@ class Index extends React.Component {
 
       return (
         <div className="container companies productShowcaseSection paddingBottom paddingTop">
-          <h1 className="section-header">Powering laboratories efficiency</h1>
+          <h1 className="section-header">Trusted by</h1>
           <div className="wrapper">
             <div className="section-intro">
-              Organizations across the globe that trust SENAITE as a <strong>robust
-              and reliable Open-Source LIMS Solution</strong> to manage their
-              daily laboratory routines.
+              Organizations across the globe.
             </div>
           </div>
           <div className="wrapper">
             <div className="logos">
               {showcase}
-            </div>
-            <div className="more-users">
-              <a className="button" href={pageUrl('users.html')}>
-                View all Organizations trusting in SENAITE
-              </a>
             </div>
           </div>
         </div>
@@ -419,7 +412,7 @@ class Index extends React.Component {
           <Providers />
           {/* <WhyOpenSource /> */}
           {/* <WhyChooseUs /> */}
-          {/* <Showcase /> */}
+          <Showcase />
         </div>
       </div>
     );
