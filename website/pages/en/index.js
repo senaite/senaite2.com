@@ -121,19 +121,19 @@ class Index extends React.Component {
           {[
             {
               content: 'Amongst other functionalities, SENAITE comes with highly-customizable workflows to drive users through the analytical process, easy-to-use UI for data registration, automatic import of results, data validation and transitions constraints.',
-              image: `${baseUrl}img/undraw_process.svg`,
+              image: `${baseUrl}img/undraw_investment.svg`,
               imageAlign: 'top',
               title: 'Process Automation',
             },
             {
               content: 'SENAITE can be easily integrated with instruments by using off-the-shell interfaces for data import and export. Custom interfacing is supported too. Import instrument results and avoid human errors in the carrying over process.',
-              image: `${baseUrl}img/undraw_server.svg`,
+              image: `${baseUrl}img/undraw_solution_mindset.svg`,
               imageAlign: 'top',
               title: 'Equipment Integration',
             },
             {
               content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-              image: `${baseUrl}img/undraw_timeline.svg`,
+              image: `${baseUrl}img/undraw_done_checking.svg`,
               imageAlign: 'top',
               title: 'Turnaround Time',
             },
@@ -154,13 +154,13 @@ class Index extends React.Component {
           {[
             {
               content: 'SENAITE is ready for use in an ISO/IEC 17025 compliant environment, if setup and run properly on appropriate infrastructure. SENAITE itself can not be certified. However we can help review and validate your compliance.',
-              image: `${baseUrl}img/undraw_inspection.svg`,
+              image: `${baseUrl}img/undraw_process.svg`,
               imageAlign: 'top',
               title: 'Compliance',
             },
             {
               content: 'SENAITE records and generates snapshots of your data on any modification, including the user name, IP and datetime when the Electronic Record was changed. All changes in the system can be easily inspected and traced back.',
-              image: `${baseUrl}img/undraw_surveillance.svg`,
+              image: `${baseUrl}img/undraw_done.svg`,
               imageAlign: 'top',
               title: 'Audit and Traceability',
             },
@@ -177,7 +177,7 @@ class Index extends React.Component {
 
     const Features3 = () => (
       <div className="container bg-lightgrey paddingBottom paddingTop">
-        <h1 className="section-header">Technical</h1>
+        <h1 className="section-header">Technology</h1>
         <div className="wrapper">
           <div className="section-intro">
             Trustable, robust, secure, independent
@@ -187,19 +187,19 @@ class Index extends React.Component {
           {[
             {
               content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS. Besides, SENAITE comes with several mechanisms to prevent members or business associates making accidental or intentional changes that improperly alter or destroy electronic records.',
-              image: `${baseUrl}img/undraw_secure_server.svg`,
+              image: `${baseUrl}img/undraw_security.svg`,
               imageAlign: 'top',
               title: 'Industrial Strength Security',
             },
             {
               content: 'SENAITE can be run on a Linux Server together with high availability web servers, load balancers and proxy servers',
-              image: `${baseUrl}img/undraw_server_status.svg`,
+              image: `${baseUrl}img/undraw_deliveries.svg`,
               imageAlign: 'top',
               title: 'Reliable Architecture',
             },
             {
               content: 'All users work with SENAITE through the web browser, so no further software needs to be installed on the workstations',
-              image: `${baseUrl}img/undraw_server.svg`,
+              image: `${baseUrl}img/undraw_goals.svg`,
               imageAlign: 'top',
               title: 'Centralized System',
             },
@@ -227,7 +227,7 @@ class Index extends React.Component {
             },
             {
               content: 'After the project plan is approved, we then proceed with the installation of two instances: <b>Q-System (pilot) + P-System (production)</b>. Having these two instances running at this early stage allows the laboratory to have a working system from the very beginning, making it easier for the lab-personnel to familiarize themselves with SENAITE and therefore, facilitating a regular feedback to make the implementation a success.',
-              image: `${baseUrl}img/undraw_control_panel.svg`,
+              image: `${baseUrl}img/undraw_to_the_moon.svg`,
               imageAlign: 'top',
               title: 'Implementation',
             },
