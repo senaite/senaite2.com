@@ -186,7 +186,7 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS',
+              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS. Besides, SENAITE comes with several mechanisms to prevent members or business associates making accidental or intentional changes that improperly alter or destroy electronic records.',
               image: `${baseUrl}img/undraw_secure_server.svg`,
               imageAlign: 'top',
               title: 'Industrial Strength Security',
@@ -220,7 +220,7 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: 'An initial and detailed gap analyses uveils how much SENAITE covers the requirements of the lab and determines the amount of customizations needed',
+              content: 'An initial and detailed GAP analysis unveils how much SENAITE covers the requirements of the lab and determines the amount of customizations needed. ',
               image: `${baseUrl}img/undraw_detailed_analysis.svg`,
               imageAlign: 'top',
               title: 'Planning',
