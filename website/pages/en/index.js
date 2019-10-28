@@ -108,19 +108,19 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the best security track record of any major CMS. Besides, SENAITE comes with several mechanisms to prevent members or business associates making accidental or intentional changes that improperly alter or destroy electronic records.',
+              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the <strong>best security track record of any major CMS</strong>. Besides, SENAITE comes with several mechanisms to prevent members or business associates making accidental or intentional changes that improperly alter or destroy electronic records.',
               image: `${baseUrl}img/undraw_security.svg`,
               imageAlign: 'top',
               title: 'Industrial Strength Security',
             },
             {
-              content: 'SENAITE can be run on a Linux Server together with high availability web servers, load balancers and proxy servers',
+              content: 'SENAITE can be run on a Linux Server together with high availability web servers, load balancers and proxy servers. It can be easily deployed in virtualized environments. Thanks to Plone CMS, SENAITE connects and plays well with your infrastructure and is <strong>adaptable to your business needs today and 10 years from now</strong>.',
               image: `${baseUrl}img/undraw_deliveries.svg`,
               imageAlign: 'top',
               title: 'Reliable Architecture',
             },
             {
-              content: 'All users work with SENAITE through the web browser, so no further software needs to be installed on the workstations',
+              content: 'Users work with SENAITE through the web browser, so this translates in an <strong>improvement of the information flow</strong> and <strong>lower hardware expenses</strong>. It gives IT staff better oversight and can make routine tasks easier, driving to a <strong>reduction of costs and increase of productivity</strong>. It also <strong>helps to meet industry regulations</strong>, cause they usually require varying degrees of IT and database centralization, for data-security reasons mostly.',
               image: `${baseUrl}img/undraw_goals.svg`,
               imageAlign: 'top',
               title: 'Centralized System',
@@ -142,19 +142,19 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: 'We help you to elaborate a project plan and drive the implementation of SENAITE in your organization. After an <b>initial meeting</b> to know first-hand your requirements, we elaborate a detailed <b>GAP analysis</b> to unveil how much SENAITE covers the requirements of your lab and determines the amount of customizations needed. With your feedback, we therefore elaborate a <b>project plan with a defined scope and deliverables</b>.',
+              content: 'We help you to elaborate a project plan and drive the implementation of SENAITE in your organization. After an <strong>initial meeting</strong> to know first-hand your requirements, we elaborate a detailed <strong>GAP analysis</strong> to unveil how much SENAITE covers the requirements of your lab and determines the amount of customizations needed. With your feedback, we therefore elaborate a <strong>project plan with a defined scope and deliverables</strong>.',
               image: `${baseUrl}img/undraw_detailed_analysis.svg`,
               imageAlign: 'top',
               title: 'Analysis and Planning',
             },
             {
-              content: 'After the project plan is approved, we then proceed with the installation of two instances: <b>Q-System (pilot) + P-System (production)</b>. Having these two instances running at this early stage allows the laboratory to have a working system from the very beginning, making it easier for the lab-personnel to familiarize themselves with SENAITE and therefore, facilitating a regular feedback to make the implementation a success.',
+              content: 'After the project plan is approved, we then proceed with the installation of two instances: <strong>Q-System (pilot) + P-System (production)</strong>. Having these two instances running at this early stage allows the laboratory to have a working system from the very beginning, making it easier for the lab-personnel to familiarize themselves with SENAITE and therefore, facilitating a regular feedback to make the implementation a success.',
               image: `${baseUrl}img/undraw_to_the_moon.svg`,
               imageAlign: 'top',
               title: 'Implementation',
             },
             {
-              content: '<b>We love capacity building</b>, because we strongly believe the engagement of your team is key for success. We train your team in both functional (Lab personnel) and technical areas (System administrators and Software developers), so they can take control of SENAITE by themselves. We also provide <b>Operational Support Packages</b> to monitor your system and give you advice for <b>preventive and corrective actions</b>.',
+              content: '<strong>We love capacity building</strong>, because we strongly believe the engagement of your team is key for success. We train your team in both functional (Lab personnel) and technical areas (System administrators and Software developers), so they can take control of SENAITE by themselves. We also provide <strong>Operational Support Packages</strong> to monitor your system and give you advice for <strong>preventive and corrective actions</strong>.',
               image: `${baseUrl}img/undraw_professor.svg`,
               imageAlign: 'top',
               title: 'Training and Support',
