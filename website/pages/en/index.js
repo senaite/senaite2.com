@@ -31,41 +31,6 @@ class Index extends React.Component {
       </Container>
     );
 
-    const UnchainYourLab = () => (
-      <div className="container paddingBottom">
-        <h1 className="section-header">Unchain your Lab with SENAITE</h1>
-        <div className="wrapper">
-          <div className="section-intro paddingBottom">
-            Choosing Open Source is a matter of <strong>liberty</strong> and not just the ability to get the software for free.
-            We believe that <strong>freedom is one of the most important goods</strong> in every aspect of life.
-            Therefore, you should choose SENAITE primarily because of its abilities and because you love your freedom as much as we do.
-          </div>
-        </div>
-        <div className="wrapper pt-1">
-          <div className="gridBlock">
-            <div className="blockElement twoByGridBlock">
-              <ul>
-                <li>no license binding</li>
-                <li>no licensing costs (GPLv2 License)</li>
-                <li>no usage restrictions</li>
-                <li>no restriction of the number of users</li>
-                <li>no dependence on a manufacturer</li>
-              </ul>
-            </div>
-            <div className="blockElement twoByGridBlock">
-              <ul>
-                <li>insight into the source code</li>
-                <li>code hosted publicly on GitHub</li>
-                <li>testability for user-unwanted mechanisms (backdoors)</li>
-                <li>adherence to open standards</li>
-                <li>testable software quality</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-
     const Features = () => (
       <div className="container bg-lightgrey paddingBottom paddingTop">
         <h1 className="section-header">Performance</h1>
