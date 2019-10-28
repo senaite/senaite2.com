@@ -134,7 +134,7 @@ function WhySenaite(props) {
 
   const WhyChooseUs = () => (
       <div className="container lightBackground paddingBottom paddingTop">
-        <h1 className="section-header">Why Professional Service Providers</h1>
+        <h1 className="section-header">Why Professional Providers</h1>
         <div className="wrapper">
           <div className="section-intro">
             Professional Service Providers will help you to drive the adoption
