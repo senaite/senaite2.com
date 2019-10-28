@@ -125,7 +125,7 @@ function WhySenaite(props) {
         <h1 className="section-header">Why Professional Providers</h1>
         <div className="wrapper">
           <div className="section-intro">
-            Experience, expertise, know-how and passionate engineers
+            Experience, expertise, know-how and passionate
           </div>
         </div>
         <Block layout="twoColumn">
@@ -137,7 +137,7 @@ function WhySenaite(props) {
               title: 'Maintainers and Developers',
             },
             {
-              content: 'Professional service providers are also passionate engineers, <strong>able to speak same language with both Laboratory personnel and IT department</strong>. We analyse your organization requirements in-depth and suggest improvements both in functional and technical areas. Thanks to several <strong>years of experience on driving SENAITE implementations worldwide with success</strong>, providers have dealt with similar challenges as those that might arise while implementing a LIMS/LIS.',
+              content: 'Professional service providers are also passionate engineers, <strong>able to speak same language with both Laboratory personnel and IT department</strong>. We analyse your organization requirements in-depth and suggest improvements for both functional and technical areas. Thanks to several <strong>years of experience on driving SENAITE implementations worldwide with success</strong>, providers have dealt with similar challenges as those that might arise while implementing a LIMS/LIS.',
               image: `${baseUrl}img/undraw_usability_testing.svg`,
               imageAlign: 'top',
               title: 'Skilled Engineers',
