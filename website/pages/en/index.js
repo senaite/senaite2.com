@@ -31,55 +31,12 @@ class Index extends React.Component {
       </Container>
     );
 
-    const WhyOpenSource = () => (
-      <div className="container paddingTop paddingBottom">
-        <h1 className="section-header">Why to choose Open-Source</h1>
-        <div className="wrapper">
-          <div className="section-intro paddingBottom">
-            Open source is in your best interest, whether you're an individual, a corporation, a small business, a non-profit, or a government agency.
-            <div className="text-muted">
-              <hr/>
-              Source: <a href="https://ben.balter.com/2015/11/23/why-open-source/">Why Open Source</a> by <a href="https://opensource.com/users/benbalter">Ben Balter</a>, Nov. 23, 2015
-            </div>
-          </div>
-        </div>
-        <Block layout="twoColumn">
-          {[
-            {
-              content: "Using open source software yields a lower total cost of ownership when compared to closed source and proprietary alternatives. Adopting open source software generally has a lower up-front cost (because the software often comes at no cost or relatively low cost), and shifts the cost center from licensing (an operating expense) to customization and implementation (a capital expense). Additional costs like training, maintenance, and support are sunk costs. You're going to be paying for both regardless of if the software is open or closed source, the cost often being baked into the license in the case of commercial, off-the-shelf software (COTS). What makes open source unique is that you're not paying for the right to use the underlying intellectual property.",
-              image: `${baseUrl}img/undraw_predictive_analytics.svg`,
-              imageAlign: 'top',
-              title: 'Lower total cost of ownership',
-            },
-            /* { */
-            /*   content: "We like to say in open source that all the easy problems have already been solved. Blogging, content management, and operating systems are all problems with established (and mainstream) open source solutions, to name a few. While your developers could spend their time reinventing wheels that the open source community have already perfected, it's far preferable to use the worlds best wheel, especially when that wheel comes at no cost to you. This frees developers up to work on yet-unsolved challenges, the types of challenges that are unique to and add value to your organization's mission. Why not stand on the shoulders of technology giants?", */
-            /*   image: `${baseUrl}img/undraw_High_five.svg`, */
-            /*   imageAlign: 'top', */
-            /*   title: "Shift developers from low-value work to high-value work", */
-            /* }, */
-            /* { */
-            /*   content: "If you consume open source software, it's in your best interest to contribute back. Contributions can be in the form of reporting bugs, or even submitting proposed fixes. Since software is written by humans, it's highly unlikely to be perfect, and even if so, likely doesn't satisfy every use case. Rather than forking the project and implementing changes into your own version (closed source), submitting bug reports and improvements upstream (open source) allows you to more easily continue to benefit from the subsequent fixes and improvements submitted by others.", */
-            /*   image: `${baseUrl}img/undraw_invest.svg`, */
-            /*   imageAlign: 'top', */
-            /*   title: "Upstream improvements", */
-            /* }, */
-            {
-              content: "You'd be hard pressed to find a startup today worth it's venture capital funding not based, at least in part (if not largely) on open source. Open source isn't a fad, or a bunch of hippies out in California passing around tie-dye laptops like they would illicit substances. Open source is how modern organizations, and increasingly more traditional organizations build software. It's becoming exceedingly challenging to make the argument that five-or-ten years from now the technology landscape is going to be less collaborative and more closed",
-              image: `${baseUrl}img/undraw_open_source.svg`,
-              imageAlign: 'top',
-              title: "Open source is the future",
-            },
-          ]}
-        </Block>
-      </div>
-    );
-
     const UnchainYourLab = () => (
       <div className="container paddingBottom">
         <h1 className="section-header">Unchain your Lab with SENAITE</h1>
         <div className="wrapper">
           <div className="section-intro paddingBottom">
-            Choosing Open-Source is a matter of <strong>liberty</strong> and not just the ability to get the software for free.
+            Choosing Open Source is a matter of <strong>liberty</strong> and not just the ability to get the software for free.
             We believe that <strong>freedom is one of the most important goods</strong> in every aspect of life.
             Therefore, you should choose SENAITE primarily because of its abilities and because you love your freedom as much as we do.
           </div>
@@ -326,49 +283,6 @@ class Index extends React.Component {
       </div>
     );
 
-    const WhyChooseUs = () => (
-      <div className="container lightBackground paddingBottom paddingTop">
-        <h1 className="section-header">Advantages of choosing a Professional Service Provider</h1>
-        <div className="wrapper">
-          <div className="section-intro">
-            Professional Service Providers will help you to drive the adoption
-            and implementation of SENAITE in your organization. In addition, by
-            contracting a Professional Service Provider committed to SENAITE
-            Open-Source project, you always invest in the project as well, making
-            SENAITE a better product for all.
-          </div>
-        </div>
-        <Block layout="twoColumn">
-          {[
-            {
-              content: 'As Core Developers we have a deep understanding of the SENAITE Codebase and know quickly where and how to implement new features.',
-              image: `${baseUrl}img/undraw_solution_mindset.svg`,
-              imageAlign: 'top',
-              title: 'Deep Knowledge',
-            },
-            {
-              content: 'We write clean, concise and human understandable Code based on the [Zen of Python](https://www.python.org/dev/peps/pep-0020/#id3) principles, to keep the code understandable and further maintenance costs low.',
-              image: `${baseUrl}img/undraw_to_the_moon.svg`,
-              imageAlign: 'top',
-              title: 'High Quality Standards',
-            },
-            {
-              content: 'We code your customizations in separate Add-ons to keep your system upgradable and mitigate the adaption to newer versions of SENAITE.',
-              image: `${baseUrl}img/undraw_version_control.svg`,
-              imageAlign: 'top',
-              title: 'Sustainable Solutions',
-            },
-            {
-              content: 'We always try to bring the best features from our Client projects back into the Core for the benefit of all users.',
-              image: `${baseUrl}img/undraw_investment.svg`,
-              imageAlign: 'top',
-              title: 'Back to Core',
-            },
-          ]}
-        </Block>
-      </div>
-    );
-
     const Showcase = () => {
       if ((siteConfig.users || []).length === 0) {
         return null;
@@ -410,8 +324,6 @@ class Index extends React.Component {
           <Features3 />
           <Features4 />
           <Providers />
-          {/* <WhyOpenSource /> */}
-          {/* <WhyChooseUs /> */}
           <Showcase />
         </div>
       </div>
