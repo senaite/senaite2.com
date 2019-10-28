@@ -155,14 +155,14 @@ function WhySenaite(props) {
               title: 'Project plan',
             },
             {
-              content: 'We code your customizations in separate Add-ons to keep your system upgradable and mitigate the adaption to newer versions of SENAITE.',
-              image: `${baseUrl}img/undraw_version_control.svg`,
+              content: 'We train your team in both functional and technical areas. <strong>Functional training sessions</strong> are useful for the laboratory personnel to know about the capabilities of SENAITE in detail and get the most of it. Are also a proved invaluable tool for the <strong>exploration of organization-specific scenarios</strong> that went unnoticed. SENAITE is Open Source, and as such, your team have access, study and modify the source code without any restriction. Therefore, <strong>Technical training sessions</strong> are a must-have for organizations willing to fully or partially <strong>internalise the costs of maintenance and customization</strong> of their own SENAITE system.',
+              image: `${baseUrl}img/undraw_high_five.svg`,
               imageAlign: 'top',
               title: 'Capacity building',
             },
             {
-              content: 'We code your customizations in separate Add-ons to keep your system upgradable and mitigate the adaption to newer versions of SENAITE.',
-              image: `${baseUrl}img/undraw_version_control.svg`,
+              content: 'Professional service providers also give you the opportunity to hire <strong>Operational Support Packages</strong>. With these packages, we can monitor your system, notify about deviations rapidly, apply <strong>security updates</strong> promptly and give you <strong>advice for preventive and corrective actions</strong>. System monitoring is also useful to guarantee that your <strong>SENAITE system evolves consistently with unforeseen and/or planned laboratory requirements over time</strong>, being these requirements related with either functional or technical areas.',
+              image: `${baseUrl}img/undraw_instant_support.svg`,
               imageAlign: 'top',
               title: 'Long Term Support',
             },
@@ -173,12 +173,12 @@ function WhySenaite(props) {
 
   return (
     <div className="container">
-      <h1 className="section-header">
-        Why Senaite?
-      </h1>
+      { /* <h1 className="section-header"> */ }
+      { /*   Why Senaite? */ }
+      { /* </h1> */ }
       { /* <UnchainYourLab/> */ }
-      <Description/>
-      <Description2/>
+      { /* <Description/> */ }
+      { /* <Description2/> */ }
       <WhyOpenSource/>
       <WhyChooseUs/>
     </div>
