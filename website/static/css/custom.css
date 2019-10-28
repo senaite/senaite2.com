@@ -205,3 +205,7 @@ div.homeSplashFade {
     color: #fff;
     background-color: transparent;
 }
+
+.productShowcaseSection.paddingTop {
+    padding-top: 80px;
+}
