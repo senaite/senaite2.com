@@ -109,18 +109,6 @@ function WhySenaite(props) {
               imageAlign: 'top',
               title: 'Lower Total Cost of Ownership (TCO)',
             },
-            /* { */
-            /*   content: "We like to say in open source that all the easy problems have already been solved. Blogging, content management, and operating systems are all problems with established (and mainstream) open source solutions, to name a few. While your developers could spend their time reinventing wheels that the open source community have already perfected, it's far preferable to use the worlds best wheel, especially when that wheel comes at no cost to you. This frees developers up to work on yet-unsolved challenges, the types of challenges that are unique to and add value to your organization's mission. Why not stand on the shoulders of technology giants?", */
-            /*   image: `${baseUrl}img/undraw_High_five.svg`, */
-            /*   imageAlign: 'top', */
-            /*   title: "Shift developers from low-value work to high-value work", */
-            /* }, */
-            /* { */
-            /*   content: "If you consume open source software, it's in your best interest to contribute back. Contributions can be in the form of reporting bugs, or even submitting proposed fixes. Since software is written by humans, it's highly unlikely to be perfect, and even if so, likely doesn't satisfy every use case. Rather than forking the project and implementing changes into your own version (closed source), submitting bug reports and improvements upstream (open source) allows you to more easily continue to benefit from the subsequent fixes and improvements submitted by others.", */
-            /*   image: `${baseUrl}img/undraw_invest.svg`, */
-            /*   imageAlign: 'top', */
-            /*   title: "Upstream improvements", */
-            /* }, */
             {
               content: "FLOSS has significant market share in many markets, is <strong>often the most reliable software, and in many cases has the best performance</strong>. FLOSS scales, both in problem size and project size. FLOSS software often has <strong>far better security</strong>, perhaps due to the possibility of worldwide review. Total cost of ownership for FLOSS is often far less than proprietary software, especially as the number of platforms increases.<br/><br/><strong>These statements are not merely opinions; these effects can be shown quantitatively, using a wide variety of measures</strong>. This doesn’t even consider other issues that are hard to measure, such as freedom from control by a single source, freedom from licensing management (with its accompanying risk of audit and litigation), Organizations can transition to FLOSS in part or in stages, which for many is a far more practical transition approach.<hr>Source: <a href='https://dwheeler.com/oss_fs_why.html'>Why Open Source Software</a> by <a href='https://dwheeler.com/'>David A. Wheeler</a>, rev. Jul. 18, 2015",
               image: `${baseUrl}img/undraw_heatmap.svg`,
@@ -137,38 +125,46 @@ function WhySenaite(props) {
         <h1 className="section-header">Why Professional Providers</h1>
         <div className="wrapper">
           <div className="section-intro">
-            Professional Service Providers will help you to drive the adoption
-            and implementation of SENAITE in your organization. In addition, by
-            contracting a Professional Service Provider committed to SENAITE
-            Open Source project, you always invest in the project as well, making
-            SENAITE a better product for all.
+            Experience, expertise, know-how and passionate engineers
           </div>
         </div>
         <Block layout="twoColumn">
           {[
             {
-              content: 'As Core Developers we have a deep understanding of the SENAITE Codebase and know quickly where and how to implement new features.',
-              image: `${baseUrl}img/undraw_solution_mindset.svg`,
+              content: 'Professional Service Providers, as maintainers and developers, have a <strong>deep understanding of the SENAITE Codebase</strong> and know quickly where and how to implement new features or how to tailor the system to best fit your organization needs. In addition, by contracting a Professional Service Provider, <strong>you always invest in SENAITE codebase</strong> as well, making it a better product while receiving back the contributions made for other laboratories like yours.',
+              image: `${baseUrl}img/undraw_version_control.svg`,
               imageAlign: 'top',
-              title: 'Deep Knowledge',
+              title: 'Maintainers and Developers',
             },
             {
-              content: 'We write clean, concise and human understandable Code based on the [Zen of Python](https://www.python.org/dev/peps/pep-0020/#id3) principles, to keep the code understandable and further maintenance costs low.',
-              image: `${baseUrl}img/undraw_to_the_moon.svg`,
+              content: 'Professional service providers are also passionate engineers, <strong>able to speak same language with both Laboratory personnel and IT department</strong>. We analyse your organization requirements in-depth and suggest improvements both in functional and technical areas. Thanks to several <strong>years of experience on driving SENAITE implementations worldwide with success</strong>, providers have dealt with similar challenges as those that might arise while implementing a LIMS/LIS.',
+              image: `${baseUrl}img/undraw_usability_testing.svg`,
+              imageAlign: 'top',
+              title: 'Skilled Engineers',
+            },
+            {
+              content: 'We write clean, concise and human understandable <strong>Code based on the [Zen of Python](https://www.python.org/dev/peps/pep-0020/#id3) principles</strong>, to keep the code understandable and further maintenance costs low. We use <strong>Peer Review strategy</strong>, so the work done by one of our engineers is always reviewed by another engineer before its delivery. To guarantee backwards compatibility, we follow <strong>Continuous Integration (CI)</strong> practice by adding automated tests. Last, but not least, we also follow <strong>Continuous Delivery (CD)</strong> practice, to provide both <strong>timely deliverables and a working environment from the start</strong>.',
+              image: `${baseUrl}img/undraw_confirmation.svg`,
               imageAlign: 'top',
               title: 'High Quality Standards',
+            },
+            {
+              content: 'After an <strong>initial meeting</strong> to know first-hand your requirements, Professional Service Providers do an in-depth <strong>GAP Analysis</strong> to unveil how much SENAITE covers the requirements of your laboratory and determines the recommended actions to be taken into consideration. As soon as the actions suggested are accepted, we elaborate a <strong>Project Plan</strong>. The project plan is based on <strong>milestones and deliverables</strong>. An <strong>on-site visit</strong> is highly recommended to build trust, engage your team, and further fine-grained assessment. <strong>Follow-up meetings and weekly reports</strong> are mechanisms to control the project success.',
+              image: `${baseUrl}img/undraw_organizing_projects.svg`,
+              imageAlign: 'top',
+              title: 'Project plan',
             },
             {
               content: 'We code your customizations in separate Add-ons to keep your system upgradable and mitigate the adaption to newer versions of SENAITE.',
               image: `${baseUrl}img/undraw_version_control.svg`,
               imageAlign: 'top',
-              title: 'Sustainable Solutions',
+              title: 'Capacity building',
             },
             {
-              content: 'We always try to bring the best features from our Client projects back into the Core for the benefit of all users.',
-              image: `${baseUrl}img/undraw_investment.svg`,
+              content: 'We code your customizations in separate Add-ons to keep your system upgradable and mitigate the adaption to newer versions of SENAITE.',
+              image: `${baseUrl}img/undraw_version_control.svg`,
               imageAlign: 'top',
-              title: 'Back to Core',
+              title: 'Long Term Support',
             },
           ]}
         </Block>
