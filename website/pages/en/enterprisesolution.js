@@ -11,6 +11,7 @@ const GridBlock = CompLibrary.GridBlock;
 
 const VerticalTimeLine = require(`${process.cwd()}/core/VerticalTimeLine.js`);
 
+
 function EnterpriseSolution(props) {
   const {config: siteConfig, language = ''} = props;
   const {baseUrl, docsUrl} = siteConfig;
@@ -30,70 +31,6 @@ function EnterpriseSolution(props) {
       />
     </Container>
   );
-
-  const Features = () => (
-      <div className="container bg-lightgrey paddingBottom paddingTop">
-        <h1 className="section-header">SENAITE Features</h1>
-        <div className="wrapper">
-          <div className="section-intro">
-            Discover some of the functionalities SENAITE comes with
-          </div>
-        </div>
-        <Block layout="threeColumn">
-          {[
-            {
-              content: 'Amongst other functionalities, SENAITE comes with highly-customizable workflows to drive users through the analytical process, easy-to-use UI for data registration, automatic import of results, data validation and transitions constraints.',
-              title: 'Samples management',
-            },
-            {
-              content: 'SENAITE can be easily integrated with instruments by using off-the-shell interfaces for data import and export. Custom interfacing is supported too. Import instrument results and avoid human errors in the carrying over process.',
-              title: 'Worksheets',
-            },
-            {
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-              title: 'Batches',
-            },
-            {
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-              title: 'Partitions, Aliquots',
-            },
-            {
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-              title: 'Profiles and Templates',
-            },
-            {
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-              title: 'Instruments management',
-            },
-            {
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-              title: 'Audit Log',
-            },
-            {
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-              title: 'Analysis and Calculations',
-            },
-            {
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-              title: 'Security policies',
-            },
-            {
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-              title: 'Barcode printing',
-            },
-            {
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-              title: 'Results reports and COA',
-            },
-            {
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-              title: 'Integration with instruments',
-            },
-          ]}
-        </Block>
-      </div>
-    );
-
 
   const Description = () => (
     <Block>
@@ -191,7 +128,7 @@ function EnterpriseSolution(props) {
         <h1 className="section-header">Why Professional Providers</h1>
         <div className="wrapper">
           <div className="section-intro">
-            Experience, expertise, know-how and passionate
+            Experience, expertise, know-how and passion
           </div>
         </div>
         <Block layout="twoColumn">
@@ -239,13 +176,13 @@ function EnterpriseSolution(props) {
 
 
   const TimeLineOverview = () => (
-    <div className="container paddingBottom paddingTop">
+    <div className="container bg-lightgrey paddingBottom paddingTop">
       <h1 className="section-header">
-        Implementation
+        How we work
       </h1>
       <div className="wrapper">
         <div className="section-intro">
-          7 Steps to SENAITE implementation success
+          8 Steps to SENAITE implementation success
         </div>
       </div>
       <div className="container">
@@ -285,6 +222,11 @@ function EnterpriseSolution(props) {
               color: '#927f54',
             },
             {
+              title: 'Preventive & Corrective Support',
+              content: 'Keep your SENAITE instance <strong>up-to-date and compatible</strong> with latest versions. Include updates, upgrades and Q&A',
+              color: '#927f54',
+            },
+            {
               title: 'Operational Support',
               content: 'System monitoring, security updates, advice for preventive and corrective actions. A must-have to guarantee that your <strong>SENAITE system evolves consistently with unforeseen and/or planned laboratory requirements over time</strong>.',
               color: '#927f54',
@@ -296,15 +238,88 @@ function EnterpriseSolution(props) {
     </div>
   );
 
+const Features4 = () => (
+      <div className="container bg-white paddingBottom paddingTop">
+        <h1 className="section-header">Driving the Implementation</h1>
+        <div className="wrapper">
+          <div className="section-intro">
+            From the planning to the successful integration of SENAITE in your daily lab routine
+          </div>
+        </div>
+        <Block layout="threeColumn">
+          {[
+            {
+              content: 'We help you to elaborate a project plan and drive the implementation of SENAITE in your organization. After an <strong>initial meeting</strong> to know first-hand your requirements, we elaborate a detailed <strong>GAP analysis</strong> to unveil how much SENAITE covers the requirements of your lab and determines the amount of customizations needed. With your feedback, we therefore elaborate a <strong>project plan with a defined scope and deliverables</strong>.',
+              image: `${baseUrl}img/undraw_detailed_analysis.svg`,
+              imageAlign: 'top',
+              title: 'Analysis and Planning',
+            },
+            {
+              content: 'After the project plan is approved, we then proceed with the installation of two instances: <strong>Q-System (pilot) + P-System (production)</strong>. Having these two instances running at this early stage allows the laboratory to have a working system from the very beginning, making it easier for the lab-personnel to familiarize themselves with SENAITE and therefore, facilitating a regular feedback to make the implementation a success.',
+              image: `${baseUrl}img/undraw_to_the_moon.svg`,
+              imageAlign: 'top',
+              title: 'Implementation',
+            },
+            {
+              content: '<strong>We love capacity building</strong>, because we strongly believe the engagement of your team is key for success. We train your team in both functional (Lab personnel) and technical areas (System administrators and Software developers), so they can take control of SENAITE by themselves. We also provide <strong>Operational Support Packages</strong> to monitor your system and give you advice for <strong>preventive and corrective actions</strong>.',
+              image: `${baseUrl}img/undraw_professor.svg`,
+              imageAlign: 'top',
+              title: 'Training and Support',
+            },
+          ]}
+        </Block>
+      </div>
+    );
+
+    const Providers = () => (
+      <div className="container bg-screen providers paddingBottom paddingTop">
+        <h1 className="section-header">Providers</h1>
+        <div className="wrapper">
+          <div className="section-intro">
+            Solutions made by people. We are the companies behind SENAITE.
+          </div>
+        </div>
+
+        <div className="wrapper">
+          <div className="gridBlock">
+
+            <div className="provider ridingbytes blockElement alignCenter twoByGridBlock">
+              <div className="logo">
+                <div className="slogan"></div>
+                <a href="https://www.ridingbytes.com" className="logo-link">
+                  <img src={baseUrl + "img/ridingbytes.png"}/>
+                </a>
+                <div className="slogan">Professional Open Source Solutions</div>
+              </div>
+            </div>
+
+            <div className="provider naralabs blockElement alignCenter twoByGridBlock">
+              <div className="logo">
+                <div className="top-slogan">&nbsp;</div>
+                <a href="https://naralabs.com" className="logo-link">
+                  <img src={baseUrl + "img/naralabs.png"}/>
+                </a>
+                <div className="slogan"></div>
+              </div>
+            </div>
+
+          </div>
+          <div className="gridBlock">
+          </div>
+        </div>
+      </div>
+    );
+
+
   return (
     <div className="container">
       { /* <h1 className="section-header"> */ }
       { /*   Why Senaite? */ }
       { /* </h1> */ }
       { /* <UnchainYourLab/> */ }
-      <Features/>
-      <WhyOpenSource/>
+      <Providers/>
       <WhyChooseUs/>
+      <Features4/>
       <TimeLineOverview/>
     </div>
   );

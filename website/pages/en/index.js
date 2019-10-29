@@ -31,8 +31,8 @@ class Index extends React.Component {
       </Container>
     );
 
-    const Features = () => (
-      <div className="container bg-lightgrey paddingBottom paddingTop">
+    const Performance = () => (
+      <div className="container paddingBottom paddingTop">
         <h1 className="section-header">Performance</h1>
         <div className="wrapper">
           <div className="section-intro">
@@ -64,8 +64,8 @@ class Index extends React.Component {
       </div>
     );
 
-    const Features2 = () => (
-      <div className="container bg-white paddingBottom paddingTop">
+    const Control = () => (
+      <div className="container bg-lightgrey paddingBottom paddingTop">
         <h1 className="section-header">Control</h1>
         <div className="wrapper">
           <div className="section-intro">
@@ -97,8 +97,8 @@ class Index extends React.Component {
       </div>
     );
 
-    const Features3 = () => (
-      <div className="container bg-lightgrey paddingBottom paddingTop">
+    const Technology = () => (
+      <div className="container paddingBottom paddingTop">
         <h1 className="section-header">Technology</h1>
         <div className="wrapper">
           <div className="section-intro">
@@ -130,125 +130,34 @@ class Index extends React.Component {
       </div>
     );
 
-
-    const Features4 = () => (
-      <div className="container bg-white paddingBottom paddingTop">
-        <h1 className="section-header">Driving the Implementation</h1>
+    const WhyOpenSource = () => (
+      <div className="container bg-lightgrey paddingTop paddingBottom">
+        <h1 className="section-header">Open Source</h1>
         <div className="wrapper">
-          <div className="section-intro">
-            From the planning to the successful integration of SENAITE in your daily lab routine
+          <div className="section-intro paddingBottom">
+            The rights granted are far closer to an owner's rights than the rights granted by proprietary software
           </div>
         </div>
-        <Block layout="threeColumn">
+        <Block layout="twoColumn">
           {[
             {
-              content: 'We help you to elaborate a project plan and drive the implementation of SENAITE in your organization. After an <strong>initial meeting</strong> to know first-hand your requirements, we elaborate a detailed <strong>GAP analysis</strong> to unveil how much SENAITE covers the requirements of your lab and determines the amount of customizations needed. With your feedback, we therefore elaborate a <strong>project plan with a defined scope and deliverables</strong>.',
-              image: `${baseUrl}img/undraw_detailed_analysis.svg`,
+              content: "Using open source software yields a lower total cost of ownership when compared to closed source and proprietary alternatives. Adopting open source software generally has a lower up-front cost, and <strong>shifts the cost center from licensing (an operating expense) to customization and implementation (a capital expense)</strong>.<br/><br/>Additional costs like training, maintenance, and support are sunk costs. You're going to be paying for both regardless of if the software is open or closed source, the cost often being baked into the license in the case of commercial, off-the-shelf software (COTS).<br/><br/>What makes open source unique is that <strong>you're not paying for the right to use the underlying intellectual property</strong>.<hr>Source: <a href='https://ben.balter.com/2015/11/23/why-open-source/'>Why Open Source</a> by <a href='https://opensource.com/users/benbalter'>Ben Balter</a>, Nov. 23, 2015",
+              image: `${baseUrl}img/undraw_invest.svg`,
               imageAlign: 'top',
-              title: 'Analysis and Planning',
+              title: 'Lower Total Cost of Ownership (TCO)',
             },
             {
-              content: 'After the project plan is approved, we then proceed with the installation of two instances: <strong>Q-System (pilot) + P-System (production)</strong>. Having these two instances running at this early stage allows the laboratory to have a working system from the very beginning, making it easier for the lab-personnel to familiarize themselves with SENAITE and therefore, facilitating a regular feedback to make the implementation a success.',
-              image: `${baseUrl}img/undraw_to_the_moon.svg`,
+              content: "FLOSS has significant market share in many markets, is <strong>often the most reliable software, and in many cases has the best performance</strong>. FLOSS scales, both in problem size and project size. FLOSS software often has <strong>far better security</strong>, perhaps due to the possibility of worldwide review. Total cost of ownership for FLOSS is often far less than proprietary software, especially as the number of platforms increases.<br/><br/><strong>These statements are not merely opinions; these effects can be shown quantitatively, using a wide variety of measures</strong>. This doesn’t even consider other issues that are hard to measure, such as freedom from control by a single source, freedom from licensing management (with its accompanying risk of audit and litigation), Organizations can transition to FLOSS in part or in stages, which for many is a far more practical transition approach.<hr>Source: <a href='https://dwheeler.com/oss_fs_why.html'>Why Open Source Software</a> by <a href='https://dwheeler.com/'>David A. Wheeler</a>, rev. Jul. 18, 2015",
+              image: `${baseUrl}img/undraw_heatmap.svg`,
               imageAlign: 'top',
-              title: 'Implementation',
-            },
-            {
-              content: '<strong>We love capacity building</strong>, because we strongly believe the engagement of your team is key for success. We train your team in both functional (Lab personnel) and technical areas (System administrators and Software developers), so they can take control of SENAITE by themselves. We also provide <strong>Operational Support Packages</strong> to monitor your system and give you advice for <strong>preventive and corrective actions</strong>.',
-              image: `${baseUrl}img/undraw_professor.svg`,
-              imageAlign: 'top',
-              title: 'Training and Support',
+              title: "Reliability, Security, Performance",
             },
           ]}
         </Block>
       </div>
     );
 
-    const Providers = () => (
-      <div className="container bg-screen providers paddingBottom paddingTop">
-        <h1 className="section-header">Providers</h1>
-        <div className="wrapper">
-          {/* <div className="section-intro"> */}
-          {/*   The listed companies are SENAITE Professional Service Providers and */}
-          {/*   are <strong>committed to maintain and protect the code of SENAITE</strong>. */}
-          {/*   They provide <strong>in depth knowledge</strong> of the system and */}
-          {/*   are able to tailor the system to your specific needs and requirements. */}
-          {/*   They work under <strong>high quality standards</strong> and always */}
-          {/*   try to bring the best features of their clients back to the core for */}
-          {/*   the <strong>benefit of the community and the project</strong>. */}
-          {/* </div> */}
-          <div className="section-intro">
-            Solutions made by people. We are the companies behind SENAITE.
-          </div>
-        </div>
-
-        <div className="wrapper">
-          <div className="gridBlock">
-
-            <div className="provider ridingbytes blockElement alignCenter twoByGridBlock">
-              <div className="logo">
-                <div className="slogan"></div>
-                <a href="https://www.ridingbytes.com" className="logo-link">
-                  <img src={baseUrl + "img/ridingbytes.png"}/>
-                </a>
-                <div className="slogan">Professional Open Source Solutions</div>
-              </div>
-              {/* <div className="text-muted"> */}
-              {/*   <strong>RIDING BYTES</strong> is a German-based company, providing <strong>professional open source services</strong> for enterprises of all sizes. */}
-              {/*   We are specialized in interfacing systems into existing IT infrastructures and have a special focus on the areas of <strong>lab- and healthcare systems</strong>. */}
-              {/*   Our <strong>comprehensive services</strong> include consulting, administration, software development and continuous maintenance of the software and the computer systems. */}
-              {/*   <br/> */}
-              {/*   <br/> */}
-              {/*   The company was started for one single reason: To build better software for human beings. */}
-              {/*   Therefore our mission is to build software solutions, using the most sophisticated and modern technologies available on the market. */}
-              {/*   Always aligned with our strategy: To support Open-Source Software. */}
-              {/*   <div className="contactBlock"> */}
-              {/*     Contact us at <a href="mailto:hello@ridingbytes.com"> hello@ridingbytes.com</a> */}
-              {/*     <div className="">Location: Germany</div> */}
-              {/*   </div> */}
-              {/* </div> */}
-            </div>
-
-            <div className="provider naralabs blockElement alignCenter twoByGridBlock">
-              <div className="logo">
-                <div className="top-slogan">&nbsp;</div>
-                <a href="https://naralabs.com" className="logo-link">
-                  <img src={baseUrl + "img/naralabs.png"}/>
-                </a>
-                <div className="slogan"></div>
-              </div>
-              {/* <div className="text-muted"> */}
-              {/*   <div> */}
-              {/*   <p> */}
-              {/*     <strong>Naralabs</strong> is a company specialized in engineering */}
-              {/*     and professional services around SENAITE. Our vision is to */}
-              {/*     consolidate Open Source Software as an essential component */}
-              {/*     within the strategies for improving efficiency, quality and */}
-              {/*     data management in laboratories. */}
-              {/*   </p> */}
-              {/*   <p> */}
-              {/*     We are not only accomplished professional service providers, */}
-              {/*     but also passionate engineers, able to speak same language with */}
-              {/*     both Laboratory personnel and IT department: we act as the */}
-              {/*     catalyst to make the implementation of the LIMS/LIS in your */}
-              {/*     organization a success. */}
-              {/*   </p> */}
-              {/*     <div className="contactBlock"> */}
-              {/*       Contact us at <a href="mailto:info@naralabs.com"> info@naralabs.com</a> */}
-              {/*       <div className="">Location: Barcelona, Spain</div> */}
-              {/*     </div> */}
-              {/*   </div> */}
-              {/* </div> */}
-            </div>
-
-          </div>
-          <div className="gridBlock">
-          </div>
-        </div>
-      </div>
-    );
-
-    const Showcase = () => {
+    const TrustedBy = () => {
       if ((siteConfig.users || []).length === 0) {
         return null;
       }
@@ -280,16 +189,17 @@ class Index extends React.Component {
       );
     };
 
+
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Features />
-          <Features2 />
-          <Features3 />
-          <Features4 />
-          <Providers />
-          <Showcase />
+          <Performance />
+          <Control />
+          <Technology />
+          <WhyOpenSource />
+          { /* <Providers /> */ }
+          <TrustedBy />
         </div>
       </div>
     );
