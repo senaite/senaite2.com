@@ -34,7 +34,7 @@ function EnterpriseSolution(props) {
 
   const Providers = () => (
     <div className="container bg-screen providers paddingBottom paddingTop">
-      <h1 className="section-header">Providers</h1>
+      <h1 className="section-header">Enterprise Solution</h1>
       <div className="wrapper">
         <div className="section-intro">
           Solutions made by people. We are the companies behind SENAITE.

@@ -98,7 +98,7 @@ function Features(props) {
   return (
     <div className="container">
       <SenaiteFeatures />
-      <WorksheetBlock />
+      { /* <WorksheetBlock /> */ }
     </div>
   );
 }
