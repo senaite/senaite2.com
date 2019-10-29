@@ -8,11 +8,12 @@ class VerticalTimeLine extends React.Component {
       <div class="cd-timeline__block">
         <div class="cd-timeline__img cd-timeline__img--picture"
           style={{backgroundColor: props.color }}>
-          <img src={props.icon} alt={props.alt}/>
+          <span class="number">{props.number}</span>
+          { /* <img src={props.icon} alt={props.alt}/> */ }
         </div>
         <div class="cd-timeline__content text-component">
           <h2>{props.title}</h2>
-          <div dangerouslySetInnerHTML={{__html: props.content}}></div>
+          <div class="text-box" dangerouslySetInnerHTML={{__html: props.content}}></div>
         </div>
         <div class="flex justify-between items-center">
         </div>
@@ -22,7 +23,7 @@ class VerticalTimeLine extends React.Component {
     const items = this.props.contents.map(
       (item, index) =>
         <TimeLineBlock
-          icon={item.icon}
+          number={index+1}
           alt={item.alt||''}
           title={item.title}
           color={item.color}
