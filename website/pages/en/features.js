@@ -10,7 +10,7 @@ const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
 
-function Explore(props) {
+function Features(props) {
   const {config: siteConfig, language = ''} = props;
   const {baseUrl, docsUrl} = siteConfig;
   const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
@@ -30,8 +30,7 @@ function Explore(props) {
     </Container>
   );
 
-
-  const Features = () => (
+  const SenaiteFeatures = () => (
       <div className="container bg-lightgrey paddingBottom paddingTop">
         <h1 className="section-header">SENAITE Features</h1>
         <div className="wrapper">
@@ -82,8 +81,6 @@ function Explore(props) {
       </div>
     );
 
-
-
   const WorksheetBlock = () => (
     <Block>
     {[
@@ -100,10 +97,10 @@ function Explore(props) {
 
   return (
     <div className="container">
-      <Features />
-      <WorksheetBlock/>
+      <SenaiteFeatures />
+      <WorksheetBlock />
     </div>
   );
 }
 
-module.exports = Explore;
+module.exports = Features;

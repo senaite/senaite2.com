@@ -13,6 +13,7 @@ const HomeSplash = require(`${process.cwd()}/core/HomeSplash.js`);
 
 
 class Index extends React.Component {
+
   render() {
     const {config: siteConfig, language = ''} = this.props;
     const {baseUrl} = siteConfig;
@@ -198,7 +199,6 @@ class Index extends React.Component {
           <Control />
           <Technology />
           <WhyOpenSource />
-          { /* <Providers /> */ }
           <TrustedBy />
         </div>
       </div>
