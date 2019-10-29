@@ -1,16 +1,18 @@
 const React = require('react');
 
+
 class VerticalTimeLine extends React.Component {
   render() {
 
     const TimeLineBlock = props => (
       <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
+        <div class="cd-timeline__img cd-timeline__img--picture"
+          style={{backgroundColor: props.color }}>
           <img src={props.icon} alt={props.alt}/>
         </div>
         <div class="cd-timeline__content text-component">
           <h2>{props.title}</h2>
-          <p class="color-constrat-medium">{props.content}</p>
+          <div dangerouslySetInnerHTML={{__html: props.content}}></div>
         </div>
         <div class="flex justify-between items-center">
         </div>
@@ -23,6 +25,7 @@ class VerticalTimeLine extends React.Component {
           icon={item.icon}
           alt={item.alt||''}
           title={item.title}
+          color={item.color}
           content={item.content} />
     )
 

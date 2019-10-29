@@ -213,3 +213,25 @@ div.homeSplashFade {
 .twoByGridBlock {
     margin-bottom: 50px;
 }
+
+
+.screenshot {
+
+}
+
+.screenshot-1 {
+    background-image: url(/img/screenshot_02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    z-index: -1;
+}
+
+.screenshot .bg-screen {
+    width:100%;
+    height:550px;
+    padding: 10px 0;
+    background-image: url(/img/bgx_trans.png);
+}
