@@ -32,7 +32,7 @@ class VerticalTimeLine extends React.Component {
 
     return (
       <section class="cd-timeline js-cd-timeline">
-        <div class="container max-width-lg cd-timeline__container">
+        <div class="cd-timeline__container">
           {items}
         </div>
       </section>

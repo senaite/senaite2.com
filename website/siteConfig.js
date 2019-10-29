@@ -100,9 +100,9 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     // {href: 'https://community.senaite.org', label: 'Community'},
-    {page: 'why', label: 'Enterprise solution'},
-    {page: 'implementation', label: 'Implementation'},
-    {doc: 'installation', label: 'Read the docs'},
+    {page: 'enterprisesolution', label: 'Enterprise solution'},
+    {page: 'explore', label: 'Explore'},
+    {doc: 'quickstart', label: 'Documentation'},
 
     // {doc: 'doc4', label: 'API'},
     // {page: 'help', label: 'Help'},
