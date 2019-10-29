@@ -42,7 +42,7 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: 'Amongst other functionalities, SENAITE comes with highly-customizable workflows to drive users through the analytical process, easy-to-use UI for data registration, automatic import of results, data validation and transitions constraints.',
+              content: 'Amongst other functionalities, SENAITE comes with highly-customizable workflows to drive users through the analytical process, easy-to-use UI for data registration, automatic import of results, data validation and transition constraints.',
               image: `${baseUrl}img/undraw_investment.svg`,
               imageAlign: 'top',
               title: 'Process Automation',
@@ -54,7 +54,7 @@ class Index extends React.Component {
               title: 'Equipment Integration',
             },
             {
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
+              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately.',
               image: `${baseUrl}img/undraw_done_checking.svg`,
               imageAlign: 'top',
               title: 'Turnaround Time',
@@ -75,7 +75,7 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: 'SENAITE is ready for use in an ISO/IEC 17025 compliant environment, if setup and run properly on appropriate infrastructure. SENAITE itself can not be certified. However we can help review and validate your compliance.',
+              content: 'SENAITE is ready for use in an ISO/IEC 17025 compliant environment, if setup and run properly in an appropriate infrastructure. Although SENAITE by itself can not be certified by its own, we can help review and validate your compliance.',
               image: `${baseUrl}img/undraw_process.svg`,
               imageAlign: 'top',
               title: 'Compliance',
@@ -87,7 +87,7 @@ class Index extends React.Component {
               title: 'Audit and Traceability',
             },
             {
-              content: 'SENAITE provides a powerful dashboard to visualize the performance of the lab on a daily, weekly, monthly, quarterly, biannually and yearly basis. Business Intelligence tools can also be connected to SENAITE through its JSON API.',
+              content: 'SENAITE provides a powerful dashboard to visualize the performance of the lab on a daily, weekly, monthly, quarterly, biannually and yearly basis. Business Intelligence tools can also be connected to SENAITE through the use of its JSON API.',
               image: `${baseUrl}img/undraw_all_the_data.svg`,
               imageAlign: 'top',
               title: 'Data Insights',
@@ -108,7 +108,7 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the <strong>best security track record of any major CMS</strong>. Besides, SENAITE comes with several mechanisms to prevent members or business associates making accidental or intentional changes that improperly alter or destroy electronic records.',
+              content: 'SENAITE is based on the Content Management System <a href="https://plone.org">Plone</a>, that has the <strong>best security track record of any major CMS</strong>. Besides that, SENAITE comes with several mechanisms to prevent members or business associates making accidental or intentional changes that improperly alter or destroy electronic records.',
               image: `${baseUrl}img/undraw_security.svg`,
               imageAlign: 'top',
               title: 'Industrial Strength Security',
@@ -120,7 +120,7 @@ class Index extends React.Component {
               title: 'Reliable Architecture',
             },
             {
-              content: 'Users work with SENAITE through the web browser, so this translates in an <strong>improvement of the information flow</strong> and <strong>lower hardware expenses</strong>. It gives IT staff better oversight and can make routine tasks easier, driving to a <strong>reduction of costs and increase of productivity</strong>. It also <strong>helps to meet industry regulations</strong>, cause they usually require varying degrees of IT and database centralization, for data-security reasons mostly.',
+              content: 'SENAITE is operated through the web browser, which <strong>improves the information flow</strong> and <strong>lowers the hardware expenses</strong>. Furthermore, it gives IT departments a better control and reduces maintenance tasks, which leads to a <strong>reduction of costs and an increase of the productivity</strong>. It also <strong>helps to meet industry regulations</strong> as they usually require varying degrees of IT and database centralization.',
               image: `${baseUrl}img/undraw_goals.svg`,
               imageAlign: 'top',
               title: 'Centralized System',
