@@ -10,7 +10,7 @@ const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
 
-function Explore(props) {
+function Features(props) {
   const {config: siteConfig, language = ''} = props;
   const {baseUrl, docsUrl} = siteConfig;
   const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
@@ -30,8 +30,7 @@ function Explore(props) {
     </Container>
   );
 
-
-  const Features = () => (
+  const SenaiteFeatures = () => (
       <div className="container bg-lightgrey paddingBottom paddingTop">
         <h1 className="section-header">SENAITE Features</h1>
         <div className="wrapper">
@@ -77,24 +76,10 @@ function Explore(props) {
               title: 'Security policies',
               content: 'Roles and groups with different permissions for each ER\'s status: client contact, lab clerk, sampler, preserver, analyst, verifier, publisher, lab manager, regulatory inspector and system administrator.',
             },
-            {
-              title: 'Barcode printing',
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-            },
-            {
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-              title: 'Results reports and COA',
-            },
-            {
-              content: 'Reduce the turnaround time on results reports delivery. Assign priorities to samples and due dates for tests, plan and assign the daily work by using worksheets and keep track of delayed tests immediately',
-              title: 'Integration with instruments',
-            },
           ]}
         </Block>
       </div>
     );
-
-
 
   const WorksheetBlock = () => (
     <Block>
@@ -112,10 +97,10 @@ function Explore(props) {
 
   return (
     <div className="container">
-      <Features />
-      <WorksheetBlock/>
+      <SenaiteFeatures />
+      { /* <WorksheetBlock /> */ }
     </div>
   );
 }
 
-module.exports = Explore;
+module.exports = Features;

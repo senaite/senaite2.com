@@ -32,96 +32,43 @@ function EnterpriseSolution(props) {
     </Container>
   );
 
-  const Description = () => (
-    <Block>
-    {[
-      {
-        content:
-        'This is another description of how this project is useful',
-        image: `${baseUrl}img/undraw_invest.svg`,
-        imageAlign: 'right',
-        title: 'Description',
-      },
-    ]}
-    </Block>
-  );
-
-  const Description2 = () => (
-    <Block background="light">
-    {[
-      {
-        content:
-        'This is another description of how this project is useful',
-        image: `${baseUrl}img/undraw_invest.svg`,
-        imageAlign: 'left',
-        title: 'Description',
-      },
-    ]}
-    </Block>
-  );
-
-    const UnchainYourLab = () => (
-      <div className="container paddingBottom">
-        <h1 className="section-header">Unchain your Lab with SENAITE</h1>
-        <div className="wrapper">
-          <div className="section-intro paddingBottom">
-            Choosing Open Source is a matter of <strong>liberty</strong> and not just the ability to get the software for free.
-            We believe that <strong>freedom is one of the most important goods</strong> in every aspect of life.
-            Therefore, you should choose SENAITE primarily because of its abilities and because you love your freedom as much as we do.
-          </div>
+  const Providers = () => (
+    <div className="container bg-screen providers paddingBottom paddingTop">
+      <h1 className="section-header">Enterprise Solution</h1>
+      <div className="wrapper">
+        <div className="section-intro">
+          Solutions made by people. We are the companies behind SENAITE.
         </div>
-        <div className="wrapper pt-1">
-          <div className="gridBlock">
-            <div className="blockElement twoByGridBlock">
-              <ul>
-                <li>no license binding</li>
-                <li>no licensing costs (GPLv2 License)</li>
-                <li>no usage restrictions</li>
-                <li>no restriction of the number of users</li>
-                <li>no dependence on a manufacturer</li>
-              </ul>
+      </div>
+
+      <div className="wrapper">
+        <div className="gridBlock">
+
+          <div className="provider ridingbytes blockElement alignCenter twoByGridBlock">
+            <div className="logo">
+              <div className="slogan"></div>
+              <a href="https://www.ridingbytes.com" className="logo-link">
+                <img src={baseUrl + "img/ridingbytes.png"}/>
+              </a>
+              <div className="slogan">Professional Open Source Solutions</div>
             </div>
-            <div className="blockElement twoByGridBlock">
-              <ul>
-                <li>insight into the source code</li>
-                <li>code hosted publicly on GitHub</li>
-                <li>testability for user-unwanted mechanisms (backdoors)</li>
-                <li>adherence to open standards</li>
-                <li>testable software quality</li>
-              </ul>
+          </div>
+
+          <div className="provider naralabs blockElement alignCenter twoByGridBlock">
+            <div className="logo">
+              <div className="top-slogan">&nbsp;</div>
+              <a href="https://naralabs.com" className="logo-link">
+                <img src={baseUrl + "img/naralabs.png"}/>
+              </a>
+              <div className="slogan"></div>
             </div>
           </div>
         </div>
+      <div className="gridBlock">
       </div>
-    );
-
-
-    const WhyOpenSource = () => (
-      <div className="container paddingTop paddingBottom">
-        <h1 className="section-header">Why Open Source</h1>
-        <div className="wrapper">
-          <div className="section-intro paddingBottom">
-            The rights granted are far closer to an owner's rights than the rights granted by proprietary software
-          </div>
-        </div>
-        <Block layout="twoColumn">
-          {[
-            {
-              content: "Using open source software yields a lower total cost of ownership when compared to closed source and proprietary alternatives. Adopting open source software generally has a lower up-front cost, and <strong>shifts the cost center from licensing (an operating expense) to customization and implementation (a capital expense)</strong>.<br/><br/>Additional costs like training, maintenance, and support are sunk costs. You're going to be paying for both regardless of if the software is open or closed source, the cost often being baked into the license in the case of commercial, off-the-shelf software (COTS).<br/><br/>What makes open source unique is that <strong>you're not paying for the right to use the underlying intellectual property</strong>.<hr>Source: <a href='https://ben.balter.com/2015/11/23/why-open-source/'>Why Open Source</a> by <a href='https://opensource.com/users/benbalter'>Ben Balter</a>, Nov. 23, 2015",
-              image: `${baseUrl}img/undraw_invest.svg`,
-              imageAlign: 'top',
-              title: 'Lower Total Cost of Ownership (TCO)',
-            },
-            {
-              content: "FLOSS has significant market share in many markets, is <strong>often the most reliable software, and in many cases has the best performance</strong>. FLOSS scales, both in problem size and project size. FLOSS software often has <strong>far better security</strong>, perhaps due to the possibility of worldwide review. Total cost of ownership for FLOSS is often far less than proprietary software, especially as the number of platforms increases.<br/><br/><strong>These statements are not merely opinions; these effects can be shown quantitatively, using a wide variety of measures</strong>. This doesn’t even consider other issues that are hard to measure, such as freedom from control by a single source, freedom from licensing management (with its accompanying risk of audit and litigation), Organizations can transition to FLOSS in part or in stages, which for many is a far more practical transition approach.<hr>Source: <a href='https://dwheeler.com/oss_fs_why.html'>Why Open Source Software</a> by <a href='https://dwheeler.com/'>David A. Wheeler</a>, rev. Jul. 18, 2015",
-              image: `${baseUrl}img/undraw_heatmap.svg`,
-              imageAlign: 'top',
-              title: "Reliability, Security, Performance",
-            },
-          ]}
-        </Block>
-      </div>
-    );
+    </div>
+  </div>
+  );
 
   const WhyChooseUs = () => (
       <div className="container lightBackground paddingBottom paddingTop">
@@ -174,6 +121,38 @@ function EnterpriseSolution(props) {
       </div>
     );
 
+  const DrivingImplementation = () => (
+      <div className="container bg-white paddingBottom paddingTop">
+        <h1 className="section-header">Driving the Implementation</h1>
+        <div className="wrapper">
+          <div className="section-intro">
+            From the planning to the successful integration of SENAITE in your daily lab routine
+          </div>
+        </div>
+        <Block layout="threeColumn">
+          {[
+            {
+              content: 'We help you to elaborate a project plan and drive the implementation of SENAITE in your organization. After an <strong>initial meeting</strong> to know first-hand your requirements, we elaborate a detailed <strong>GAP analysis</strong> to unveil how much SENAITE covers the requirements of your lab and determines the amount of customizations needed. With your feedback, we therefore elaborate a <strong>project plan with a defined scope and deliverables</strong>.',
+              image: `${baseUrl}img/undraw_detailed_analysis.svg`,
+              imageAlign: 'top',
+              title: 'Analysis and Planning',
+            },
+            {
+              content: 'After the project plan is approved, we then proceed with the installation of two instances: <strong>Q-System (pilot) + P-System (production)</strong>. Having these two instances running at this early stage allows the laboratory to have a working system from the very beginning, making it easier for the lab-personnel to familiarize themselves with SENAITE and therefore, facilitating a regular feedback to make the implementation a success.',
+              image: `${baseUrl}img/undraw_to_the_moon.svg`,
+              imageAlign: 'top',
+              title: 'Implementation',
+            },
+            {
+              content: '<strong>We love capacity building</strong>, because we strongly believe the engagement of your team is key for success. We train your team in both functional (Lab personnel) and technical areas (System administrators and Software developers), so they can take control of SENAITE by themselves. We also provide <strong>Operational Support Packages</strong> to monitor your system and give you advice for <strong>preventive and corrective actions</strong>.',
+              image: `${baseUrl}img/undraw_professor.svg`,
+              imageAlign: 'top',
+              title: 'Training and Support',
+            },
+          ]}
+        </Block>
+      </div>
+    );
 
   const TimeLineOverview = () => (
     <div className="container bg-lightgrey paddingBottom paddingTop">
@@ -238,88 +217,12 @@ function EnterpriseSolution(props) {
     </div>
   );
 
-const Features4 = () => (
-      <div className="container bg-white paddingBottom paddingTop">
-        <h1 className="section-header">Driving the Implementation</h1>
-        <div className="wrapper">
-          <div className="section-intro">
-            From the planning to the successful integration of SENAITE in your daily lab routine
-          </div>
-        </div>
-        <Block layout="threeColumn">
-          {[
-            {
-              content: 'We help you to elaborate a project plan and drive the implementation of SENAITE in your organization. After an <strong>initial meeting</strong> to know first-hand your requirements, we elaborate a detailed <strong>GAP analysis</strong> to unveil how much SENAITE covers the requirements of your lab and determines the amount of customizations needed. With your feedback, we therefore elaborate a <strong>project plan with a defined scope and deliverables</strong>.',
-              image: `${baseUrl}img/undraw_detailed_analysis.svg`,
-              imageAlign: 'top',
-              title: 'Analysis and Planning',
-            },
-            {
-              content: 'After the project plan is approved, we then proceed with the installation of two instances: <strong>Q-System (pilot) + P-System (production)</strong>. Having these two instances running at this early stage allows the laboratory to have a working system from the very beginning, making it easier for the lab-personnel to familiarize themselves with SENAITE and therefore, facilitating a regular feedback to make the implementation a success.',
-              image: `${baseUrl}img/undraw_to_the_moon.svg`,
-              imageAlign: 'top',
-              title: 'Implementation',
-            },
-            {
-              content: '<strong>We love capacity building</strong>, because we strongly believe the engagement of your team is key for success. We train your team in both functional (Lab personnel) and technical areas (System administrators and Software developers), so they can take control of SENAITE by themselves. We also provide <strong>Operational Support Packages</strong> to monitor your system and give you advice for <strong>preventive and corrective actions</strong>.',
-              image: `${baseUrl}img/undraw_professor.svg`,
-              imageAlign: 'top',
-              title: 'Training and Support',
-            },
-          ]}
-        </Block>
-      </div>
-    );
-
-    const Providers = () => (
-      <div className="container bg-screen providers paddingBottom paddingTop">
-        <h1 className="section-header">Providers</h1>
-        <div className="wrapper">
-          <div className="section-intro">
-            Solutions made by people. We are the companies behind SENAITE.
-          </div>
-        </div>
-
-        <div className="wrapper">
-          <div className="gridBlock">
-
-            <div className="provider ridingbytes blockElement alignCenter twoByGridBlock">
-              <div className="logo">
-                <div className="slogan"></div>
-                <a href="https://www.ridingbytes.com" className="logo-link">
-                  <img src={baseUrl + "img/ridingbytes.png"}/>
-                </a>
-                <div className="slogan">Professional Open Source Solutions</div>
-              </div>
-            </div>
-
-            <div className="provider naralabs blockElement alignCenter twoByGridBlock">
-              <div className="logo">
-                <div className="top-slogan">&nbsp;</div>
-                <a href="https://naralabs.com" className="logo-link">
-                  <img src={baseUrl + "img/naralabs.png"}/>
-                </a>
-                <div className="slogan"></div>
-              </div>
-            </div>
-
-          </div>
-          <div className="gridBlock">
-          </div>
-        </div>
-      </div>
-    );
-
 
   return (
     <div className="container">
-      { /* <h1 className="section-header"> */ }
-      { /*   Why Senaite? */ }
-      { /* </h1> */ }
-      { /* <UnchainYourLab/> */ }
       <Providers/>
       <WhyChooseUs/>
-      <Features4/>
+      <DrivingImplementation/>
       <TimeLineOverview/>
     </div>
   );
