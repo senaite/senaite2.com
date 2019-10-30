@@ -116,8 +116,8 @@ const siteConfig = {
   home_buttons,
 
   /* path to images for header/footer */
-  // headerIcon: 'img/favicon.ico',
-  // footerIcon: 'img/logo.png',
+  headerIcon: 'img/senaite_product_logo_grey.svg',
+  // footerIcon: 'img/senaite_product_logo_grey.svg',
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
@@ -141,7 +141,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © 2017-${new Date().getFullYear()} RIDING BYTES GmbH & NARALABS S.L.`,
+  copyright: `Copyright © 2017-${new Date().getFullYear()}`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.

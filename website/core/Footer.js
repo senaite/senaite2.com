@@ -92,10 +92,12 @@ class Footer extends React.Component {
            rel="noreferrer noopener"
            className="fbOpenSource">
           <img
-            src={`${this.props.config.baseUrl}img/senaite2_grey.png`}
+            src={`${this.props.config.baseUrl}img/senaite_product_logo_grey.svg`}
             alt="SENAITE LIMS"/>
         </a>
-        <section className="copyright">{this.props.config.copyright}</section>
+        <section className="copyright">
+          {this.props.config.copyright} <a href='https://www.ridingbytes.com' target='_blank'>RIDING BYTES GmbH</a> &amp; <a href='https://www.naralabs.com' target='blank'>NARALABS S.L.</a>
+        </section>
       </footer>
     );
   }
