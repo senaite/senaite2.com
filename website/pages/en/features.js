@@ -23,7 +23,7 @@ function Features(props) {
     id={props.id}
     background={props.background}>
     <GridBlock
-    align="center"
+    align={props.align}
     contents={props.children}
     layout={props.layout}
       />
@@ -32,10 +32,10 @@ function Features(props) {
 
   const SenaiteFeatures = () => (
       <div className="container bg-lightgrey paddingBottom paddingTop">
-        <h1 className="section-header">SENAITE Features</h1>
+        <h1 className="section-header">Features</h1>
         <div className="wrapper">
           <div className="section-intro">
-            Discover some built-in functionalities of SENAITE
+            Discover the built-in functionalities of SENAITE
           </div>
         </div>
         <Block layout="threeColumn">
@@ -82,11 +82,13 @@ function Features(props) {
     );
 
   const WorksheetBlock = () => (
-    <Block>
+    <Block align="left">
     {[
       {
         content:
-        '<p>Worksheets are artifacts used by Lab Manager to plan the work to be done by analysts and to group analyses from different Samples by type in a single batch of work. Worksheets might also represents a single run with multiple samples analyses in a given analytical instrument.</p><p>Worksheets support the addition of QC analyses (blanks, controls and duplicates) that will become useful to the Lab Manager later, during the verification process.',
+        '<p>Worksheets are entities used by Lab Manager to plan the work to be done by Analysts and to group Analyses from different Samples in a single batch of work.'
+        + 'Worksheets might also represent a single work package of multiple samples analyses in a given analytical instrument.</p>'
+        + '<p>Worksheets support the addition of QC analyses (blanks, controls and duplicates) detect irregularities during the verification process.',
         image: `${baseUrl}img/worksheet_1.png`,
         imageAlign: 'right',
         title: 'Worksheets',
