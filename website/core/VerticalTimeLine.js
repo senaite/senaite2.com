@@ -23,6 +23,7 @@ class VerticalTimeLine extends React.Component {
     const items = this.props.contents.map(
       (item, index) =>
         <TimeLineBlock
+          key={index}
           number={index+1}
           alt={item.alt||''}
           title={item.title}
