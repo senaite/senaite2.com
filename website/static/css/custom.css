@@ -255,6 +255,18 @@ div.homeSplashFade {
   text-align: justify;
 }
 
+div.privacy_policy_responsibles h1 {
+  margin-top:0.5em;
+}
+
+div.privacy_policy_responsibles .logo img {
+    width:280px;
+}
+
+div.privacy_policy_responsibles .company-info {
+  margin-top: 30px;
+}
+
 @media only screen and (min-width: 736px) {
   .container.privacy_policy .gridBlock > *:first-child {
       margin-left: 12px;

@@ -33,15 +33,9 @@ function Privacy(props) {
     </Container>
   );
 
-  const PrivacyIntro = () => (
-    <div className="container bg-screen paddingBottom paddingTop">
-      <h1 className="section-header">Privacy Policy and Web Legal Announcement</h1>
-      <div className="wrapper">
-        <div className="section-intro">
-          Solutions made by people. We are the companies behind SENAITE.
-        </div>
-      </div>
-
+  const Responsibles = () => (
+    <div className="container bg-screen paddingBottom paddingTop privacy_policy_responsibles">
+      <h1 className="section-header">Responsibles for the content</h1>
       <div className="wrapper">
         <div className="gridBlock">
 
@@ -52,6 +46,13 @@ function Privacy(props) {
                 <img src={baseUrl + "img/ridingbytes.png"}/>
               </a>
               <div className="slogan">Professional Open Source Solutions</div>
+              <div className="company-info">
+                <strong>RIDING BYTES GmbH</strong><br/>
+                Würzburger Straße 81<br/>
+                90766 Fürth, Germany<br/>
+                Phone: +49 (0) 911 974 930 90<br/>
+                Mail: <a href="mailto:info@ridingbytes.com">info@ridingbytes.com</a>
+              </div>
             </div>
           </div>
 
@@ -62,6 +63,13 @@ function Privacy(props) {
                 <img src={baseUrl + "img/naralabs.png"}/>
               </a>
               <div className="slogan"></div>
+              <div className="company-info">
+                <strong>NARALABS S.L.</strong><br/>
+                Av. Via Augusta 15 - 25<br/>
+                08174 Sant Cugat del Vallès, Spain<br/>
+                Phone: +34 93 681 43 87<br/>
+                Mail: <a href="mailto:info@naralabs.com">info@naralabs.com</a>
+              </div>
             </div>
           </div>
         </div>
@@ -87,7 +95,7 @@ function Privacy(props) {
             {
               title: 'LEGAL ANNOUNCEMENT LSSI – CE',
               content:
-              '<p>In compliance with Law 34/2002 of July 11, of the Information and E-Commerce Society Services, the Corporate Entity informs that it is the owner of the web site. According to what is required under article 10, subject to Law above mentioned and such informs the following: The owner of the web site is: Naralabs, S.L.<br> Tax ID: ES-B65947301<br> Main Office address: Avenida Via Augusta 15-25, 08174 Sant Cugat del Vallès, Barcelona</p>'
+              '<p>In compliance with Law 34/2002 of July 11, of the Information and E-Commerce Society Services, the Corporate Entity informs that it is the owner of the web site. According to what is required under article 10, subject to Law above mentioned and such informs the following: The owner of the web site are: RIDING BYTES GmbH (Tax ID: DE-301668607, Address: Würzburger Straße 81, 90766 Fürth, Germany) and NARALABS S.L. (Tax ID: ES-B65947301, Address: Avenida Via Augusta 15-25, 08174 Sant Cugat del Vallès, Barcelona).</p>'
             },
 
             {
@@ -152,6 +160,7 @@ function Privacy(props) {
 
   return (
     <div className="container">
+      <Responsibles />
       <PrivacyContent />
     </div>
   );
