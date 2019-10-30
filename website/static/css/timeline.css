@@ -9,7 +9,6 @@
     margin: 50px auto 150px auto;
 }
 
-
 .cd-timeline__container::before {
     content: '';
     position: absolute;
