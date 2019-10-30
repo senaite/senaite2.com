@@ -76,19 +76,19 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: 'SENAITE is ready for use in an ISO/IEC 17025 compliant environment, if setup and run properly in an appropriate infrastructure. Although SENAITE by itself can not be certified by its own, we can help review and validate your compliance.',
+              content: 'SENAITE is ready for use in an ISO/IEC 17025 compliant environment, if setup and run properly in an appropriate infrastructure. Although SENAITE by itself can not be certified by its own, <a href="enterprisesolution">we can help review and validate your compliance.</a>',
               image: `${baseUrl}img/undraw_process.svg`,
               imageAlign: 'top',
               title: 'Compliance',
             },
             {
-              content: 'SENAITE records and generates snapshots of your data on any modification, including the user name, IP and datetime when the Electronic Record was changed. All changes in the system can be easily inspected and traced back.',
+              content: 'SENAITE records and generates snapshots of your data on any modification, including the user name, IP address and datetime when the electronic record was changed. All changes in the system can be easily inspected, analysed and traced back.',
               image: `${baseUrl}img/undraw_done.svg`,
               imageAlign: 'top',
               title: 'Audit and Traceability',
             },
             {
-              content: 'SENAITE provides a powerful dashboard to visualize the performance of the lab on a daily, weekly, monthly, quarterly, biannually and yearly basis. Business Intelligence tools can also be connected to SENAITE through the use of its JSON API.',
+              content: 'SENAITE provides a powerful dashboard to visualize the performance of the lab on a daily, weekly, monthly, quarterly, biannually and yearly basis. Business Intelligence tools can be connected to SENAITE through the use of its JSON API.',
               image: `${baseUrl}img/undraw_all_the_data.svg`,
               imageAlign: 'top',
               title: 'Data Insights',
@@ -115,13 +115,13 @@ class Index extends React.Component {
               title: 'Industrial Strength Security',
             },
             {
-              content: 'SENAITE can be run on a Linux Server together with high availability web servers, load balancers and proxy servers. It can be easily deployed in virtualized environments. Thanks to Plone CMS, SENAITE connects and plays well with your infrastructure and is <strong>adaptable to your business needs today and 10 years from now</strong>.',
+              content: 'SENAITE can be run on Linux servers together with high availability web servers, load balancers and proxy servers. It can be easily deployed in virtualized environments. Thanks to Plone CMS, SENAITE connects and plays well with your infrastructure and is <strong>adaptable to your business needs today and 10 years from now</strong>.',
               image: `${baseUrl}img/undraw_deliveries.svg`,
               imageAlign: 'top',
               title: 'Reliable Architecture',
             },
             {
-              content: 'SENAITE is operated through the web browser, which <strong>improves the information flow</strong> and <strong>lowers the hardware expenses</strong>. Furthermore, it gives IT departments a better control and reduces maintenance tasks, which leads to a <strong>reduction of costs and an increase of the productivity</strong>. It also <strong>helps to meet industry regulations</strong> as they usually require varying degrees of IT and database centralization.',
+              content: 'SENAITE works in the web browser, which <strong>improves the information flow</strong> and <strong>lowers the hardware expenses</strong>. This gives IT departments better control and reduces maintenance tasks, which leads to a <strong>reduction of costs, increase of productivity</strong> and <strong>helps to meet industry regulations</strong>, as they usually require varying degrees of IT system centralization.',
               image: `${baseUrl}img/undraw_goals.svg`,
               imageAlign: 'top',
               title: 'Centralized System',
@@ -136,19 +136,19 @@ class Index extends React.Component {
         <h1 className="section-header">Open Source</h1>
         <div className="wrapper">
           <div className="section-intro paddingBottom">
-            The rights granted are far closer to an owner's rights than the rights granted by proprietary software
+            The rights granted are far closer to owner rights than the rights granted by proprietary software
           </div>
         </div>
         <Block layout="twoColumn">
           {[
             {
-              content: "Using open source software yields a lower total cost of ownership when compared to closed source and proprietary alternatives. Adopting open source software generally has a lower up-front cost, and <strong>shifts the cost center from licensing (an operating expense) to customization and implementation (a capital expense)</strong>.<br/><br/>Additional costs like training, maintenance, and support are sunk costs. You're going to be paying for both regardless of if the software is open or closed source, the cost often being baked into the license in the case of commercial, off-the-shelf software (COTS).<br/><br/>What makes open source unique is that <strong>you're not paying for the right to use the underlying intellectual property</strong>.<hr>Source: <a href='https://ben.balter.com/2015/11/23/why-open-source/'>Why Open Source</a> by <a href='https://opensource.com/users/benbalter'>Ben Balter</a>, Nov. 23, 2015",
+              content: "Using open source software yields a lower total cost of ownership when compared to closed source and proprietary alternatives. Adopting open source software generally has a lower up-front cost, and <strong>shifts the cost center from licensing (an operating expense) to customization and implementation (a capital expense)</strong>.<br/><br/>Additional costs like training, maintenance, and support are sunk costs. You're going to be paying for both regardless of if the software is open or closed source, the cost often being baked into the license in the case of commercial, off-the-shelf software (COTS).<br/><br/>What makes open source unique is that <strong>you're not paying for the right to use the underlying intellectual property</strong>.<hr/>Source: <a target='_blank' href='https://ben.balter.com/2015/11/23/why-open-source/'>Why Open Source</a> by <a target='_blank' href='https://opensource.com/users/benbalter'>Ben Balter</a>, Nov. 23, 2015",
               image: `${baseUrl}img/undraw_invest.svg`,
               imageAlign: 'top',
               title: 'Lower Total Cost of Ownership (TCO)',
             },
             {
-              content: "FLOSS has significant market share in many markets, is <strong>often the most reliable software, and in many cases has the best performance</strong>. FLOSS scales, both in problem size and project size. FLOSS software often has <strong>far better security</strong>, perhaps due to the possibility of worldwide review. Total cost of ownership for FLOSS is often far less than proprietary software, especially as the number of platforms increases.<br/><br/><strong>These statements are not merely opinions; these effects can be shown quantitatively, using a wide variety of measures</strong>. This doesn’t even consider other issues that are hard to measure, such as freedom from control by a single source, freedom from licensing management (with its accompanying risk of audit and litigation), Organizations can transition to FLOSS in part or in stages, which for many is a far more practical transition approach.<hr>Source: <a href='https://dwheeler.com/oss_fs_why.html'>Why Open Source Software</a> by <a href='https://dwheeler.com/'>David A. Wheeler</a>, rev. Jul. 18, 2015",
+              content: "FLOSS has significant market share in many markets, is <strong>often the most reliable software, and in many cases has the best performance</strong>. FLOSS scales, both in problem size and project size. FLOSS software often has <strong>far better security</strong>, perhaps due to the possibility of worldwide review. Total cost of ownership for FLOSS is often far less than proprietary software, especially as the number of platforms increases.<br/><br/><strong>These statements are not merely opinions; these effects can be shown quantitatively, using a wide variety of measures</strong>. This doesn’t even consider other issues that are hard to measure, such as freedom from control by a single source, freedom from licensing management (with its accompanying risk of audit and litigation), Organizations can transition to FLOSS in part or in stages, which for many is a far more practical transition approach.<hr/>Source: <a target='_blank' href='https://dwheeler.com/oss_fs_why.html'>Why Open Source Software</a> by <a target='_blank' href='https://dwheeler.com/'>David A. Wheeler</a>, rev. Jul. 18, 2015",
               image: `${baseUrl}img/undraw_heatmap.svg`,
               imageAlign: 'top',
               title: "Reliability, Security, Performance",
