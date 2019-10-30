@@ -239,3 +239,24 @@ div.homeSplashFade {
     background-image: url(/img/bgx_trans.png);
 }
 
+.nav-footer .privacy {
+  text-align: center;
+}
+.nav-footer .privacy a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+}
+.nav-footer .privacy a:hover {
+  color: #d7dbdc;
+}
+
+.container.privacy_policy .blockContent,
+.container.privacy_policy .blockContent h2{
+  text-align: justify;
+}
+
+@media only screen and (min-width: 736px) {
+  .container.privacy_policy .gridBlock > *:first-child {
+      margin-left: 12px;
+  }
+}

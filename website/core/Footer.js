@@ -34,7 +34,7 @@ class Footer extends React.Component {
             )}
           </a>
           <div>
-            <h5>Docs</h5>
+            <h5>Documentation</h5>
             <a href={this.docUrl('installation.html', this.props.language)}>
               Installation
             </a>
@@ -47,17 +47,8 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>Community</h5>
-            {/* <a href={this.pageUrl('users.html', this.props.language)}> */}
-            {/*   User Showcase */}
-            {/* </a> */}
-            <a target="_blank" href="https://gitter.im/senaite/Lobby">Gitter Chat</a>
             <a target="_blank" href="https://community.senaite.org">Community Site</a>
-            <a
-              href="https://stackoverflow.com/search?q=senaite"
-              target="_blank"
-              rel="noreferrer noopener">
-              Stack Overflow
-            </a>
+            <a target="_blank" href="https://gitter.im/senaite/Lobby">Gitter Chat</a>
           </div>
           <div>
             <h5>More</h5>
@@ -97,6 +88,9 @@ class Footer extends React.Component {
         </a>
         <section className="copyright">
           {this.props.config.copyright} <a href='https://www.ridingbytes.com' target='_blank'>RIDING BYTES GmbH</a> &amp; <a href='https://www.naralabs.com' target='blank'>NARALABS S.L.</a>
+        </section>
+        <section className="privacy">
+          <a href="privacy">Privacy policy and web legal announcement</a>
         </section>
       </footer>
     );

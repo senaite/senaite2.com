@@ -76,7 +76,7 @@ class Index extends React.Component {
         <Block layout="threeColumn">
           {[
             {
-              content: 'SENAITE is ready for use in an ISO/IEC 17025 compliant environment, if setup and run properly in an appropriate infrastructure. Although SENAITE by itself can not be certified by its own, <a href="enterprisesolution">we can help review and validate your compliance.</a>',
+              content: 'SENAITE is ready for use in an ISO/IEC 17025 compliant environment, if setup and run properly in an appropriate infrastructure. Although SENAITE by itself can not be certified by its own, <a href="enterprisesolution">we can help review and validate your compliance</a>.',
               image: `${baseUrl}img/undraw_process.svg`,
               imageAlign: 'top',
               title: 'Compliance',
