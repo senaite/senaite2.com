@@ -48,7 +48,7 @@ function EnterpriseSolution(props) {
             <div className="logo">
               <div className="slogan"></div>
               <a href="https://www.ridingbytes.com" className="logo-link">
-                <img src={baseUrl + "img/ridingbytes.png"}/>
+                <img src={baseUrl + "img/ridingbytes.svg"}/>
               </a>
               <div className="slogan">Professional Open Source Solutions</div>
             </div>
