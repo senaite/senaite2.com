@@ -5,7 +5,7 @@
 .cd-timeline__container {
     position: relative;
     padding: 1.25em 0;
-    width: 820px;
+    max-width: 820px;
     margin: 50px auto 150px auto;
 }
 
@@ -33,12 +33,13 @@
     vertical-align: baseline;
 }
 
-
 .cd-timeline__img {
+    position: absolute;
+    left: 50%;
     width: 60px;
     height: 60px;
     order: 1;
-    margin: 30px;
+    margin: auto 0 0 -30px;
     padding: 17px;
     will-change: transform;
     border-radius: 50%;
