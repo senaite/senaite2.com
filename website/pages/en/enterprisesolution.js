@@ -105,7 +105,7 @@ function EnterpriseSolution(props) {
               title: 'Project plan',
             },
             {
-              content: 'We train your team in both functional and technical areas. <strong>Functional training sessions</strong> are useful for the laboratory personnel to know about the capabilities of SENAITE in detail and get the most of it. Are also a proven invaluable tool for the <strong>exploration of organization-specific scenarios</strong> that went unnoticed. SENAITE is Open Source, and as such, your team have access, study and modify the source code without any restriction. Therefore, <strong>Technical training sessions</strong> are a must-have for organizations willing to fully or partially <strong>internalise the costs of maintenance and customization</strong> of their own SENAITE system.',
+              content: 'We train your team in both functional and technical areas. <strong>Functional training sessions</strong> are useful for the laboratory personnel to know about the capabilities of SENAITE in detail and get the most of it. They are also a proven invaluable tool for the <strong>exploration of organization-specific scenarios</strong> that went unnoticed. SENAITE is Open Source, and as such, your team have access, study and modify the source code without any restriction. Therefore, <strong>Technical training sessions</strong> are a must-have for organizations willing to fully or partially <strong>internalise the costs of maintenance and customization</strong> of their own SENAITE system.',
               image: `${baseUrl}img/undraw_high_five.svg`,
               imageAlign: 'top',
               title: 'Capacity building',
