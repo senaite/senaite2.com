@@ -18,6 +18,7 @@ buildout/eggs
 buildout/parts
 buildout/src
 buildout/var
+website/senaite.github.io
 
 yarn.lock
 yarn-error.log
