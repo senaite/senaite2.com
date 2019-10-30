@@ -58,7 +58,8 @@ function Features(props) {
             },
             {
               title: 'Profiles and Templates',
-              content: 'Create profiles to boost the registration of analysis requests at the same time you simplify the catalog of available services to your clients. Use templates for auto-partitioning on reception.',
+              content: 'Create analysis profiles to boost the registration of samples at the same time you simplify the catalog of available services. Use sample templates for auto-partitioning on reception.
+              ',
             },
             {
               title: 'Instruments management',
