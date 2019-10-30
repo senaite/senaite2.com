@@ -116,7 +116,7 @@ const siteConfig = {
   home_buttons,
 
   /* path to images for header/footer */
-  headerIcon: 'img/senaite_product_logo_grey.svg',
+  headerIcon: 'img/senaite_product_logo_text.svg',
   // footerIcon: 'img/senaite_product_logo_grey.svg',
   favicon: 'img/favicon.ico',
 

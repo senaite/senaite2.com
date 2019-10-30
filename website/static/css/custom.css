@@ -43,6 +43,9 @@ div.mainContainer {
 .fixedHeaderContainer header .headerTitleWithLogo {
     display: none;
 }
+.fixedHeaderContainer header .logo {
+    height: 20px;
+}
 
 .text-blue { color: #293333!important; }
 .text-gold { color: #927f54; }
