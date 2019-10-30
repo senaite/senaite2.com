@@ -1,0 +1,65 @@
+#!/bin/bash
+# set -x
+
+DATE=$(date '+%Y-%m-%d')
+BACKUP_DIR=/tmp/senaite-com-backup-$DATE
+WEB_DIR=$(pwd)/website
+BUILD_DIR=$WEB_DIR/build
+PAGE=senaite.github.io
+REPO=$WEB_DIR/$PAGE
+REPOURL=git@github.com:senaite/$PAGE.git
+YARN=yarn
+
+function die() {
+    echo "ERROR: $1"
+}
+
+# Check if yarn is installed
+function has() {
+    BIN=$(which $1)
+    if test ! -x $BIN || test -z $BIN; then
+        return -1
+    else
+        return 0
+    fi
+}
+
+if ! has $YARN; then
+    die "Please install Yarn first: $ npm install yarn"
+fi
+
+echo -e "\033[0;32mDeploying $PAGE to GitHub...\033[0m"
+
+# Change to the Website Directory
+cd $WEB_DIR
+
+# Clone the GitHub repo if needed
+if ! test -d $REPO; then
+    git clone $REPOURL
+fi
+
+# Build the project.
+echo -e "\033[0;32mBuilding the site, this takes a while...\033[0m"
+yarn build
+
+# Clean the repo
+mkdir -p $BACKUP_DIR
+mv $REPO/* /$BACKUP_DIR
+
+# Copy files to the deployment repository
+cp -r $BUILD_DIR/senaite.core/* $REPO
+
+# Add changes to git.
+cd $REPO
+git add -A
+
+# Commit changes.
+msg="Rebuilding site `date`"
+if [ $# -eq 1 ]
+    then msg="$1"
+fi
+
+git commit -m "$msg"
+git push origin master
+
+echo "DEPLOYED"

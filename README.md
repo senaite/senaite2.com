@@ -19,10 +19,15 @@ or if you have Yarn:
 
     yarn global add docusaurus-init
 
+## Install the dependencies
+
+Change into the `website` directory of the site and install the required
+dependencies with `npm install` or `yarn install`.
+
 
 ## Start the develop server
 
-Change into the `website` directory and run `npm start` or `yarn start`.
+Make sure to be in the `website` directory and run `npm run start` or `yarn start`.
 
 
 ## Site Configuration
@@ -41,6 +46,18 @@ Docusaurus comes with some ReactJS Components that can be used in pages like
 e.g. a `MarkdownBlock`, `Container`, `Grid` etc.
 
 https://docusaurus.io/docs/en/api-pages#provided-components
+
+
+## Deployment
+
+The website is deployed on [GitHub](https://github.com/senaite) in the repository
+`ridingbytes.github.io`.
+
+A script will execute all necessary steps to deploy the latest version.
+
+Deploy Command:
+
+    ./bin/deploy
 
 
 # License
