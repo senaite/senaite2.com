@@ -91,8 +91,8 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'senaite',
-  organizationName: 'SENAITE',
+  projectName: 'senaite.core',
+  organizationName: 'senaite',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -103,6 +103,7 @@ const siteConfig = {
     {page: 'features', label: 'Features'},
     {page: 'enterprisesolution', label: 'Enterprise solution'},
     {doc: 'quickstart', label: 'Documentation'},
+    {page: 'versions', label: 'Versions'},
 
     // {doc: 'doc4', label: 'API'},
     // {page: 'help', label: 'Help'},

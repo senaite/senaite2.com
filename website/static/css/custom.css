@@ -43,8 +43,13 @@ div.mainContainer {
 .fixedHeaderContainer header .headerTitleWithLogo {
     display: none;
 }
+
 .fixedHeaderContainer header .logo {
     height: 20px;
+}
+
+.fixedHeaderContainer a[href='/versions'] {
+    display: none;
 }
 
 .text-blue { color: #293333!important; }
