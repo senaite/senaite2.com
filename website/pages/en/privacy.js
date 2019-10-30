@@ -35,8 +35,10 @@ function Privacy(props) {
 
   const Responsibles = () => (
     <div className="container bg-screen paddingBottom paddingTop privacy_policy_responsibles">
-      <h1 className="section-header">Responsibles for the content</h1>
+      <h1 className="section-header">Responsible for the content</h1>
       <div className="wrapper">
+        <div className="section-intro">
+        </div>
         <div className="gridBlock">
 
           <div className="provider ridingbytes blockElement alignCenter twoByGridBlock">
@@ -50,7 +52,7 @@ function Privacy(props) {
                 <strong>RIDING BYTES GmbH</strong><br/>
                 Würzburger Straße 81<br/>
                 90766 Fürth, Germany<br/>
-                Phone: +49 (0) 911 974 930 90<br/>
+                Phone: <a href="tel:+4991197493090">+49 (0) 911 974 930 90</a><br/>
                 Mail: <a href="mailto:info@ridingbytes.com">info@ridingbytes.com</a>
               </div>
             </div>
@@ -67,7 +69,7 @@ function Privacy(props) {
                 <strong>NARALABS S.L.</strong><br/>
                 Av. Via Augusta 15 - 25<br/>
                 08174 Sant Cugat del Vallès, Spain<br/>
-                Phone: +34 93 681 43 87<br/>
+                Phone: <a href="tel:+34936814387">+34 93 681 43 87</a><br/>
                 Mail: <a href="mailto:info@naralabs.com">info@naralabs.com</a>
               </div>
             </div>
@@ -81,7 +83,7 @@ function Privacy(props) {
 
   const PrivacyContent = () => (
       <div className="container paddingTop privacy_policy">
-        <h1 className="section-header">Privacy Policy</h1>
+        <h1 className="section-header">Privacy Notice</h1>
         <Block layout="oneColumn">
           {[
             {
@@ -90,6 +92,28 @@ function Privacy(props) {
               '<p>RIDING BYTES GmbH and NARALABS, S.L. (hereinafter referred to as "PROVIDERS") guarantee to web page users that such complies with the General Regulation of Data Protection (UE) 2016/679, and has established the security measures claimed by the laws and regulations destined to preserve secrecy, confidentiality and integrity in handling your personal data.</p>'
               + '<p>Such personal data will be used in the way and under the limitations and rights to grant the protection of information of personal use.</p>'
               + '<p>The collection and handling of personal data requested have the sole purpose of giving user support, not only administrative but commercial as well PROVIDERS agree to keep absolute reserve, secrecy and confidentiality about the information of personal data which it handles. You are entitled to obtain information whether if PROVIDERS are treating your personal information, reason for which you have the right to access your personal data, rectify inexact information or request deleting, once these is no longer needed for the purposes for which they were required.</p>',
+            },
+
+            {
+              title: 'Usage of Cookies',
+              content:
+              '<p>We do <strong>not</strong> use "cookies" (small files with configuration information) on our website.</p>'
+            },
+
+            {
+              title: 'Usage of Matomo Statistic Tools',
+              content:
+              '<p>We use the open-source software Matomo for the statistical evaluation of visitor access.</p>'
+              + '<p>The data collected by Matomo will not and never be transferred to other servers or passed on to third parties, but used in anonymous form to improve our offer. IP addresses are stored in Matomo without the last tuple. We know from which network an inquiry came, but not from which computer. </p>'
+              + '<p>You can disable data collection by Matomo here. If your browser supports the "Do-Not-Track" technique and you have activated it, your visit will automatically be ignored.</p>'
+              + '<p>By using our website, you consent to the processing of data collected about you by Matomo in the manner and for the purposes set out above.</p>'
+            },
+
+            {
+              title: 'Privacy Policy for the use of Twitter',
+              content:
+              '<p>Functions of the Twitter service are integrated on our sites. These features are available through Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA. By using Twitter and the "Re-Tweet" feature, the web pages you visit will be linked to your Twitter account and shared with other users. This data is also transmitted to Twitter.</p>'
+              + '<p>We point out that we as the providers of the pages are not aware of the content of the transmitted data and their use by Twitter. For more information, see the Twitter Privacy Policy at http://twitter.com/privacy. Your privacy settings on Twitter can be changed in the account settings at: <a href="http://twitter.com/account/settings">http://twitter.com/account/settings</a>.</p>'
             },
 
             {

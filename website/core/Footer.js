@@ -92,6 +92,8 @@ class Footer extends React.Component {
         <section className="privacy">
           <a href="privacy">Privacy policy and web legal announcement</a>
         </section>
+        {/* Matomo Tracking Image */}
+        <img src="https://piwik.ridingbytes.com/matomo.php?idsite=3&amp;rec=1" style={{border: 0}} alt="" />
       </footer>
     );
   }
