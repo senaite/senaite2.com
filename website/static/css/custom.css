@@ -36,6 +36,11 @@ html, body {
     color: #293333;
 }
 
+h1 {
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+
 div.mainContainer {
     padding-bottom: 0;
 }
@@ -142,8 +147,6 @@ div.providers .logo img {
 }
 div.container h1.section-header {
     text-align: center;
-    font-weight: 100;
-    font-size: 3.5rem;
 }
 div.providers .contactBlock {
     padding-top: 1em;

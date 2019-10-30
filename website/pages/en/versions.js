@@ -18,7 +18,7 @@ function Versions(props) {
   const repoUrl = `https://github.com/${siteConfig.organizationName}/${siteConfig.projectName}`;
   return (
     <div className="docMainWrapper wrapper">
-      <Container className="mainContainer versionsContainer paddingTop paddingBottom">
+      <Container className="mainContainer versionsContainer paddingBottom">
         <div className="post">
           <header className="postHeader">
             <h1>Versions</h1>
