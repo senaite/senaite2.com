@@ -48,6 +48,7 @@ class Footer extends React.Component {
           <div>
             <h5>Community</h5>
             <a target="_blank" href="https://community.senaite.org">Community Site</a>
+            <a target="_blank" href="https://sourceforge.net/projects/senaite/lists/senaite-users">Mailing List</a>
             <a target="_blank" href="https://gitter.im/senaite/Lobby">Gitter Chat</a>
           </div>
           <div>
