@@ -165,7 +165,7 @@ function EnterpriseSolution(props) {
         </div>
       </div>
       <div className="container">
-        <div class="wrapper">
+        <div className="wrapper">
           <VerticalTimeLine
           contents=
             {[
