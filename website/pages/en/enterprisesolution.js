@@ -187,7 +187,6 @@ function EnterpriseSolution(props) {
             {
               title: 'Project Plan',
               content: '<p>Delivery of a project plan based on the discussion and feedback received from previous stages. Includes the <strong>scope, milestones and deliverables</strong>.</p><p>It becomes the approved document <strong>used to guide both project execution and project control</strong>: document planning assumptions and decisions, facilitate communication, scope, cost, and schedule baselines.</p>',
-              icon: `${baseUrl}img/cd-icon-location.svg`,
               color: '#927f54',
             },
             {
