@@ -82,26 +82,45 @@ function Features(props) {
     );
 
   const WorksheetBlock = () => (
+    <div className="container paddingBottom paddingTop">
     <Block align="left">
     {[
       {
+        title: 'Worksheets',
         content:
         '<p>Worksheets are entities used by Lab Manager to plan the work to be done by Analysts and to group Analyses from different Samples in a single batch of work.'
         + 'Worksheets might also represent a single work package of multiple samples analyses in a given analytical instrument.</p>'
         + '<p>Worksheets support the addition of QC analyses (blanks, controls and duplicates) detect irregularities during the verification process.',
         image: `${baseUrl}img/worksheet_1.png`,
         imageAlign: 'right',
-        title: 'Worksheets',
       },
     ]}
     </Block>
+    </div>
+  );
+
+  const ProfilesTemplatesBlock = () => (
+    <div className="container bg-lightgrey paddingBottom paddingTop">
+    <Block align="left">
+    {[
+      {
+        title: 'Profiles and Templates',
+        content:
+        '<p>Profiles and Templates are useful tools to group analyses and make the creation of Samples with multiple tests an easy task: once a profile is selected while creating a Sample, all tests are added automatically. You can add as many profiles for a Sample as you wish. Templates are like Profiles, but with Sample type and partitioning criteria.</p><p>SENAITE also supports the creation of client-specific templates and profiles.</p>',
+        image: `${baseUrl}img/analysis_template_1.png`,
+        imageAlign: 'left',
+      }
+    ]}
+    </Block>
+    </div>
   );
 
   return (
-    <div className="container">
+      <div className="container">
       <SenaiteFeatures />
       <WorksheetBlock />
-    </div>
+      <ProfilesTemplatesBlock />
+      </div>
   );
 }
 
