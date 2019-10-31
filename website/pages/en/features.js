@@ -82,7 +82,7 @@ function Features(props) {
     );
 
   const WorksheetBlock = () => (
-    <div className="container paddingBottom paddingTop">
+    <div className="container paddingTop">
     <Block align="left">
     {[
       {

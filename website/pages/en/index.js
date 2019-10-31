@@ -191,6 +191,29 @@ class Index extends React.Component {
     };
 
 
+    const MailingListForm = props => (
+     <div className="container paddingTop paddingBottom">
+     <h1 className="section-header">Mailing list</h1>
+     <div className="wrapper">
+            <div className="section-intro">
+              Subscribe to announcements and news.
+            </div>
+           </div>
+      <div className="wrapper">
+      <div className="alignCenter">
+      <form id="subscribe"
+            className="form form-inline"
+            action="https://sourceforge.net/projects/senaite/lists/senaite-users" method="GET">
+        <input name="email" placeholder="labman@acme-labs.io" type="text" className="form-input"/>
+        <input className="button" type="submit" title="Send"
+               value="Subscribe"/>
+      </form>
+      </div>
+      </div>
+      </div>
+    );
+
+
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />

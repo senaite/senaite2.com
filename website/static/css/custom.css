@@ -262,15 +262,11 @@ div.privacy_policy_responsibles .company-info {
 #subscribe .button {
   font-weight: bold;
   color: #fff;
-  background-color: transparent;
+  background-color: #927f54;
   cursor: pointer;
-}
-
-#subscribe .button {
-  font-weight: bold;
-  color: #fff;
-  background-color: transparent;
-  cursor: pointer;
+  margin-left:10px;
+  padding: 10px 20px;
+  border:none;
 }
 
 #subscribe .button:hover {
@@ -280,4 +276,5 @@ div.privacy_policy_responsibles .company-info {
 
 #subscribe input.form-input {
   color: #555;
+  width: 300px;
 }
