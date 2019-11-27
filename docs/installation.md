@@ -210,7 +210,12 @@ $ which buildout
 $ PYTHONHTTPSVERIFY=0 buildout
 ```
 
-Also see here: https://github.com/senaite/senaite.lims#readme
+## Further links
+
+- https://github.com/senaite/senaite.lims#readme
+- http://www.buildout.org/en/latest/
+- https://setuptools.readthedocs.io/en/latest
+- https://docs.conda.io/en/latest/miniconda.html
 
 
 ## Starting SENAITE
