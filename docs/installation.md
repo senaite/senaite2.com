@@ -180,7 +180,7 @@ compatible version:
 
 Create a `requirements.txt` file:
 
-```
+```shell
 $ cd /home/senaite/senaitelims
 $ cat << EOF > requirements.txt
 setuptools==39.2.0
@@ -191,7 +191,7 @@ EOF
 
 Install the requirements with the `pip` command of the local Python environment:
 
-```
+```shell
 $ which pip
 /home/senaite/miniconda2/envs/senaite/bin/pip
 
@@ -238,7 +238,7 @@ You can also start SENAITE in the background (production) mode with the command
 
 This will print several logs to the terminal and notifies when the server is ready with the line:
 
-```
+```log
 2019-09-14 09:59:44 INFO Zope Ready to handle requests
 ```
 
