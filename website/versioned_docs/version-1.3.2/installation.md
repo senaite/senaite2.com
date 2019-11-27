@@ -15,7 +15,7 @@ We recommend to install SENAITE on [Ubuntu][UBUNTU] or [Debian][DEBIAN] Linux.
 Installation on MacOS works as well, but needs additional packages installed
 via [Homebrew][HOMEBREW].
 
-In this secion we will mostly use Ubuntu as reference system.
+In this secion we will mostly use **Ubuntu 18.04 LTS** as reference system.
 
 The installation on other Linux distributions, MacOS or Windows is not covered here.
 
@@ -23,7 +23,10 @@ The installation on other Linux distributions, MacOS or Windows is not covered h
 ## A note about Versions
 
 The current codebase of SENAITE is at the moment only compatible with the latest
-version 4 of Plone. This version of Plone works only with [Python][PYTHON] 2.x.
+version 4 of Plone.
+
+**☝️Note:**
+**This version of Plone works only with [Python][PYTHON] 2.x.**
 
 
 ## Python
@@ -38,39 +41,71 @@ libraries is that it might get upgraded by the system and get incompatible.
 Therefore, it is better to setup a virtual Python environment with one of the
 following tools:
 
--   Virtualenv: <https://pypi.org/project/virtualenv>
--   Miniconda: <https://conda.io/miniconda.html>
+  - Virtualenv: <https://pypi.org/project/virtualenv>
+  - Miniconda: <https://conda.io/miniconda.html>
 
-In this manual we will use Miniconda.
+In this manual we will use **Miniconda**.
+
+
+## Create a new User
+
+Create a new user `senaite` in your system with the following command:
+
+```shell
+$ adduser --home /home/senaite --shell /bin/bash senaite
+```
+
+And make sure you became this user within the following sections:
+
+```shell
+$ sudo su - senaite
+$ whoami
+senaite
+```
 
 
 ## Miniconda
 
-Please use your terminal to run the commands listed below.
+Download and install the `Python 2.7` version for your operating system:
 
-1.  Download the `Python 2.7` version for your operating system
-2.  Create a virtual environment with `conda create --name senaite`
-3.  Activate the environment with `conda activate senaite`
+```shell
+$ wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh
+$ ~/Miniconda2-latest-Linux-x86_64.sh
+$ source ~/.bashrc
+```
+
+*You can accept the default settings of the miniconda installer*
+
+Create a new Python environment with the name `senaite`:
+
+```shell
+$ conda create --name senaite python=2.7
+```
+
+Activate the Python environment:
+
+```shell
+$ conda active senaite
+```
 
 The command `which python` can be used to check if the right Python interpreter
-is active in the current shell:
+is active in the current session:
 
 ```shell
 $ which python
-~/miniconda2/envs/senaite/bin/python
+/home/senaite/miniconda2/envs/senaite/bin/python
 ```
-
 
 ```shell
 $ python
-Python 2.7.16 |Anaconda, Inc.| (default, May  1 2018, 18:37:05)
-[GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)] on darwin
+Python 2.7.17 |Anaconda, Inc.| (default, Oct 21 2019, 19:04:46)
+[GCC 7.3.0] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
 
-## Install dependencies
+## Install System dependencies
 
 Install the required dependencies for SENAITE:
 
@@ -87,12 +122,11 @@ $ sudo apt install libffi-dev libcairo2 libpango-1.0-0 libgdk-pixbuf2.0-0 libpan
 The [Plone Unified Installer][PLONE-unified-installer] installs Plone and its
 dependencies from source on most Unix-like platforms.
 
+```shell
+$ wget --no-check-certificate https://launchpad.net/plone/4.3/4.3.19/+download/Plone-4.3.19-UnifiedInstaller.tgz
+$ tar xzf Plone-4.3.19-UnifiedInstaller.tgz
+$ cd Plone-4.3.19-UnifiedInstaller
 ```
-$ wget --no-check-certificate https://launchpad.net/plone/4.3/4.3.18/+download/Plone-4.3.18-UnifiedInstaller.tgz
-$ tar xzf Plone-4.3.18-UnifiedInstaller.tgz
-$ cd Plone-4.3.18-UnifiedInstaller
-```
-
 
 ## Install Plone
 
@@ -102,9 +136,9 @@ Next step is to install Plone with the provided `install.sh` shell script:
 $ ./install.sh standalone --target=/home/senaite --instance=senaitelims --password=admin
 ```
 
-**Note**
-We install SENAITE in the directory `/home/senaite` and we have set the admin
-password to `admin`
+**☝️Note:**
+We install SENAITE in the directory `/home/senaite/senaitelims` and we have set
+the admin password to `admin`
 
 
 ## Install SENAITE
@@ -113,13 +147,12 @@ To install SENAITE we need to modify the generated `buildout.cfg` config file.
 [Buildout][BUILDOUT] is an automation tool written in and extended with Python:
 
 ```shell
-$ cd /home/senaite
+$ cd /home/senaite/senaitelims
 $ vim buildout.cfg
 ```
 
-**Note**
-You can use `nano` or any other text editor you feel comfortable with instead of
-`vim`.
+**☝️Note:**
+You can use `nano` or any other text editor you feel comfortable with
 
 Add `senaite.lims` to the `eggs` section of the file:
 
@@ -131,12 +164,51 @@ eggs =
     senaite.lims
 zcml =
 ...
+
+[versions]
+zc.buildout =
+setuptools =
 ```
+
+**☝️Note:**
+The version unpinning of `zc.buildout` and `setuptools` is important!
+
+
+### Upgrade pip, setuptools and zc.buildout
+
+We need to ensure that `pip`, `setuptools`, and `zc.buildout` are available in a
+compatible version:
+
+Create a `requirements.txt` file:
+
+```
+$ cd /home/senaite/senaitelims
+$ cat << EOF > requirements.txt
+setuptools==39.2.0
+zc.buildout==2.13.2
+pip==19.3.1
+EOF
+```
+
+Install the requirements with the `pip` command of the local Python environment:
+
+```
+$ which pip
+/home/senaite/miniconda2/envs/senaite/bin/pip
+
+$ pip install -r requirements.txt
+```
+
+**☝️Note:**
+A wrong version of `setuptools` can lead to the infamous 
+[Error while buildout: There is a version conflict. We already have: UNKNOWN 0.0.0](https://github.com/senaite/senaite.lims/issues/106)
 
 Re-run the `buildout` script:
 
 ```shell
-$ PYTHONHTTPSVERIFY=0 bin/buildout
+$ which buildout
+/home/training/miniconda2/envs/senaite/bin/buildout
+$ PYTHONHTTPSVERIFY=0 buildout
 ```
 
 Also see here: https://github.com/senaite/senaite.lims#readme
@@ -193,5 +265,4 @@ Please continue with the next sections to learn the first steps in your new syst
 [HOMEBREW]: https://brew.sh "The missing package manager for macOS (or Linux)"
 [PLONE-unified-installer]: https://github.com/plone/Installers-UnifiedInstaller  "Plone Unified Installer"
 [BUILDOUT]: http://www.buildout.org/en/latest/  "Buildout, an automation tool written in and extended with Python"
-
 
