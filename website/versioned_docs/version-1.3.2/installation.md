@@ -52,7 +52,7 @@ In this manual we will use **Miniconda**.
 Create a new user `senaite` in your system with the following command:
 
 ```shell
-$ adduser --home /home/senaite --shell /bin/bash senaite
+$ sudo adduser --home /home/senaite --shell /bin/bash senaite
 ```
 
 And make sure you became this user within the following sections:
