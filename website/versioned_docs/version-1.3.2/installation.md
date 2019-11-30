@@ -70,8 +70,8 @@ Download and install the `Python 2.7` version for your operating system:
 
 ```shell
 $ wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh
-$ ~/Miniconda2-latest-Linux-x86_64.sh
-$ source ~/.bashrc
+$ bash /home/senaite/Miniconda2-latest-Linux-x86_64.sh
+$ source /home/senaite/.bashrc
 ```
 
 *You can accept the default settings of the miniconda installer*
@@ -85,7 +85,7 @@ $ conda create --name senaite python=2.7
 Activate the Python environment:
 
 ```shell
-$ conda active senaite
+$ conda activate senaite
 ```
 
 The command `which python` can be used to check if the right Python interpreter
