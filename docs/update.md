@@ -4,7 +4,7 @@ title: How to update SENAITE
 sidebar_label: How to update SENAITE
 ---
 
-We regularly release new versions of SENAITE and the required add-ons.
+We regularly release new versions of SENAITE and the required Add-ons.
 Therefore, it is crucial to understand the steps required to update an existing
 SENAITE installation and how to run the upgrade steps to migrate your data from
 one version to the other.
@@ -12,7 +12,7 @@ one version to the other.
 ## Disclaimer
 
 Although we invest a lot of time ensuring that each upgrade step works properly
-and migrates the data safely from one version to another, unforseen things can
+and migrates the data safely from one version to another, unforeseen things can
 happen and your database can get damaged.
 
 Please note that your data is in your responsibility and it is highly recommended
@@ -40,7 +40,7 @@ automatically be installed as dependency in the correct version.
 
 ## Preparing the Update
 
-Please read for every new update the changelogs of each package:
+Please read for every new update the change logs of each package:
 https://pypi.org/project/senaite.lims/#changelog
 
 Most of the changes happen in `senaite.core`, so read them thoroughly:
@@ -50,7 +50,7 @@ If you have your own add-on, please review the changes to check beforehand if
 some parts of your add-on require modifications. Worth to mention that the
 following tips are strongly recommended before proceeding with the upgrade:
 
-- Test first with a clone your current productive VM
+- Test first with a clone of your current productive VM
 - Do a `zeopack` of your database
 - Do a backup of both your code and database
   (a copy of the `filestorage` and `blobstorage` directories)
@@ -125,7 +125,7 @@ upgrades" button.
 
 ![Old Upgrades](/screenshots/zmi_portal_setup_show_old_upgrades.png "Old Upgrades")
 
-You can re-run the upgrade steop of the latest version if needed.
+You can re-run the upgrade step of the latest version if needed.
 
 Continue the last steps for the rest of the profiles with pending upgrades.
 
