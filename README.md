@@ -60,6 +60,16 @@ Deploy Command:
     ./bin/deploy
 
 
+## Versioning
+
+Run the following command to create a new version:
+
+    cd website
+    yarn run version 1.3.3
+
+Further reading: https://docusaurus.io/docs/en/versioning
+
+
 # License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">

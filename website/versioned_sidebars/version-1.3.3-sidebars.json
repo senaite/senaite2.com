@@ -1,0 +1,28 @@
+{
+  "version-1.3.3-docs": {
+    "Getting Started": [
+      "version-1.3.3-installation",
+      "version-1.3.3-quickstart",
+      "version-1.3.3-update"
+    ],
+    "Working with Samples": [
+      "version-1.3.3-sample-basics",
+      "version-1.3.3-sample-copy",
+      "version-1.3.3-sample-barcodes",
+      "version-1.3.3-sample-analyses",
+      "version-1.3.3-sample-partitions"
+    ],
+    "Working with Analyses": [
+      "version-1.3.3-analysis-specifications",
+      "version-1.3.3-dynamic-analysis-specifications",
+      "version-1.3.3-analysis-calculations",
+      "version-1.3.3-analysis-categorization",
+      "version-1.3.3-analysis-profiles",
+      "version-1.3.3-analysis-templates"
+    ],
+    "Working with Worksheets": [
+      "version-1.3.3-worksheet-basics",
+      "version-1.3.3-worksheet-control-references"
+    ]
+  }
+}
