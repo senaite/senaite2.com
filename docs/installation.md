@@ -153,7 +153,7 @@ $ vim buildout.cfg
 **☝️Note:**
 You can use `nano` or any other text editor you feel comfortable with
 
-Add `senaite.lims` to the `eggs` section of the file:
+Add `senaite.lims` and `simplejson` to the `eggs` section of the file:
 
 ```config
 [buildout]
@@ -161,6 +161,7 @@ Add `senaite.lims` to the `eggs` section of the file:
 eggs =
     ...
     senaite.lims
+    simplejson
 zcml =
 ...
 ```
