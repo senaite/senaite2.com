@@ -51,7 +51,7 @@ https://docusaurus.io/docs/en/api-pages#provided-components
 ## Deployment
 
 The website is deployed on [GitHub](https://github.com/senaite) in the repository
-`ridingbytes.github.io`.
+`senaite.github.io`.
 
 A script will execute all necessary steps to deploy the latest version.
 
