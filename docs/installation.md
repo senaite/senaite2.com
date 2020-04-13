@@ -163,10 +163,21 @@ eggs =
     senaite.lims
 zcml =
 ...
+```
 
+Modify the `versions` section of the file as follows:
+
+```shell
 [versions]
 zc.buildout =
 setuptools =
+Pillow = 5.1.0
+cssselect2 = 0.2.2
+soupsieve = 1.9.5
+
+buildout.sanitycheck = 1.0.2
+collective.recipe.backup = 4.0
+plone.recipe.unifiedinstaller = 4.3.2
 ```
 
 **☝️Note:**
