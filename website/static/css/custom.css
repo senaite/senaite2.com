@@ -278,3 +278,57 @@ div.privacy_policy_responsibles .company-info {
   color: #555;
   width: 300px;
 }
+
+/*
+ * Section Documentation
+ */
+div.docsContainer h1 {
+  font-size:2.4rem;
+  margin-bottom: 20px;
+}
+div.docsContainer h2 {
+  font-size:1.8rem;
+  font-weight:100;
+}
+div.docsContainer h3 {
+}
+
+#docsNav .toc li a {
+  text-decoration:none;
+  color: #888;
+}
+
+#docsNav .toc li.navListItemActive {
+  text-decoration:none;
+  background-color:#efefef;
+  margin-left: -8px;
+  padding-left: 8px;
+}
+#docsNav .toc li.navListItemActive a {
+  color: #927f54;
+}
+div.docMainWrapper nav.onPageNav li a {
+  text-decoration:none;
+  font-size:0.9rem;
+  color: #888;
+}
+div.docMainWrapper nav.onPageNav li a.active {
+  color: #333;
+  font-weight:normal;
+}
+div.docMainWrapper nav.onPageNav ul ul.toc-headings {
+  padding-left:8px;
+}
+div.docsContainer div.docs-prevnext {
+  border-top: 1px dotted #cdcdcd;
+  margin-top:30px;
+  padding-top:10px;
+}
+div.docsContainer div.docs-prevnext a {
+  border:none;
+  font.size:0.9rem;
+}
+div.docsContainer div.docs-prevnext a:hover {
+  background-color: transparent;
+  color: #333;
+}

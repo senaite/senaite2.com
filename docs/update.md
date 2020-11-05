@@ -1,7 +1,7 @@
 ---
 id: update
-title: How to update SENAITE
-sidebar_label: How to update SENAITE
+title: Releases and Updates
+sidebar_label: Releases and Updates
 ---
 
 We regularly release new versions of SENAITE and the required Add-ons.

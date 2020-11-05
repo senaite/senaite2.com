@@ -2,27 +2,45 @@
   "docs": {
     "Getting Started": [
       "installation",
+      "update",
       "quickstart",
-      "update"
+      {
+        "type": "subcategory",
+        "label": "Working with Samples",
+        "ids": [
+          "sample-basics",
+          "sample-copy",
+          "sample-barcodes",
+          "sample-analyses",
+          "sample-partitions"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Working with Analyses",
+        "ids": [
+          "analysis-specifications",
+          "dynamic-analysis-specifications",
+          "analysis-calculations",
+          "analysis-categorization",
+          "analysis-profiles",
+          "analysis-templates"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Working with Worksheets",
+        "ids": [
+          "worksheet-basics",
+          "worksheet-control-references"
+        ]
+      }
     ],
-    "Working with Samples": [
-      "sample-basics",
-      "sample-copy",
-      "sample-barcodes",
-      "sample-analyses",
-      "sample-partitions"
-    ],
-    "Working with Analyses": [
-      "analysis-specifications",
-      "dynamic-analysis-specifications",
-      "analysis-calculations",
-      "analysis-categorization",
-      "analysis-profiles",
-      "analysis-templates"
-    ],
-    "Working with Worksheets": [
-      "worksheet-basics",
-      "worksheet-control-references"
+    "User manual": [
+      "user_manual/preface",
+      "user_manual/site_configuration",
+      "user_manual/general_navigation",
+      "user_manual/users_and-groups"
     ]
   }
 }
