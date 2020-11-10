@@ -81,9 +81,9 @@ by the system:
 
 ## User Groups
 
-SENAITE allows comes with user groups too. Groups are used to "group" roles. A 
+SENAITE comes with user groups too. Groups are used to "group" roles. A 
 user can be assigned to a group and therefore, acquire all the privileges 
-granted for the roles that are assigned to that group. However, in a vanilla 
+granted for the roles that are assigned to that same group. However, in a vanilla 
 installation of SENAITE, the relationship between groups and roles is *almost* 
 one to one in order to keep things simple. The term *almost* is used because 
 besides this one-to-one relationship between groups and roles, groups contain
@@ -101,9 +101,76 @@ necessary. Privileges for specific permissions can be granted at user level too.
 ## User Permissions
 
 Permissions in SENAITE are quite powerful, mostly because their scope is at 
-object-level: every single electronic record in SENAITE has its own permissions 
-mapping. One might change the permission schema globally, but existing electronic
-records won't be affected. 
+both object-level and status level: every single electronic record in SENAITE 
+has its own permissions mapping and depends on its status. One might change the 
+permission schema globally, but existing electronic records won't be affected. 
+Not only that, permission mappings of a single electronic record are different 
+depending on its status at any given time. For example, the permissions mapping 
+for a Sample in status *received* (not yet processed) is different from the 
+permissions mapping the Sample acquires when it reaches the status *verified* 
+(the sample has been reviewed and verified by a user with "Lab Manager" role). 
+
+The "mutation" of the permission mappings at object-level each time the status
+of an electronic record changes is done automatically depending on the workflow 
+definition for that specific type of electronic record. Every single type 
+(Sample, Worksheet, Analysis, Client, etc) has its own workflow definition,
+and therefore, have its own permission mapping for every single status they can 
+have.
+
+There are four types of permissions:
+
+* **Object permissions**: these are the best known permissions and are 
+    traditionally used for read and update operations at object level. The 
+    four principal permissions of this type, inherited from Zope framework are:
+    
+    * *View*: allow/disallow the user to *view* all information from an
+       electronic record. "Sample ID", "Sample Type", "Sample's contact" are
+       fields of information from a Sample (electronic record)
+
+    * *Modify portal content*: allow/disallow the user to edit the contents of
+       an electronic record. Note that it does not refer to electronic record 
+       information only, but also to the electronic record and children 
+
+    * *Access contents information*: allow/disallow the user access to the
+       basic data information of an electronic record. Every electronic record 
+       has some information that is considered as basic (like IDs, titles or 
+       descriptions). However, the "basic" information accessible might differ
+       depending on the electronic record type. This permission is useful for
+       when full access "View" to an electronic record is not desirable, but
+       user should still be able to locate and know about that record
+ 
+    * *List folder contents*: allow/disallow the user to list electronic
+       records contained by an electronic record. As an example, a Sample belongs
+       to a Client and as such, its container is the Client electronic record.
+       One might want the user to have access to the Client information, but not
+       able to reach the Samples inside
+
+* **Field permissions**: the scope of these permissions are the fields
+    an electronic record contain. Usually, there are two permissions for each
+    field: one for view and another for edit. When a Sample is in "received"
+    status, "Lab Clerks" and "Lab Managers" can modify the information of
+    the sample: these roles have the object-level permission "Modify portal 
+    content" granted. However, there are some fields that neither "Lab Manager"
+    nor "Lab Clerk" can edit at this point: "Client", "Sample Type", etc. The
+    read/write privilege for these fields is governed by field-scope permissions:
+    "Field Edit Sample Type" and "Field View Sample Type"
+    
+* **Transition permissions**: these permissions govern whether a given role can
+    perform a given action/transition to an object at a given status. Only
+    "Lab Manager" can transition a Sample from "to be verified" to "verified" 
+    status, even when other roles have the object-level permission 
+    "Modify portal content" granted.
+    
+* **Behavioral permissions**: these are the less common permissions and are used
+    in heterogeneous places (not necessarily bound to an object) to control what
+    the information to display or actions allowed to the user. "Manage SENAITE"
+    is a behavioral permission and users with this permission granted can access
+    to some control panels and settings that otherwise, remain hidden.
+
+The fine-granularity of permissions and their scope, together with the fact that
+they are tightly bound to the workflow status of electronic records make 
+SENAITE LIMS a very strong system in terms of security, while being flexible
+enough to fit with security policies from different types of organizations.
 
 
 ## Users and Contacts
