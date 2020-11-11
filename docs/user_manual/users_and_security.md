@@ -3,11 +3,19 @@ id: users_and_security
 title: Users and Security
 ---
 
+## Overview
+
 SENAITE LIMS is a multi-user system and by default, maintains the user accounts 
 on its own database, without relying on the user accounts set up on the 
 workstations or on the operating system under which runs. However, SENAITE LIMS
 can use the industry-standard Lightweight Directory Access Protocol (LDAP) for
 users management and authentication.
+
+The access to the software follows a "User - role - permission" three layer 
+security model. Each user can belong to one or more roles and a fine-grained 
+schema of permissions is set at electronic record level. The system is so
+powerful that a user with enough privileges could apply role permissions to each
+single electronic record stored in the system, individually.
 
 ## User Roles
 
@@ -56,7 +64,7 @@ The following are the roles that come by default with the system:
 * **Publisher**: Users with this role don't have rights to manage electronic
     records or perform anything else other than publishing samples.
 
-Besides the roles above, there are two additional roles that are used internally
+Besides the roles above, there are four additional roles that are used internally
 by the system:
 
 * **Anonymous**: Any user that has not been authenticated in the system. These
@@ -170,7 +178,7 @@ There are four types of permissions:
 The fine-granularity of permissions and their scope, together with the fact that
 they are tightly bound to the workflow status of electronic records make 
 SENAITE LIMS a very strong system in terms of security, while being flexible
-enough to fit with security policies from different types of organizations.
+enough to fit with the security policies from different types of organizations.
 
 
 ## Users and Contacts
