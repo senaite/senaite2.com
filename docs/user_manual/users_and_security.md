@@ -8,14 +8,16 @@ title: Users and Security
 SENAITE LIMS is a multi-user system and by default, maintains the user accounts 
 on its own database, without relying on the user accounts set up on the 
 workstations or on the operating system under which runs. However, SENAITE LIMS
-can use the industry-standard Lightweight Directory Access Protocol (LDAP) for
-users management and authentication.
+can use the industry-standard [Lightweight Directory Access Protocol (LDAP)][LDAP]
+for users management and authentication.
 
-The access to the software follows a "User - role - permission" three layer 
-security model. Each user can belong to one or more roles and a fine-grained 
-schema of permissions is set at electronic record level. The system is so
-powerful that a user with enough privileges could apply role permissions to each
-single electronic record stored in the system, individually.
+The security policy of SENAITE software is inherited from [Zope][zope_security] and 
+follows the widely accepted as best practice [Role-Based Access Control (RBAC)][RBAC], 
+a policy-neutral access-control mechanism defined around roles and privileges. 
+Each user (subject) can belong to one or more roles and a fine-grained schema of
+permissions is set at electronic record level. The system is so powerful that a 
+user with enough privileges could apply role permissions to each single electronic
+record stored in the system, individually.
 
 ## User Roles
 
@@ -27,26 +29,26 @@ a laboratory.
 
 The following are the roles that come by default with the system:
 
-* **LabManager**: Users with this role assigned can do almost everything (from
+* **LabManager**: Users with this role assigned can do almost everything (
     maintaining electronic records such as analysis profiles, assigning work by
     means of worksheets, managing, laboratory and client contacts, etc.). A user 
-    with LabManager role also have privileges to verify analyses, samples and 
+    with this role assigned also have privileges to verify analyses, samples and 
     publish them. However, laboratory managers do not have privileges for
     system administration low-level tasks, for which a technically skilled user 
-    with knowledge about the underlying Zope framework is required.
+    with knowledge about the underlying Plone and Zope framework is required.
     
 * **LabClerk**: Users with this role can manage clients, client contacts and
     some electronic records as well. They can also register samples into the 
     system, receive, cancel or reject them, but they cannot participate on 
-    results introduction, verification and publication processes. These users 
-    play an important role regarding to ocular inspection of the sample 
+    results submission, verification and publication processes. These users 
+    play an important role regarding to the ocular inspection of the sample 
     conditions and data validation on sample reception.
     
 * **Analyst**: Users with this role cannot manage electronic records, neither
-    from clients nor from the laboratory. They can submit results of analyses 
+    from clients nor from the laboratory. They can submit results for analyses 
     and also retract them, but they don't have privileges to verify, publish,
-    reject or invalidate. Therefore, analyses are mostly responsible of
-    results introduction.
+    reject or invalidate. Therefore, users with role "Analyst" are responsible 
+    of results introduction and submission mostly.
     
 * **Client**: Users with this role always belong to a Client/Sample Referrer
     and can access to the system, but they can only see the electronic records 
@@ -55,8 +57,8 @@ The following are the roles that come by default with the system:
     rejected by laboratory personnel. Clients can also query and download 
     results reports from samples that have been verified and published by the 
     laboratory anytime. Regarding to results of tests, they cannot see them 
-    unless verified by a lab user with enough privileges, even if they have 
-    results submitted already.
+    unless verified by a lab user with enough privileges, even if results have 
+    been submitted already.
 
 * **Verifier**: Users with this role don't have rights to manage electronic 
     records or perform anything else other than verifying tests and samples.
@@ -70,7 +72,7 @@ by the system:
 * **Anonymous**: Any user that has not been authenticated in the system. These
     users have access to the Login screen only.
 
-* **Authenticated**: Any authenticated user, regardless of their specific role
+* **Authenticated**: Any authenticated user, regardless of their specific role, 
     belongs to this group. Authenticated users can see past the login screen, 
     the navigation bar, the menu items and some screens without sensitive data.
     
@@ -120,10 +122,11 @@ permissions mapping the Sample acquires when it reaches the status *verified*
 
 The "mutation" of the permission mappings at object-level each time the status
 of an electronic record changes is done automatically depending on the workflow 
-definition for that specific type of electronic record. Every single type 
-(Sample, Worksheet, Analysis, Client, etc) has its own workflow definition,
-and therefore, have its own permission mapping for every single status they can 
-have.
+definition for that specific type of electronic record. Workflow definition will
+be explained in detail later, in chapter *[Workflow][workflow]*, but is worth to
+mention here that every single type (Sample, Worksheet, Analysis, Client, etc) 
+has its own workflow definition, and therefore, have its own permission mapping 
+for every single status they can reach within their life-cycle.
 
 There are four types of permissions:
 
@@ -217,3 +220,8 @@ required when creating a Sample. Only the contacts from the same client the
 Sample belongs to are available for selection. On the other side, the selection
 of a Laboratory Contact is required when creating a Worksheet.
 
+
+[LDAP]: https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol
+[RBAC]: https://en.wikipedia.org/wiki/Role-based_access_control
+[zope_security]: https://zope.readthedocs.io/en/latest/zopebook/Security.html#introduction-to-zope-security
+[workflow]: ./workflow
