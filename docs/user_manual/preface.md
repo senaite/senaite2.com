@@ -33,11 +33,18 @@ of SENAITE and technologies behind can visit the links provided and are encourag
 to read the technical documentation.
 
 
+## Intended use and applicability
+
+This document is for use with SENAITE LIMS version 2.x. When a subsequent
+software version affects the information in this manual, a new version will be 
+released and accessible from the [Versions](/versions) page.
+
+
 ## How to read this manual
 
 This manual is more explanatory and verbose in nature than the technical 
-documentation of SENAITE add-ons. Some things to bear in mind while reading this
-document:
+documentation of the add-ons that SENAITE LIMS is based on. Some things to bear 
+in mind while reading this document:
 
 * This manual is not and does not try to be an exhaustive documentation of
   every possible use-case, scenario and/or laboratory operation that can be 
