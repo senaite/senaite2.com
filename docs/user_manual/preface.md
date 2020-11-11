@@ -37,7 +37,7 @@ to read the technical documentation.
 
 This document is for use with SENAITE LIMS version 2.x. When a subsequent
 software version affects the information in this manual, a new version will be 
-released and accessible from the [Versions](/versions) page.
+released and accessible from the [Versions][senaite_web_versions] page.
 
 
 ## How to read this manual
@@ -68,18 +68,17 @@ Management System (LIMS) for enterprise environments, especially focused to
 behave with excellent performance and stability. SENAITE LIMS is part of a 
 family of inter-related Open Source software applications and add-ons that are 
 developed and published under the umbrella of SENAITE name. These add-ons, and 
-SENAITE LIMS as well, are hosted in the [SENAITE's organization Github page](https://github.com/senaite).
+SENAITE LIMS as well, are hosted in the [SENAITE's organization Github page][senaite_github].
 
 The main point of Open Source software is providing open and unrestricted access
 to the program source code, so organizations using SENAITE can access, study and
 modify the software in order to make the software better fit with their own 
 organizational needs. Also, organizations can benefit from improvements and 
 other developments made world-wide by companies supporting SENAITE and by the
-[SENAITE Open Source Community](https://community.senaite.org).
+[SENAITE Open Source Community][senaite_community].
 
-SENAITE is maintained, developed and supported by
-[Naralabs](https://naralabs.com) and [Riding Bytes](https://ridingbytes.com), 
-since November 2017. 
+SENAITE is maintained, developed and supported by [Naralabs][naralabs] and 
+[Riding Bytes][ridingbytes], since November 2017. 
 
 The first public version of SENAITE LIMS, 1.2.0, was released on Jan 3d, 2018. 
 By the end of year 2020, more than ten versions have  been released publicly and
@@ -89,17 +88,17 @@ All active work is publicly available and visible on Github and undergoes
 thorough code reviews and testing before new releases are made public.
 
 If you want to keep in touch with the community members and up-to-date with the 
-latest discussions, please join to the [Community discussion board](https://community.senaite.org/) 
-or to the [Gitter community channel](https://gitter.im/senaite/Lobby).
+latest discussions, please join to the [Community discussion board][senaite_community] 
+or to the [Gitter community channel][senaite_gitter].
 
 
 ## Contributing to this manual
 
-Everybody may contribute to this [Docusaurus](https://docusaurus.io/)-based 
-documentation. This manual adheres to the [Contributor Covenant Code of Conduct version 1.4](https://www.contributor-covenant.org/version/1/4/code-of-conduct/)
-and is hosted at [senaite2.com repository on Github](https://github.com/senaite/senaite2.com).
+Everybody may contribute to this [Docusaurus][docusaurus]-based 
+documentation. This manual adheres to the [Contributor Covenant Code of Conduct version 1.4][covenant]
+and is hosted at [senaite2.com repository on Github][senaite2_github].
 All contents are available under the "docs/user_manual" folder. To add new 
-content or edit an existing one, please follow [these instructions](https://github.com/senaite/senaite2.com/blob/master/website/README.md) 
+content or edit an existing one, please follow [these instructions][senaite2_readme] 
 and open a Pull Request afterwards.
 
 Just like with code contributions, please follow best practice. Validate your 
@@ -109,7 +108,7 @@ Use a reasonable line length (<80).
 All suggestions and proposals are welcome. Feedback of the community is an 
 important asset for the improvement of this manual. With the aim to get 
 the most of these contributions, but without interfering with the undergoing 
-work, the [Community discussion board](https://community.senaite.org/) is the 
+work, the [Community discussion board][senaite_community] is the 
 right place to discuss new ideas, further steps or improvements.
 
 
@@ -140,4 +139,17 @@ support SENAITE LIMS endorse or have approved the linked site.
 
 ## License
 
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][ccasha4].
+
+
+[docusaurus]: https://docusaurus.io/
+[naralabs]: https://naralabs.com
+[ridingbytes]: https://ridingbytes.com
+[senaite_community]: https://community.senaite.org/
+[senaite_github]: https://github.com/senaite
+[senaite_gitter]: https://gitter.im/senaite/Lobby
+[senaite_web_versions]: /versions
+[senaite2_github]: https://github.com/senaite/senaite2.com
+[senaite2_readme]: https://github.com/senaite/senaite2.com/blob/master/website/README.md
+[ccasha4]: http://creativecommons.org/licenses/by-sa/4.0/
+[covenant]: https://www.contributor-covenant.org/version/1/4/code-of-conduct/
