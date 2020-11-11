@@ -19,7 +19,7 @@ permissions is set at electronic record level. The system is so powerful that a
 user with enough privileges could apply role permissions to each single electronic
 record stored in the system, individually.
 
-## User Roles
+## Roles
 
 SENAITE LIMS is also a multi-role system, so every single user can have one or 
 more roles assigned, and each role has a set of permissions granted. Therefore,
@@ -89,7 +89,7 @@ by the system:
     be used when strictly required and for system maintenance tasks mostly.
 
 
-## User Groups
+## Groups
 
 SENAITE comes with user groups too. Groups are used to "group" roles. A 
 user can be assigned to a group and therefore, acquire all the privileges 
@@ -108,7 +108,7 @@ groups, although additional roles for specific users can be assigned if
 necessary. Privileges for specific permissions can be granted at user level too.
 
 
-## User Permissions
+## Permissions
 
 Permissions in SENAITE are quite powerful, mostly because their scope is at 
 both object-level and status level: every single electronic record in SENAITE 
