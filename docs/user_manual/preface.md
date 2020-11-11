@@ -22,15 +22,15 @@ The intended audience of this document is laboratory personnel that use or is
 planning to use SENAITE LIMS as their Laboratory Information Management System.
 Readers are not required to be Lab managers or have deep knowledge on how to
 operate a laboratory. However, some knowledge about analytical methods and
-procedures would be advantageous for reading of this document. 
+procedures would be advantageous for reading this document. 
 
 In some chapters, the reader will find contents that might require technical 
 background about the technologies the software is based on. These contents are 
 meant to merely help the reader to understand how and why SENAITE LIMS works the
 way it does, but the reader can skip them and jump to more functional-related 
 topics without losing sight. Readers more inclined to know about the internals
-of SENAITE and technologies behind can visit the links provided are encouraged to
-visit the technical documentation of SENAITE add-ons.
+of SENAITE and technologies behind can visit the links provided and are encouraged 
+to read the technical documentation.
 
 
 ## How to read this manual
@@ -70,7 +70,7 @@ organizational needs. Also, organizations can benefit from improvements and
 other developments made world-wide by companies supporting SENAITE and by the
 [SENAITE Open Source Community](https://community.senaite.org).
 
-SENAITE is maintained, developed and backed-up by
+SENAITE is maintained, developed and supported by
 [Naralabs](https://naralabs.com) and [Riding Bytes](https://ridingbytes.com), 
 since November 2017. 
 
@@ -108,7 +108,7 @@ right place to discuss new ideas, further steps or improvements.
 
 ## Disclaimer
 
-Authors of this document and companies that maintain, develop or back-up SENAITE
+Authors of this document and companies that maintain, develop or support SENAITE
 LIMS make no representations or warranties of any kind or nature with respect to 
 the information contained in this document, that is provided in good faith and for 
 general purposes only. Authors and companies hereby disclaims all representations 
@@ -116,7 +116,7 @@ and warranties of any kind, whether express or implied, regarding the accuracy,
 adequacy, validity, reliability, availability or completeness of any information
 contained in this document.
 
-Authors of this document and companies that maintain, develop or back-up SENAITE
+Authors of this document and companies that maintain, develop or support SENAITE
 LIMS are not liable for any damages arising in contract, tort or otherwise from 
 the use of or inability to use the information contained in this document, or 
 from any action or decision taken as a result of using it. 
@@ -125,11 +125,11 @@ The information in this document comprise the authors view; they do not constitu
 legal or other professional advice. You should consult your professional adviser
 for legal or other advice.
 
-Authors of this document and companies that maintain, develop or back-up SENAITE
+Authors of this document and companies that maintain, develop or support SENAITE
 LIMS are not responsible for the content of any linked site or any link in a 
 linked site. The links are provided to assist readers and the inclusion of a 
 link does not imply that the authors and companies that maintain, develop or 
-back-up SENAITE LIMS endorse or have approved the linked site.
+support SENAITE LIMS endorse or have approved the linked site.
 
 ## License
 
