@@ -175,11 +175,11 @@ listing view.
 ### Verification
 
 The verification of the sample takes place automatically as soon as all the
-analyses from the Sample are verified by the *LabManager*. However, this
-transition may not happen automatically (e.g. system has been configured with
+analyses from the Sample are verified by the *LabManager* or *Verifier*. However, 
+this transition may not happen automatically (e.g. system has been configured with
 additional "guards" that validate that some data from the sample is correct).
-In such case, only *LabManager* user can perform such transition. Once the 
-transition is done, the sample status becomes "**verified**". 
+In such case, only *LabManager* or *Verifier* users can perform such transition. 
+Once the transition is done, the sample status becomes "**verified**". 
 
 As the name clearly states, the "verification" of the sample means that both
 tests and sample have been verified by the *LabManager* and the sample is now
@@ -199,7 +199,26 @@ displayed at the top of samples listing views.
 
 ### Publication
 
-TODO
+Only "LabManager" or "Publisher" can publish samples. The publishing of a Sample
+involves the generation of the results report, that can be sent directly via 
+e-mail as an attachment to the Sample's client contact. Once the transition is
+done, the sample status becomes "**published**".
+
+Before publishing, the user can introduce free-text in "Results Interpretation"
+field and the contents will be rendered in the pdf generated afterwards.
+
+Once published, the *Client* user can access to the system and download the
+results report at a glance. Results are also visible.
+
+The status "published" can be considered as an end-status, so Samples with this 
+status cannot be modified at all, cannot be used anymore, and are not displayed 
+by default in listings. Also, no further transitions but invalidation can be
+performed. Therefore, there is no more actions required for this sample and is
+kept in history.
+
+Published samples are displayed under "Published" filter button displayed at the
+top of samples listing views.
+
 
 ### Invalidation
 
