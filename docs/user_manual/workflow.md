@@ -222,7 +222,36 @@ top of samples listing views.
 
 ### Invalidation
 
-TODO
+Invalidation transition is the "last-resort" transition when the sample has
+been published and the lab personnel realizes there is an issue with the sample,
+the results or in the results report. The invalidation of a sample involves the
+invalidation of the pdf generated and a notification e-mail is sent to the 
+Sample's client contact. As a result of the invalidation process, the status
+of the invalidated sample becomes "**invalid**" and a new sample (retest) in 
+"received" status is created automatically. However, the relationship between
+an invalidated sample and the retest is kept and two informative panels are
+displayed accordingly:
+
+* In the "invalidated" sample, an informative panel stating the sample has been
+  invalidated and a link to the re-test is displayed.
+
+* In the re-test sample, an informative panel is displayed at the top of the
+  view stating that the sample is the outcome of an invalidation of another
+  sample. A link to the invalidated sample is displayed too.
+
+The e-mail subject and body of the notification e-mail that is sent on
+invalidation can be configured in "*Setup > Notifications*".
+
+The invalidation can only take place after a Sample is published and *Client*
+users have view access to the Sample.
+
+The status "published" is as an end-status, Samples cannot be modified at all, 
+cannot be used anymore, and are not displayed by default in listings. Also, no 
+further transitions can be performed.
+
+Invalidated samples are displayed under "Invalid" filter button displayed at 
+the top of samples listing views.
+
 
 ### Sampling workflow
 
