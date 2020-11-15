@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Learn",
+    "description": "",
+    "columns": "three",
+    "items": [
+      {
+        "name": "Quick Start guide",
+        "description": "A quick start guide for laboratory personnel",
+        "page": "quickstart",
+        "versions": [
+          "1.3.3",
+          "1.3.2"
+        ]
+      },
+      {
+        "name": "User manual",
+        "description": "Narrative documentation for laboratory personnel",
+        "page": "user_manual/preface",
+        "versions": [
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Extend",
+    "description": "",
+    "columns": "three",
+    "items": [
+      {
+        "name": "senaite.core",
+        "description": "Main logic, contents, behavior and user interface for SENAITE LIMS.",
+        "page": "https://senaitecore.readthedocs.io/en/latest/",
+        "versions": []
+      },
+      {
+        "name": "senaite.jsonapi",
+        "description": "RESTful JSON API for SENAITE LIMS, that allows to Create, Read and Update through http GET/POST requests.",
+        "page": "https://senaitejsonapi.readthedocs.io/en/latest/",
+        "versions": []
+      },
+      {
+        "name": "senaite.queue",
+        "description": "Asynchronous tasks for SENAITE LIMS, that allows to better handle concurrent actions and processes.",
+        "page": "https://senaitequeue.readthedocs.io/en/latest/",
+        "versions": []
+      }
+    ]
+  }
+]
