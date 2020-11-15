@@ -38,6 +38,7 @@ denominator among them, but can also be extended and customized to meet the
 specific needs of the laboratory, as discussed later in *[Customization](#customization)*
 section.
 
+
 ### Registration
 
 The registration is the first step of the Sample workflow. Users with enough
@@ -75,6 +76,7 @@ submission of results for these samples is not possible neither.
 Samples that are in "Sample due" status can be filtered easily by using the 
 "Sample due" filter button displayed at the top of samples listing views.
 
+
 ### Cancellation
 
 When the sample is in "sample due" status, *LabManagers*, *LabClerks* and 
@@ -92,6 +94,7 @@ listings and cannot be used anymore. Also, no further transitions can be perform
 
 To see cancelled samples, user has to press the "Cancelled" filter button
 displayed at the top of listings.
+
 
 ### Rejection
 
@@ -139,12 +142,14 @@ listings. Also, no further transitions can be performed.
 To see rejected samples, user has to press the "Rejected" filter button
 displayed at the top of listings.
 
+
 ### Reception
 
 This is the next natural step when the sample is in "sample due" status. After
 the lab personnel has validated the sample is in correct conditions and it's
 type, volume and preservation are suitable for the requested tests, *LabClerk*
-or *LabManager* can "receive" the sample. Once the transition is done, the 
+or *LabManager* can "receive" the sample. Therefore, the reception of a Sample
+involves ocular inspection and validation. Once the transition is done, the 
 sample status becomes "**received**". 
 
 *Lab Manager* can configure the system so sample barcodes are generated 
@@ -155,7 +160,7 @@ the barcode labels preview once the "receive" transition is triggered.
 Received samples are are physically present in the laboratory facilities and 
 are ready for the testing to take place. At this "received" status, the data of 
 the sample can be modified by *Clients*, *LabManagers* and *LabClerks* with the 
-exception of the permanent read-onlu fields discussed in 
+exception of the permanent read-only fields discussed in 
 *[Registration](#registration)*: *Client*, *Sample Type* and *Sample Template*.
 
 Received samples can be processed and are available to *LabManager* on the views
@@ -169,7 +174,28 @@ listing view.
 
 ### Verification
 
-TODO
+The verification of the sample takes place automatically as soon as all the
+analyses from the Sample are verified by the *LabManager*. However, this
+transition may not happen automatically (e.g. system has been configured with
+additional "guards" that validate that some data from the sample is correct).
+In such case, only *LabManager* user can perform such transition. Once the 
+transition is done, the sample status becomes "**verified**". 
+
+As the name clearly states, the "verification" of the sample means that both
+tests and sample have been verified by the *LabManager* and the sample is now
+ready for publish. *Client* user can also see the results of the sample, even
+if the sample has not yet been published. 
+
+The "verified" status is a *no-way-back* status, most data of the sample cannot 
+be modified anymore, with the exception of "Results interpretation". This field
+is discussed in next section, *[Publication](#publication)*. Therefore, when a
+sample reaches this point, it is assumed that the sample has been validated,
+processed and verified, so there is only two possible transitions: "publish" or
+"invalidate".
+
+Verified samples are displayed under both "Active" and "Verified" filter buttons
+displayed at the top of samples listing views.
+
 
 ### Publication
 
