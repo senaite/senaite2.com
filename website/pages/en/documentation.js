@@ -13,11 +13,11 @@ function Documentation(props) {
   const {config: siteConfig} = props;
 
   return (
-    <div class="container">
-      <div class="container bg-lightgrey paddingBottom paddingTop">
-          <h1 class="section-header">Documentation</h1>
-          <div class="wrapper">
-            <div class="section-intro">Discover and learn about SENAITE LIMS</div>
+    <div className="container">
+      <div className="container bg-lightgrey paddingBottom paddingTop">
+          <h1 className="section-header">Documentation</h1>
+          <div className="wrapper">
+            <div className="section-intro">Discover and learn about SENAITE LIMS</div>
           </div>
       </div>
       <div className="docMainWrapper wrapper">
@@ -27,14 +27,14 @@ function Documentation(props) {
               <div className="post pb-2 container">
                 <header className="postHeader">
                   <h2>{category.name}</h2>
-                  <p>{category.description}</p>
+                  <p><strong>{category.description}</strong></p>
                 </header>
-                <div class="wrapper">
-                  <div class="gridBlock">
+                <div className="wrapper">
+                  <div className="gridBlock">
                     {category.items.map(
-                      document => (
-                        <div class={'blockElement '+`${category.columns}`+'ByGridBlock'}>
-                          <div class="blockContent">
+                      (document) => (
+                        <div className="blockElement threeByGridBlock">
+                          <div className="blockContent">
                             <h3>
                               {document.page.startsWith("http") && (
                                 <a class='external' href={`${document.page}`} target='_blank'>{document.name}</a>

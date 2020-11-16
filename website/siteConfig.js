@@ -102,8 +102,8 @@ const siteConfig = {
     // {href: 'https://community.senaite.org', label: 'Community'},
     {page: 'features', label: 'Features'},
     {page: 'enterprisesolution', label: 'Enterprise solution'},
-    {page: 'documentation', label: 'Documentation'},
     {doc: 'quickstart', label: 'Quick Start'},
+    {page: 'documentation', label: 'Documentation'},
 
     // {doc: 'doc4', label: 'API'},
     // {page: 'help', label: 'Help'},

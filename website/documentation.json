@@ -2,7 +2,6 @@
   {
     "name": "Learn",
     "description": "",
-    "columns": "three",
     "items": [
       {
         "name": "Quick Start guide",
@@ -23,26 +22,25 @@
     ]
   },
   {
-    "name": "Extend",
-    "description": "",
-    "columns": "three",
+    "name": "Built-in parts and extensions",
+    "description": "Technical documentation of packages from SENAITE ecosystem",
     "items": [
       {
-        "name": "senaite.core",
+        "name": "SENAITE's core",
         "description": "Main logic, contents, behavior and user interface for SENAITE LIMS.",
         "page": "https://senaitecore.readthedocs.io/en/latest/",
         "versions": []
       },
       {
-        "name": "senaite.jsonapi",
+        "name": "RESTful JSON API",
         "description": "RESTful JSON API for SENAITE LIMS, that allows to Create, Read and Update through http GET/POST requests.",
         "page": "https://senaitejsonapi.readthedocs.io/en/latest/",
         "versions": []
       },
       {
-        "name": "senaite.queue",
-        "description": "Asynchronous tasks for SENAITE LIMS, that allows to better handle concurrent actions and processes.",
-        "page": "https://senaitequeue.readthedocs.io/en/latest/",
+        "name": "Panic levels",
+        "description": "Integration of panic ranges (or life-threatening conditions) in Analysis Specifications",
+        "page": "https://senaitepanic.readthedocs.io/en/latest/",
         "versions": []
       }
     ]
