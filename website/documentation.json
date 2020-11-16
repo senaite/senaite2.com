@@ -22,15 +22,9 @@
     ]
   },
   {
-    "name": "Built-in parts and extensions",
-    "description": "Technical documentation of packages from SENAITE ecosystem",
+    "name": "Integrate",
+    "description": "Technical documentation of integration extensions",
     "items": [
-      {
-        "name": "SENAITE's core",
-        "description": "Main logic, contents, behavior and user interface for SENAITE LIMS.",
-        "page": "https://senaitecore.readthedocs.io/en/latest/",
-        "versions": []
-      },
       {
         "name": "RESTful JSON API",
         "description": "RESTful JSON API for SENAITE LIMS, that allows to Create, Read and Update through http GET/POST requests.",
@@ -38,7 +32,37 @@
         "versions": []
       },
       {
-        "name": "Panic levels",
+        "name": "SQL Multiplex",
+        "description": "Multiplex for SENAITE LIMS that allows to keep a MySQL or MariaDB database in-sync with SENAITE's database.",
+        "page": "https://senaitequeue.readthedocs.io/en/latest/",
+        "versions": []
+      },
+      {
+        "name": "LIS1-A/ASTM E1381 (RS-232)",
+        "description": "Tool for interfacing systems compliant with ASTM E1381-02, LIS1-A to SENAITE LIMS across the serial RS-232 port.",
+        "page": "https://senaiteserialcli.readthedocs.io/en/latest/",
+        "versions": []
+      }
+    ]
+  },
+  {
+    "name": "Build and extend",
+    "description": "Technical documentation of other packages from SENAITE ecosystem",
+    "items": [
+      {
+        "name": "The core",
+        "description": "Main logic, contents, behavior and user interface for SENAITE LIMS.",
+        "page": "https://senaitecore.readthedocs.io/en/latest/",
+        "versions": []
+      },
+      {
+        "name": "Asynchronous tasks",
+        "description": "Asynchronous tasks for SENAITE LIMS to better handle concurrent actions and processes when the workload is high.",
+        "page": "https://senaitequeue.readthedocs.io/en/latest/",
+        "versions": []
+      },
+      {
+        "name": "Panic ranges",
         "description": "Integration of panic ranges (or life-threatening conditions) in Analysis Specifications",
         "page": "https://senaitepanic.readthedocs.io/en/latest/",
         "versions": []
