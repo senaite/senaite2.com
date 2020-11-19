@@ -65,6 +65,12 @@ The following are the roles that come by default with the system:
     
 * **Publisher**: Users with this role don't have rights to manage electronic
     records or perform anything else other than publishing samples.
+    
+* **Sampler**: Users with this role can transition samples from "to be sampled"
+    to "sampled" status and introduce results for "field" type analyses: tests 
+    that are required at point of sample collection (e.g. Temperature). They can
+    also modify some data from sample record (e.g. "Preservation") when the 
+    status is "to be sampled". 
 
 Besides the roles above, there are four additional roles that are used internally
 by the system:
@@ -214,11 +220,11 @@ There are two types of Contact in a vanilla installation of SENAITE:
     Client contacts can be created by users with "Lab Manager" and/or 
     "Lab Clerk" roles.  
 
-Contacts are displayed in different places for selection in different places
-depending on their type. For instance, the selection of a Client Contact is
-required when creating a Sample. Only the contacts from the same client the
-Sample belongs to are available for selection. On the other side, the selection
-of a Laboratory Contact is required when creating a Worksheet.
+Contacts are displayed in different places for selection depending on their type. 
+For instance, the selection of a Client Contact is required when creating a Sample. 
+Only the contacts from the same client theSample belongs to are available for 
+selection. On the other side, the selection of a Laboratory Contact is required 
+when creating a Worksheet.
 
 
 [LDAP]: https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol

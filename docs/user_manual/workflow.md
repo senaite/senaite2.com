@@ -253,9 +253,77 @@ Invalidated samples are displayed under "Invalid" filter button displayed at
 the top of samples listing views.
 
 
-### Sampling workflow
+## Sampling workflow
 
-TODO
+Besides the classic workflow for Samples explained in previous section, SENAITE
+allows to enable a workflow for when the laboratory is also in charge of
+collecting the sample. There are two main reasons why a laboratory may need to
+collect the sample by itself instead of receiving them only:
+
+- The laboratory is part of an organization and the collection of samples within
+  the organization facilities or outside is one of its responsibilities. 
+  
+- The laboratory is service-oriented and the collection of sample is included in
+  the services offered.
+
+A laboratory from a high-school that is studying the evolution of a population 
+of bacteria in a particular environment (e.g. a lake) over a period of time 
+would be good example of the first use cae. Another one would be a lab that 
+belongs to a food & beverage company and is required by law to regularly collect
+and test samples for quality testing from the production line.
+
+An example of the second scenario would be a laboratory specializing on
+environmental analysis and waste products treatment. The lab has a schedule
+setup for the collection of samples from client facilities.
+
+*Sampling workflow* can be enabled from Setup and once enabled, the field 
+*Scheduled Sampling Date* is displayed on the Sample add form instead of the
+*Date Sampled* field. While the former expects future dates, the latter only
+accepts dates from the past. Field is required in both cases.
+
+
+### Registration
+
+Same privileges as for registration without sampling worklow enabled are 
+required: *LabManagers*, *LabClerks* or *Clients*.
+
+When a Sample is registered with *Sampling workflow* enabled, the first status
+the Sample acquires is "**to be sampled**". At this point, the Sample has
+not been collected yet and the date introduced for field *Scheduled Sampling
+Date* is the tentative date the laboratory expects the sample to be collected.
+
+Samples in this status can be cancelled and/or rejected as usual (see previous
+sections *[Cancellation](#cancellation)* and *[Rejection](#rejection)*). 
+However, there are two additional transitions: *Sample* and *Submit*. While the 
+first transition is obvious, the second one refers to the fact that quite often,
+some tests must be performed at the point of sample collection (e.g. Temperature).
+
+Samples in "to be sampled" status are displayed by default in listings, when
+either the "Active" or "To be sampled" filter buttons are clicked. 
+
+
+### Collect sample
+
+This transition is not available unless a user with enough privileges (*LabClerk*
+or *LabManager*) assigns first the laboratory contact in charge of collecting
+the sample. This laboratory contact must belong to the group *Samplers*. 
+
+Once the sampler is assigned, this transition can be triggered by users with 
+any roles *LabManager* and *Sampler*, but only any of these two conditions is
+met:
+
+- The sample does not have "field" analyses assigned
+- Results for "field" analyses assigned to the sample have been submitted
+
+"field" analyses are those tests required at point of collection: only users 
+with "Sampler" role can submit results. Also, result entry for this type of 
+analyses is only allowed when the status of the sample is "to be sampled". 
+User can directly introduce the results from the Sample's edit view, under 
+"Field Analyses" section.
+
+Once the transition is done, the sample status becomes "**sample due**" and 
+the classic workflow discussed in previous section follows. 
+
 
 ## Analysis workflow
 
