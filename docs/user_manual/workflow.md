@@ -38,7 +38,7 @@ denominator among them, but can also be extended and customized to meet the
 specific needs of the laboratory.
 
 
-### Registration
+### Sample registration
 
 The registration is the first step of the Sample workflow. Users with enough
 privileges (*LabManagers*, *LabClerks* or even *Clients*) can directly register
@@ -56,7 +56,7 @@ that do not need this step, SENAITE LIMS can be configured to skip this status
 with the setting "Auto-receive samples". When this setting is enabled, the
 system skips this status and automatically transitions the Sample record to the 
 "sample received" status. The "sample received" status is discussed below, under
-*[Reception](#reception)* section.
+*[Reception](#sample-reception)* section.
 
 At this "sample due" status, the data of the sample can be modified by *Clients*, 
 *LabManagers* and *LabClerks* with the exception of the following fields, that 
@@ -76,7 +76,7 @@ Samples that are in "Sample due" status can be filtered easily by using the
 "Sample due" filter button displayed at the top of samples listing views.
 
 
-### Cancellation
+### Sample cancellation
 
 When the sample is in "sample due" status, *LabManagers*, *LabClerks* and 
 *Clients* can cancel the sample. The cancellation does not trigger any
@@ -95,7 +95,7 @@ To see cancelled samples, user has to press the "Cancelled" filter button
 displayed at the top of listings.
 
 
-### Rejection
+### Sample rejection
 
 By default, the rejection transition for Samples is not enabled. *LabManagers* 
 can activate this transition in *Setup > Analyses*, setting
@@ -142,7 +142,7 @@ To see rejected samples, user has to press the "Rejected" filter button
 displayed at the top of listings.
 
 
-### Reception
+### Sample reception
 
 This is the next natural step when the sample is in "sample due" status. After
 the lab personnel has validated the sample is in correct conditions and it's
@@ -160,7 +160,7 @@ Received samples are are physically present in the laboratory facilities and
 are ready for the testing to take place. At this "received" status, the data of 
 the sample can be modified by *Clients*, *LabManagers* and *LabClerks* with the 
 exception of the permanent read-only fields discussed in 
-*[Registration](#registration)*: *Client*, *Sample Type* and *Sample Template*.
+*[Registration](#sample-registration)*: *Client*, *Sample Type* and *Sample Template*.
 
 Received samples can be processed and are available to *LabManager* on the views
 for work assignment. Submission of results is also possible, but *Clients* won't
@@ -171,7 +171,7 @@ the "Active" and "Received" filter buttons displayed at the top of samples
 listing view.
 
 
-### Verification
+### Sample verification
 
 The verification of the sample takes place automatically as soon as all the
 analyses from the Sample are verified by the *LabManager* or *Verifier*. However, 
@@ -187,7 +187,7 @@ if the sample has not yet been published.
 
 The "verified" status is a *no-way-back* status, most data of the sample cannot 
 be modified anymore, with the exception of "Results interpretation". This field
-is discussed in next section, *[Publication](#publication)*. Therefore, when a
+is discussed in next section, *[Publication](#sample-publication)*. Therefore, when a
 sample reaches this point, it is assumed that the sample has been validated,
 processed and verified, so there is only two possible transitions: "publish" or
 "invalidate".
@@ -196,7 +196,7 @@ Verified samples are displayed under both "Active" and "Verified" filter buttons
 displayed at the top of samples listing views.
 
 
-### Publication
+### Sample publication
 
 Only "LabManager" or "Publisher" can publish samples. The publishing of a Sample
 involves the generation of the results report, that can be sent directly via 
@@ -219,7 +219,7 @@ Published samples are displayed under "Published" filter button displayed at the
 top of samples listing views.
 
 
-### Invalidation
+### Sample invalidation
 
 Invalidation transition is the "last-resort" transition when the sample has
 been published and the lab personnel realizes there is an issue with the sample,
@@ -281,7 +281,7 @@ setup for the collection of samples from client facilities.
 accepts dates from the past. Field is required in both cases.
 
 
-### Registration
+### Sampling registration
 
 Same privileges as for registration without sampling worklow enabled are 
 required: *LabManagers*, *LabClerks* or *Clients*.
@@ -292,7 +292,7 @@ not been collected yet and the date introduced for field *Scheduled Sampling
 Date* is the tentative date the laboratory expects the sample to be collected.
 
 Samples in this status can be cancelled and/or rejected as usual (see previous
-sections *[Cancellation](#cancellation)* and *[Rejection](#rejection)*). 
+sections *[Cancellation](#sample-cancellation)* and *[Rejection](#sample-rejection)*). 
 However, there are two additional transitions: *Sample* and *Submit*. While the 
 first transition is obvious, the second one refers to the fact that quite often,
 some tests must be performed at the point of sample collection (e.g. Temperature).
@@ -301,7 +301,7 @@ Samples in "to be sampled" status are displayed by default in listings, when
 either the "Active" or "To be sampled" filter buttons are clicked. 
 
 
-### Collect sample
+### Sample collection
 
 This transition is not available unless a user with enough privileges (*LabClerk*
 or *LabManager*) assigns first the laboratory contact in charge of collecting
@@ -330,7 +330,7 @@ Analysis workflow works in parallel to Sample workflow and some of their
 transitions are bound together. This workflow is conceived to represent the
 lab operation regarding the handling and processing of tests.
 
-### Registration
+### Analysis registration
 
 A Sample is usually submitted on SENAITE together with the tests/analyses to
 be performed. The addition of analyses to a sample can be either done on 
@@ -363,7 +363,7 @@ from Sample's view. The name "unassigned" refers to the fact that the analysis
 has not yet been assigned to a "batch of work" that in turn, is associated to a 
 specific analyst.
 
-### Assignment
+### Analysis assignment
 
 Most labs don't expect the results introduction to take place individually for
 each sample. Laboratory manager can group analyses from different samples in a 
@@ -383,7 +383,7 @@ In analyses listing (Sample view), an icon that hyperlinks to a given worksheet
 is displayed next to the title of assigned analyses. For those Samples with
 all analyses assigned, same icon is displayed next to the sample ID in listings.
 
-### Submission
+### Analysis submission
 
 As discussed previously, users with enough privileges (Lab manager and Analyst)
 can submit results for analyses that are either in "unassigned" or "assigned"
@@ -398,7 +398,7 @@ this status require the review from users with enough privileges (lab managers
 or verifiers). Therefore, once a result is submitted, analysts can no longer
 modify the result unless the analysis is retracted. 
 
-### Verification
+### Analysis verification
 
 Analyses on "to be verified" status can be retracted by lab managers and 
 users with "Verifier" role. The verification of analyses, together with 
@@ -420,7 +420,7 @@ When all required verifications have taken place, the status of the analysis
 becomes "**verified**" and no further actions for this analysis, regardless of 
 user roles, are allowed.
 
-### Retraction
+### Analysis retraction
 
 Analyses awaiting for verification ("to be verified") can also be retracted by 
 lab managers and verifiers. User triggers a retraction when there is not enough 
@@ -437,7 +437,7 @@ listings, but under "Invalid" filter. It's status becomes "**retracted**".
 
 The retest analysis is then available to the Analyst for result capture. 
 
-### Retest
+### Analysis retest
 
 Action "retest" can also be performed against analyses that are awaiting for 
 verification ("to be verified" status). Retest behaves like retraction, except 
@@ -447,7 +447,7 @@ procedure has not been performed correctly, but the technique may have some
 limitations or the result value is uncertain. Retest action is commonly used to 
 prevent false positives and/or false negatives.
 
-### Rejection
+### Analysis rejection
 
 An analysis can be rejected by laboratory manager at any status, except once
 verified. When an analysis is rejected, the analysis status becomes 
@@ -457,3 +457,49 @@ under "Invalid" filter.
 Note that the difference with retraction is that no retest is created when an 
 analysis is rejected: the introduction of results for an analysis that has been
 rejected is not possible at all.
+
+
+## Worksheet workflow
+
+Worksheets are the main artifact for planning tests in the laboratory. Are used
+to group related analyses from different samples so they can be processed in a
+single work unit or run. Worksheets are also used to add reference samples 
+(controls and blanks) and duplicates. 
+
+### Worksheet creation
+
+Lab manager users can create worksheets manually from Worksheets view. User has
+to first choose the analyst in charge of results capture of the work unit. On 
+same view, the user can also select the instrument to be used. As soon as these
+values are submitted, the user is redirected to the "Manage analyses" view of
+the worksheet. From this view, the user can search and manually assign the
+analyses to be included. Only "unassigned" analyses are displayed for selection.
+
+Although worksheets can be created manually by lab managers each time is
+required, a better approach is to create them by using Worksheet Templates. In 
+a Worksheet Template, the user can define the layout, the number of slots and 
+the type of analyses (reference or routine) to be placed in each slot, as well 
+as the method and instrument to use.
+
+Once created, the status of a worksheet becomes "**open**", awaiting for 
+results submission, either by the assigned analyst or automatically by means of
+an instrument import interface.
+
+Open worksheets are displayed by default in worksheets listing, under "Active"
+and "Open" filters.
+
+### Worksheet submission
+
+The worksheet transitions automatically from "open" to "**to be verifed**" 
+status as soon as all the assigned analyses are submitted.
+
+Worksheets awaiting for verification are displayed by default in worksheets
+listing, under "Active", "Open" and "To be verified" filters.
+
+### Worksheet verification
+
+The worksheet transitions automatically from "to be verified" to "**verified**"
+status as soon as all the assigned analyses are verified.
+
+Verified worksheets are no longer displayed by default in worksheet listing, but
+under the filter "Verified".
