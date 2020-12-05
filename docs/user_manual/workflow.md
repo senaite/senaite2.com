@@ -35,8 +35,7 @@ the way they handle samples and operate internally might vary a lot depending on
 several factors such as corporation policies, laboratory discipline or type of
 organization. Workflow of Sample in SENAITE is meant to cover the lowest common 
 denominator among them, but can also be extended and customized to meet the 
-specific needs of the laboratory, as discussed later in *[Customization](#customization)*
-section.
+specific needs of the laboratory.
 
 
 ### Registration
@@ -327,14 +326,134 @@ the classic workflow discussed in previous section follows.
 
 ## Analysis workflow
 
-TODO
+Analysis workflow works in parallel to Sample workflow and some of their
+transitions are bound together. This workflow is conceived to represent the
+lab operation regarding the handling and processing of tests.
 
+### Registration
 
-## Worksheet workflow
+A Sample is usually submitted on SENAITE together with the tests/analyses to
+be performed. The addition of analyses to a sample can be either done on 
+sample registration or afterwards. On the first case, a list of available
+analyses is displayed at the bottom of the Sample add form for easy selection.
+For the addition of analyses after the sample has been registered in the system,
+users with enough privileges can do so through "Manage Analyses" from Sample
+view. 
 
-TODO
+Users might not know beforehand the analyses that should be performed, either 
+because the user who is submitting the sample belongs to the client role (and 
+therefore, does not necessarily have enough knowledge about the techniques 
+involved) or simply because at that point in time, there is not enough 
+information yet for a formed decision. The former use case can be addressed by
+using Analyses Profiles or Sample Templates, while the latter can be addressed
+through "Manage Analyses" from Sample View.
 
+When an analysis is selected on sample submission or is added to a sample that
+has not yet been received, its status becomes "**registered**". As a general rule, 
+results introduction for an analysis is not allowed at this status, except for 
+"field" analyses, cause their results are precisely meant to be captured on 
+sample collection.
 
-## Customization
+Analyses remain in "registered" status until the sample is received by lab
+personnel. At this point, the transition "initialize" takes place automatically
+and the analysis status becomes "**unassigned**". Users with enough privileges
+(analysts and lab managers) can submit results for analyses that are in
+"unassigned" status. The submission of results at this status can only be done
+from Sample's view. The name "unassigned" refers to the fact that the analysis 
+has not yet been assigned to a "batch of work" that in turn, is associated to a 
+specific analyst.
 
-TODO
+### Assignment
+
+Most labs don't expect the results introduction to take place individually for
+each sample. Laboratory manager can group analyses from different samples in a 
+single work unit or run: the Worksheet. In a worksheet, the introduction of 
+results happens in "batch", so the capture is for multiple analyses and from 
+different samples at once.
+
+The "assignment" of an analysis refers to the action of "adding"/"assigning" 
+analyses to a given worksheet. Analyses can be assigned to open worksheets or
+directly on worksheet creation.
+
+When an analysis is added to a worksheet, the status becomes "**assigned**"
+and no particular changes regarding permissions take place. The analyst 
+assigned to the worksheet is automatically assigned to the analysis too.
+
+In analyses listing (Sample view), an icon that hyperlinks to a given worksheet
+is displayed next to the title of assigned analyses. For those Samples with
+all analyses assigned, same icon is displayed next to the sample ID in listings.
+
+### Submission
+
+As discussed previously, users with enough privileges (Lab manager and Analyst)
+can submit results for analyses that are either in "unassigned" or "assigned"
+status. This is true for all analyses except for "field" analyses, for which
+the submission of a result has to take place before the reception of the sample.
+
+The submission of results can be manually done on sample view or on the 
+Worksheet view. The capture of results can be automated by interfacing SENAITE
+with laboratory equipment too. In both cases, the analyses is transitioned
+to "**to be verified**" status. As the name clearly indicates, analyses in 
+this status require the review from users with enough privileges (lab managers 
+or verifiers). Therefore, once a result is submitted, analysts can no longer
+modify the result unless the analysis is retracted. 
+
+### Verification
+
+Analyses on "to be verified" status can be retracted by lab managers and 
+users with "Verifier" role. The verification of analyses, together with 
+retraction, are mechanisms to guarantee that:
+
+* analyst followed best practices while performing the test
+* analyst followed the procedure and/or method correctly
+* the equipment used, if any, was working properly and was correctly calibrated
+* the procedure and/or method can be repeated, with same expected outcome
+* the analysis result is reliable
+
+Verification follows the peer-review principle, so the analysis result submitted
+must always be verified by another user with enough privileges. This principle
+is also true even when the submitter is a lab manager. Although only one
+verification is required by default, the number of required verifications 
+can be increased up to four.  
+
+When all required verifications have taken place, the status of the analysis 
+becomes "**verified**" and no further actions for this analysis, regardless of 
+user roles, are allowed.
+
+### Retraction
+
+Analyses awaiting for verification ("to be verified") can also be retracted by 
+lab managers and verifiers. User triggers a retraction when there is not enough 
+confidence about the validity of the analysis result: one or more than one 
+pre-condition of those explained in Verification section are questioned.
+
+When retracting an analysis, the system creates a copy of that analysis, the
+retest, but without a result set. System automatically transitions this retest
+to the same status as the original analysis had before the result was submitted 
+("assigned" or "unassigned"). The original analysis (the retested analysis), 
+along with its metadata (capture date, result, submitter, etc.) is preserved for
+traceability purposes and does not longer appear under the "Valid" filter in 
+listings, but under "Invalid" filter. It's status becomes "**retracted**".
+
+The retest analysis is then available to the Analyst for result capture. 
+
+### Retest
+
+Action "retest" can also be performed against analyses that are awaiting for 
+verification ("to be verified" status). Retest behaves like retraction, except 
+that the original analysis is not transitioned to "retracted" status but to 
+"verified". Therefore, the "retest" action does not necessarily mean the 
+procedure has not been performed correctly, but the technique may have some 
+limitations or the result value is uncertain. Retest action is commonly used to 
+prevent false positives and/or false negatives.
+
+### Rejection
+
+An analysis can be rejected by laboratory manager at any status, except once
+verified. When an analysis is rejected, the analysis status becomes 
+"**rejected**" and is no longer available under "Valid" filter in listings, but 
+under "Invalid" filter.
+
+Note that the difference with retraction is that no retest is created when an 
+analysis is rejected: the introduction of results for an analysis that has been
+rejected is not possible at all.
