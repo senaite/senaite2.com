@@ -3,8 +3,6 @@ id: workflow
 title: Workflow
 ---
 
-## Overview
-
 Every single electronic record in SENAITE is bound to a set of rules that define
 the different status the item can reach within its life-cycle, the required
 transitions and the permissions that apply on each stage. The specific set of 

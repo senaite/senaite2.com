@@ -3,8 +3,6 @@ id: users_and_security
 title: Users and Security
 ---
 
-## Overview
-
 SENAITE LIMS is a multi-user system and by default, maintains the user accounts 
 on its own database, without relying on the user accounts set up on the 
 workstations or on the operating system under which runs. However, SENAITE LIMS

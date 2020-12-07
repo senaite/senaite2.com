@@ -3,8 +3,6 @@ id: audit_trail
 title: Audit trail
 ---
 
-## Overview
-
 SENAITE generates snapshots of all electronic records on any modification 
 and stores this information in a chronological order. This recorded information 
 provides documentary evidence of the sequence of activities that have affected

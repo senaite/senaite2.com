@@ -3,8 +3,6 @@ id: preface
 title: Preface
 ---
 
-## Overview
-
 Welcome to the User Manual of SENAITE LIMS, an Open Source Laboratory Information
 Management System (LIMS) for enterprise environments.
 
