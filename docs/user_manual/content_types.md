@@ -46,7 +46,8 @@ samples and analyses.
 The term "baseline" refers to the fact that these objects define the 
 configuration layer that makes SENAITE fit with the laboratory discipline, 
 operation and requirements. Therefore, objects from baseline content type need 
-to be present before users can start routine work on SENAITE.
+to be present before users can start routine work on SENAITE. Contents from this
+types are also known as "master" data.
 
 For the creation of baseline content types, static content types need to be
 created first. This is the same as saying SENAITE needs to be installed first.
@@ -73,8 +74,7 @@ yet in the system or no *Sample Type* objects are available.
 *Sample*, *Analysis* and *Worksheet* are common examples of dynamic content
 types.
 
-
-## Additional considerations
+## Removal of content types
 
 SENAITE does not allow the removal of objects of any type. Rather, there are
 specific transitions to tag the object as no longer valid. For instance, there
@@ -85,7 +85,7 @@ is maintained as well (for instance, a Sample Type in "inactive" status is
 still referenced by Samples).
 
 This guarantees the consistency of relationship among objects ever created in
-the system, as well as the traceability by means of the [audit trail] history.
+the system, as well as the traceability by means of the [audit history log].
 
 
 [Users and Security]: users_and_security
