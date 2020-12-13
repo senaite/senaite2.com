@@ -171,12 +171,11 @@ listing view.
 
 ### Sample verification
 
-The verification of the sample takes place automatically as soon as all the
-analyses from the Sample are verified by the *LabManager* or *Verifier*. However, 
-this transition may not happen automatically (e.g. system has been configured with
-additional "guards" that validate that some data from the sample is correct).
-In such case, only *LabManager* or *Verifier* users can perform such transition. 
-Once the transition is done, the sample status becomes "**verified**". 
+By default, the verification of the sample takes place automatically as soon as 
+all the analyses from the Sample are verified by the *LabManager* or *Verifier*. 
+However, user can modify this behavior with *Automatic verification of Samples* 
+setting from setup. Only *LabManager* or *Verifier* users can perform this
+transition. Once the transition is done, the sample status becomes "**verified**". 
 
 As the name clearly states, the "verification" of the sample means that both
 tests and sample have been verified by the *LabManager* and the sample is now
