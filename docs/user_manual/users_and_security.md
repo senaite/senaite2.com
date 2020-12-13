@@ -135,8 +135,10 @@ for every single status they can reach within their life-cycle.
 There are five types of permissions:
 
 * **Object permissions**: these are the best known permissions and are 
-    traditionally used for read and update operations at object level. The 
-    four principal permissions of this type, inherited from Zope framework are:
+    traditionally used for read and update operations at object level and in 
+    most cases, they are not type-specific. Thus, these permissions usually 
+    apply to objects, regardless of their type. The four principal permissions 
+    of this type, inherited from Zope framework are:
     
     * *View*: allow/disallow the user to *view* all information from an
        electronic record. "Sample ID", "Sample Type", "Sample's contact" are
