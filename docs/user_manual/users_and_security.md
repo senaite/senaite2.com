@@ -132,7 +132,7 @@ mention here that every single type (Sample, Worksheet, Analysis, Client, etc)
 has its own workflow definition, and therefore, have its own permission mapping 
 for every single status they can reach within their life-cycle.
 
-There are four types of permissions:
+There are five types of permissions:
 
 * **Object permissions**: these are the best known permissions and are 
     traditionally used for read and update operations at object level. The 
@@ -169,6 +169,17 @@ There are four types of permissions:
     nor "Lab Clerk" can edit at this point: "Client", "Sample Type", etc. The
     read/write privilege for these fields is governed by field-scope permissions:
     "Field Edit Sample Type" and "Field View Sample Type"
+       
+* **Type-specific permissions**: these permissions have effect to specific
+    content types and as such, their name always contain the name of the content
+    type as a prefix. Sometimes, field permissions are not enough because the
+    ability to do something might not only depend on the content field, but also
+    on values from other fields or. However, the use of wide permissions entails 
+    additional complexity on its maintenance, specially because is easy to 
+    forget that they might behave differently on a given content type depending 
+    on the metadata it contains. This type of permissions exists to overcome
+    these drawbacks. Examples of these permissions are: "Sample: Add Attachment",
+    "Worksheet: Add Attachment", etc.
     
 * **Transition permissions**: these permissions govern whether a given role can
     perform a given action/transition to an object at a given status. Only
