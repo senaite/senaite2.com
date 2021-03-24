@@ -109,11 +109,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 Install the required dependencies for SENAITE:
 
 ```shell
-$ sudo apt install build-essential
-$ sudo apt install python2.7 python2.7-dev
-$ sudo apt install libxml2 libxml2-dev libxslt1.1 libxslt1-dev
-$ sudo apt install libffi-dev libcairo2 libpango-1.0-0 libgdk-pixbuf2.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0
-$ sudo apt install zlib1g zlib1g-dev
+$ sudo apt install build-essential python2.7 python2.7-dev \
+$  libxml2 libxml2-dev libxslt1.1 libxslt1-dev \
+$  libffi-dev libcairo2 libpango-1.0-0 libgdk-pixbuf2.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 \
+$  zlib1g zlib1g-dev
 ```
 
 
