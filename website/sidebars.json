@@ -29,10 +29,38 @@
     "User manual": [
       "user_manual/preface",
       "user_manual/introduction",
-      "user_manual/users_and_security",
-      "user_manual/workflow",
-      "user_manual/site_configuration",
-      "user_manual/general_navigation"
+      {
+        "type": "subcategory",
+        "label": "Concepts",
+        "ids": [
+          "user_manual/users_and_security",
+          "user_manual/content_types",
+          "user_manual/audit_trail",
+          "user_manual/workflow",
+          "user_manual/identifiers"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "First steps",
+        "ids": [
+          "user_manual/first_steps/interface_overview",
+          "user_manual/first_steps/laboratory_setup",
+          "user_manual/first_steps/clients_setup",
+          "user_manual/first_steps/sample_login",
+          "user_manual/first_steps/results_entry",
+          "user_manual/first_steps/results_verification",
+          "user_manual/first_steps/sample_verification",
+          "user_manual/first_steps/results_reports"
+        ]
+      },
+      "user_manual/barcodes",
+      "user_manual/quality_control",
+      "user_manual/analysis_services",
+      "user_manual/calculations",
+      "user_manual/result_ranges",
+      "user_manual/sample_partitions",
+      "user_manual/glossary"
     ]
   }
 }

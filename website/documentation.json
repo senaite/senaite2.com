@@ -23,7 +23,7 @@
   },
   {
     "name": "Integrate",
-    "description": "Technical documentation of integration extensions",
+    "description": "",
     "items": [
       {
         "name": "RESTful JSON API",
@@ -34,7 +34,7 @@
       {
         "name": "SQL Multiplex",
         "description": "Multiplex for SENAITE LIMS that allows to keep a MySQL or MariaDB database in-sync with SENAITE's database.",
-        "page": "https://senaitequeue.readthedocs.io/en/latest/",
+        "page": "https://senaitesqlmultiplex.readthedocs.io/en/latest/",
         "versions": []
       },
       {
@@ -46,8 +46,44 @@
     ]
   },
   {
-    "name": "Build and extend",
-    "description": "Technical documentation of other packages from SENAITE ecosystem",
+    "name": "Extend",
+    "description": "",
+    "items": [
+      {
+        "name": "Antibiotic Sensitivity Testing (AST)",
+        "description": "Antibiotic Sensitivity Testing (AST) for SENAITE LIMS that allows to add analyses specifically designed for the measurement of the susceptibility of microorganisms to antibiotics",
+        "page": "https://senaiteast.readthedocs.io/en/latest/",
+        "versions": []
+      },
+      {
+        "name": "Panic ranges",
+        "description": "Panic and life-threatening conditions alerts for SENAITE LIMS that integrates with baseline Analysis Specifications (results ranges).",
+        "page": "https://senaitepanic.readthedocs.io/en/latest/",
+        "versions": []
+      },
+      {
+        "name": "Sample storage",
+        "description": "Sample storage capabilities for SENAITE LIMS",
+        "page": "https://samplestorage.readthedocs.io/en/latest/",
+        "versions": []
+      }
+    ]
+  },
+  {
+    "name": "Scale",
+    "description": "",
+    "items": [
+      {
+        "name": "Asynchronous tasks",
+        "description": "Asynchronous tasks for SENAITE LIMS to better handle concurrent actions and processes when the workload is high.",
+        "page": "https://senaitequeue.readthedocs.io/en/latest/",
+        "versions": []
+      }
+    ]
+  },
+  {
+    "name": "Build",
+    "description": "",
     "items": [
       {
         "name": "The core",
@@ -56,15 +92,15 @@
         "versions": []
       },
       {
-        "name": "Asynchronous tasks",
-        "description": "Asynchronous tasks for SENAITE LIMS to better handle concurrent actions and processes when the workload is high.",
-        "page": "https://senaitequeue.readthedocs.io/en/latest/",
+        "name": "Impress",
+        "description": "Rendering engine for the generation of reports, that converts HTML documents to PDF.",
+        "page": "https://senaiteimpress.readthedocs.io/en/latest/",
         "versions": []
       },
       {
-        "name": "Panic ranges",
-        "description": "Integration of panic ranges (or life-threatening conditions) in Analysis Specifications",
-        "page": "https://senaitepanic.readthedocs.io/en/latest/",
+        "name": "Listings",
+        "description": "ReactJS based listing tables for SENAITE LIMS.",
+        "page": "https://senaite.app.listing.readthedocs.io/en/latest/",
         "versions": []
       }
     ]
