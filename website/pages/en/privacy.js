@@ -41,36 +41,21 @@ function Privacy(props) {
         </div>
         <div className="gridBlock">
 
-          <div className="provider ridingbytes blockElement alignCenter twoByGridBlock">
+          <div className="provider senaite blockElement alignCenter twoByGridBlock">
             <div className="logo">
               <div className="slogan"></div>
-              <a href="https://www.ridingbytes.com" className="logo-link">
-                <img src={baseUrl + "img/ridingbytes.svg"}/>
+              <a href="https://www.senaite.com" className="logo-link">
+                <img src={baseUrl + "img/senaite_product_logo.svg"}/>
               </a>
-              <div className="slogan">Professional Open Source Solutions</div>
               <div className="company-info">
-                <strong>RIDING BYTES GmbH</strong><br/>
+                <strong>SENAITE GmbH</strong><br/>
                 Würzburger Straße 81<br/>
                 90766 Fürth, Germany<br/>
                 Phone: <a href="tel:+4991197493090">+49 (0) 911 974 930 90</a><br/>
-                Mail: <a href="mailto:info@ridingbytes.com">info@ridingbytes.com</a>
-              </div>
-            </div>
-          </div>
-
-          <div className="provider naralabs blockElement alignCenter twoByGridBlock">
-            <div className="logo">
-              <div className="top-slogan">&nbsp;</div>
-              <a href="https://naralabs.com" className="logo-link">
-                <img src={baseUrl + "img/naralabs.png"}/>
-              </a>
-              <div className="slogan"></div>
-              <div className="company-info">
-                <strong>NARALABS S.L.</strong><br/>
-                Av. Via Augusta 15 - 25<br/>
-                08174 Sant Cugat del Vallès, Spain<br/>
-                Phone: <a href="tel:+34936814387">+34 93 681 43 87</a><br/>
-                Mail: <a href="mailto:info@naralabs.com">info@naralabs.com</a>
+                Mail: <a href="mailto:info@senaite.com">info@senaite.com</a><br/><br/>
+                Managing Director: Ramon Bartl<br/>
+                UstId: DE123456789 &middot; Register: HRB XXXXX (Registration Court Fürth)<br/>
+                Responsible for content acc. §10 Sect. 3 MdStV: Ramon Bartl
               </div>
             </div>
           </div>
@@ -89,7 +74,7 @@ function Privacy(props) {
             {
               title: 'DATA PROTECTION',
               content:
-              '<p>RIDING BYTES GmbH and NARALABS, S.L. (hereinafter referred to as "PROVIDERS") guarantee to web page users that such complies with the General Regulation of Data Protection (UE) 2016/679, and has established the security measures claimed by the laws and regulations destined to preserve secrecy, confidentiality and integrity in handling your personal data.</p>'
+              '<p>SENAITE GmbH (hereinafter referred to as "PROVIDERS") guarantee to web page users that such complies with the General Regulation of Data Protection (UE) 2016/679, and has established the security measures claimed by the laws and regulations destined to preserve secrecy, confidentiality and integrity in handling your personal data.</p>'
               + '<p>Such personal data will be used in the way and under the limitations and rights to grant the protection of information of personal use.</p>'
               + '<p>The collection and handling of personal data requested have the sole purpose of giving user support, not only administrative but commercial as well PROVIDERS agree to keep absolute reserve, secrecy and confidentiality about the information of personal data which it handles. You are entitled to obtain information whether if PROVIDERS are treating your personal information, reason for which you have the right to access your personal data, rectify inexact information or request deleting, once these is no longer needed for the purposes for which they were required.</p>',
             },

@@ -60,6 +60,33 @@ const users = [
     image: '/logos/bhp.png',
     infoLink: 'https://www.botswanaharvardpartnership.org/',
     pinned: true,
+  },
+  {
+    name: 'Lander Labs',
+    caption: 'Lander Labs',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/logos/landerlabs.png',
+    infoLink: 'https://landerlabs.com',
+    pinned: true,
+  },
+  {
+    name: 'eHealth AFRICA',
+    caption: 'eHealth AFRICA',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/logos/ehealth_africa.png',
+    infoLink: 'https://www.ehealthafrica.org/laboratory',
+    pinned: true,
+  },
+  {
+    name: 'Laboratorio de Análisis San Martin',
+    caption: 'Laboratorio de Análisis San Martin',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/logos/labsanmartin.png',
+    infoLink: 'http://www.labsanmartin.com',
+    pinned: true,
   }
 ];
 
@@ -100,10 +127,9 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     // {href: 'https://community.senaite.org', label: 'Community'},
+    {page: 'enterprisesolution', label: 'Enterprise'},
     {page: 'features', label: 'Features'},
-    {page: 'enterprisesolution', label: 'Enterprise solution'},
     {doc: 'quickstart', label: 'Documentation'},
-    {page: 'versions', label: 'Versions'},
 
     // {doc: 'doc4', label: 'API'},
     // {page: 'help', label: 'Help'},
@@ -176,8 +202,7 @@ const siteConfig = {
   repoUrl: 'https://github.com/senaite/senaite.core',
 
   // Twitter
-  twitterUsername: 'senaitelims',
-
+  twitterUsername: 'senaitelims',  
 };
 
 module.exports = siteConfig;

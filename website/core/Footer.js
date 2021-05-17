@@ -34,47 +34,27 @@ class Footer extends React.Component {
             )}
           </a>
           <div>
-            <h5>Documentation</h5>
-            <a href={this.docUrl('installation.html', this.props.language)}>
-              Installation
-            </a>
-            <a href={this.docUrl('quickstart.html', this.props.language)}>
-              Quickstart
-            </a>
-            <a href={this.docUrl('sample-basics.html', this.props.language)}>
-              Sample Basics
-            </a>
+            <h5>ABOUT</h5>
+            <a href="team">The Team</a>
+            <a href="customers">Our Customers</a>
+            <a href="mission">Mission Statement</a>
           </div>
           <div>
-            <h5>Community</h5>
-            <a target="_blank" href="https://community.senaite.org">Community Site</a>
-            <a target="_blank" href="https://sourceforge.net/projects/senaite/lists/senaite-users">Mailing List</a>
-            <a target="_blank" href="https://gitter.im/senaite/Lobby">Gitter Chat</a>
+            <h5>CONTACT</h5>
+            <a href="mailto:hello@senaite.com">hello@senaite.com</a>
+            <a href="tel:+49 (0) 911 974 930 91">+49 (0) 911 974 930 91</a>
           </div>
           <div>
-            <h5>More</h5>
+            <h5>COMMUNITY</h5>
+              <a target="_blank" href="https://community.senaite.org">Discussion Forum</a>
+              <a target="_blank" href="https://gitter.im/senaite/Lobby">Gitter Channel</a>
+              <a target="_blank" href="https://sourceforge.net/projects/senaite/lists/senaite-users">Mailing List</a>
+          </div>
+          <div>
+            <h5>INVOLVEMENT</h5>
             {/* <a href={`${this.props.config.baseUrl}blog`}>Blog</a> */}
-            <a href="https://github.com/senaite">GitHub</a>
-
-            <a className="github-button"
-               href={this.props.config.repoUrl}
-               data-icon="octicon-star"
-               data-count-href="/senaite/senaite.core/stargazers"
-               data-show-count="true"
-               data-count-aria-label="# stargazers on GitHub"
-               aria-label="Star this project on GitHub">
-              Star
-            </a>
-            {this.props.config.twitterUsername && (
-              <div className="social">
-                <a
-                  href={`https://twitter.com/${
-                    this.props.config.twitterUsername
-                  }`}
-                  className="twitter-follow-button">
-                  Follow @{this.props.config.twitterUsername}
-                </a>
-              </div>
+            <a href="https://www.transifex.com/senaite/public/">Translate @ Transifex</a>
+            <a href="https://github.com/senaite">Contribute @ GitHib</a>
             )}
           </div>
         </section>
@@ -88,10 +68,10 @@ class Footer extends React.Component {
             alt="SENAITE LIMS"/>
         </a>
         <section className="copyright">
-          {this.props.config.copyright} <a href='https://www.ridingbytes.com' target='_blank'>RIDING BYTES GmbH</a> &amp; <a href='https://www.naralabs.com' target='blank'>NARALABS S.L.</a>
+          {this.props.config.copyright} SENAITE GmbH
         </section>
         <section className="privacy">
-          <a href="privacy">Privacy policy and web legal announcement</a>
+          <a href="privacy">Privacy Policy and Web Legal Announcement</a>
         </section>
         {/* Matomo Tracking Image */}
         <img src="https://piwik.ridingbytes.com/matomo.php?idsite=3&amp;rec=1" style={{border: 0}} alt="" />
