@@ -123,9 +123,9 @@ The [Plone Unified Installer][PLONE-unified-installer] installs Plone and its
 dependencies from source on most Unix-like platforms.
 
 ```shell
-$ wget --no-check-certificate https://launchpad.net/plone/4.3/4.3.19/+download/Plone-4.3.19-UnifiedInstaller.tgz
-$ tar xzf Plone-4.3.19-UnifiedInstaller.tgz
-$ cd Plone-4.3.19-UnifiedInstaller
+$ wget --no-check-certificate https://launchpad.net/plone/5.2/5.2.6/+download/Plone-5.2.6-UnifiedInstaller-1.0.tgz
+$ tar xzf Plone-5.2.6-UnifiedInstaller-1.0.tgz
+$ cd Plone-5.2.6-UnifiedInstaller
 ```
 
 ## Install Plone
