@@ -14,7 +14,7 @@ We recommend to install SENAITE on [Ubuntu][UBUNTU] or [Debian][DEBIAN] Linux.
 Installation on MacOS works as well, but needs additional packages installed
 via [Homebrew][HOMEBREW].
 
-In this secion we will mostly use **Ubuntu 18.04 LTS** as reference system.
+In this section we will mostly use **Ubuntu 24.02** as reference system.
 
 The installation on other Linux distributions, MacOS or Windows is not covered here.
 
@@ -22,7 +22,7 @@ The installation on other Linux distributions, MacOS or Windows is not covered h
 ## A note about Versions
 
 The current codebase of SENAITE is at the moment only compatible with the latest
-version 4 of Plone.
+version 5.2 of Plone.
 
 **☝️Note:**
 **This version of Plone works only with [Python][PYTHON] 2.x.**
@@ -41,50 +41,90 @@ Therefore, it is better to setup a virtual Python environment with one of the
 following tools:
 
   - Virtualenv: <https://pypi.org/project/virtualenv>
-  - Miniconda: <https://conda.io/miniconda.html>
+  - Pyenv: <https://github.com/pyenv/pyenv>
 
-In this manual we will use **Miniconda**.
+In this manual we will use **Pyenv**.
 
 
-## Create a new User
+## Initial System Setup
 
-Create a new user `senaite` in your system with the following command:
+### Step 1: Install Basic Packages
+
+Login into a fresh installed Ubuntu 24.02 and install some basic packages:
 
 ```shell
-$ sudo adduser --home /home/senaite --shell /bin/bash senaite
+$ sudo apt install zsh vim git byobu net-tools tree neofetch
 ```
 
-And make sure you became this user within the following sections:
+### Step 2: Install oh-my-zsh (Optional)
 
 ```shell
-$ sudo su - senaite
-$ whoami
-senaite
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+You can change the `.zshrc` config to dpoggi theme and add some aliases if desired.
+
+### Step 3: Fix Locales Error (if required)
+
+```shell
+$ sudo apt install locales
+$ sudo locale-gen de_DE.UTF-8
 ```
 
 
-## Miniconda
+## Install Pyenv
 
-Download and install the `Python 2.7` version for your operating system:
+### Step 1: Install Pyenv
 
 ```shell
-$ wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh
-$ bash /home/senaite/Miniconda2-latest-Linux-x86_64.sh
-$ source /home/senaite/.bashrc
+$ curl https://pyenv.run | bash
 ```
 
-*You can accept the default settings of the miniconda installer*
-
-Create a new Python environment with the name `senaite`:
+### Step 2: Install Required Packages to Build Python
 
 ```shell
-$ conda create --name senaite python=2.7
+$ sudo apt install build-essential libbz2-dev zlib1g-dev libssl-dev \
+  libsqlite3-dev libffi-dev uuid-dev libnss3-dev libgdbm-dev \
+  libgdbm-compat-dev libncursesw5-dev liblzma-dev libreadline-dev
 ```
 
-Activate the Python environment:
+### Step 3: Update ~/.zshrc
+
+Add the following lines to your `~/.zshrc` (or `~/.bashrc` if using bash):
 
 ```shell
-$ conda activate senaite
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+```
+
+Reload your shell configuration:
+
+```shell
+$ source ~/.zshrc
+```
+
+
+## Install Python 2.7
+
+### Step 1: Install Python 2.7.18
+
+```shell
+$ pyenv install 2.7.18
+```
+
+### Step 2: Create Virtual Environment
+
+Create a virtual environment using pyenv virtualenv plugin:
+
+```shell
+$ pyenv virtualenv 2.7.18 python2.7-senaite
+```
+
+### Step 3: Activate the Virtual Environment
+
+```shell
+$ pyenv activate python2.7-senaite
 ```
 
 The command `which python` can be used to check if the right Python interpreter
@@ -92,143 +132,86 @@ is active in the current session:
 
 ```shell
 $ which python
-/home/senaite/miniconda2/envs/senaite/bin/python
-```
-
-```shell
-$ python
-Python 2.7.17 |Anaconda, Inc.| (default, Oct 21 2019, 19:04:46)
-[GCC 7.3.0] on linux2
-Type "help", "copyright", "credits" or "license" for more information.
->>>
+/home/username/.pyenv/versions/python2.7-senaite/bin/python
 ```
 
 
-## Install System dependencies
+## Install System Dependencies
 
 Install the required dependencies for SENAITE:
 
 ```shell
-$ sudo apt install build-essential
-$ sudo apt install python2.7 python2.7-dev
-$ sudo apt install libxml2 libxml2-dev libxslt1.1 libxslt1-dev
-$ sudo apt install libffi-dev libcairo2 libpango-1.0-0 libgdk-pixbuf2.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0
-$ sudo apt install zlib1g zlib1g-dev
+$ sudo apt install libpcre3-dev libcairo2 libpango-1.0-0 libpangocairo-1.0-0
 ```
 
 
-## Download the Plone unified installer
+## Setup SENAITE
 
-The [Plone Unified Installer][PLONE-unified-installer] installs Plone and its
-dependencies from source on most Unix-like platforms.
+### Step 1: Create SENAITE Directory
 
 ```shell
-$ wget --no-check-certificate https://launchpad.net/plone/5.2/5.2.6/+download/Plone-5.2.6-UnifiedInstaller-1.0.tgz
-$ tar xzf Plone-5.2.6-UnifiedInstaller-1.0.tgz
-$ cd Plone-5.2.6-UnifiedInstaller
+$ mkdir senaite && cd senaite
 ```
 
-## Install Plone
+### Step 2: Create buildout.cfg
 
-Next step is to install Plone with the provided `install.sh` shell script:
-
-```shell
-$ ./install.sh standalone --target=/home/senaite --instance=senaitelims --password=admin
-```
-
-**☝️Note:**
-We install SENAITE in the directory `/home/senaite/senaitelims` and we have set
-the admin password to `admin`
-
-
-## Install SENAITE
-
-To install SENAITE we need to modify the generated `buildout.cfg` config file.
-[Buildout][BUILDOUT] is an automation tool written in and extended with Python:
-
-```shell
-$ cd /home/senaite/senaitelims
-$ vim buildout.cfg
-```
-
-**☝️Note:**
-You can use `nano` or any other text editor you feel comfortable with
-
-Add `senaite.lims` and `simplejson` to the `eggs` section of the file:
+Create a `buildout.cfg` file with the following content:
 
 ```config
 [buildout]
-...
+index = https://pypi.org/simple/
+extends = https://dist.plone.org/release/5.2.14/versions.cfg
+find-links =
+    https://dist.plone.org/release/5.2.14/
+    https://dist.plone.org/thirdparty/
+
+parts =
+    instance
+
 eggs =
-    ...
     senaite.lims
-    simplejson
-zcml =
-...
-```
 
-Modify the `versions` section of the file as follows:
+eggs-directory = eggs
+download-cache = downloads
 
-```shell
+[instance]
+recipe = plone.recipe.zope2instance
+http-address = 0.0.0.0:8080
+user = admin:admin
+wsgi = on
+eggs =
+    ${buildout:eggs}
+
 [versions]
-zc.buildout =
-setuptools =
-Pillow = 5.1.0
-cssselect2 = 0.2.2
-soupsieve = 1.9.5
-
-buildout.sanitycheck = 1.0.2
-collective.recipe.backup = 4.0
-plone.recipe.unifiedinstaller = 4.3.2
+senaite.lims = 2.5.0
+et-xmlfile = 1.1.0
 ```
 
-**☝️Note:**
-The version unpinning of `zc.buildout` and `setuptools` is important!
+### Step 3: Create requirements.txt
 
+Create a `requirements.txt` file with the following content:
 
-### Upgrade pip, setuptools and zc.buildout
-
-We need to ensure that `pip`, `setuptools`, and `zc.buildout` are available in a
-compatible version:
-
-Create a `requirements.txt` file:
-
-```shell
-$ cd /home/senaite/senaitelims
-$ cat << EOF > requirements.txt
-setuptools==39.2.0
-zc.buildout==2.13.2
-pip==19.3.1
-EOF
+```
+setuptools==44.1.1
+zc.buildout==2.13.8
+wheel
 ```
 
-Install the requirements with the `pip` command of the local Python environment:
+### Step 4: Install Requirements
 
 ```shell
-$ which pip
-/home/senaite/miniconda2/envs/senaite/bin/pip
-
 $ pip install -r requirements.txt
 ```
 
-**☝️Note:**
-A wrong version of `setuptools` can lead to the infamous 
-[Error while buildout: There is a version conflict. We already have: UNKNOWN 0.0.0](https://github.com/senaite/senaite.lims/issues/106)
-
-Re-run the `buildout` script:
+### Step 5: Run Buildout
 
 ```shell
-$ which buildout
-/home/training/miniconda2/envs/senaite/bin/buildout
-$ PYTHONHTTPSVERIFY=0 buildout
+$ buildout -c buildout.cfg
 ```
 
-## Further links
-
-- https://github.com/senaite/senaite.lims#readme
-- http://www.buildout.org/en/latest/
-- https://setuptools.readthedocs.io/en/latest
-- https://docs.conda.io/en/latest/miniconda.html
+**☝️Note:**
+The buildout process may take several minutes to download and install all
+required packages.
 
 
 ## Starting SENAITE
@@ -273,9 +256,16 @@ Congratulations 🙌 you successfully installed SENAITE LIMS on your system!
 Please continue with the next sections to learn the first steps in your new system.
 
 
+## Further links
+
+- https://github.com/senaite/senaite.lims#readme
+- http://www.buildout.org/en/latest/
+- https://setuptools.readthedocs.io/en/latest
+- https://github.com/pyenv/pyenv
+
 
 [PLONE]: https://plone.org  "The Ultimate Enterprise CMS"
-[PLONE-installation]: https://docs.plone.org/4/en/manage/installing/installation.html#how-to-install-plone  "How to install Plone 4"
+[PLONE-installation]: https://docs.plone.org/manage/installing/installation.html  "How to install Plone"
 [PYTHON]: https://www.python.org   "Python Programming Language"
 [DEBIAN]: https://www.debian.org/distrib/netinst  "Debian Linux"
 [UBUNTU]: https://ubuntu.com/download/server   "Ubuntu Linux"
