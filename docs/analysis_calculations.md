@@ -25,7 +25,7 @@ Enter the following values in the add form:
 - Description: `Calculate the total hardness of Water based on the Calcium and Magnesium Results`
 - Calculation Formula `[Ca] + [Mg]`
 
-**☝️Note:**
+__☝️Note:__
 You can use any valid [Python Expression][Python Expressions] in the
 *Calculation Formula*
 
